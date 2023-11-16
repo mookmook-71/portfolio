@@ -1,6 +1,6 @@
 function AboutMe() {
   return (
-    <main>
+    <>
       <section className="hero">
         <img src="https://assets.api.uizard.io/api/cdn/stream/d2d3bae8-33a0-4ebe-9a4f-6a161259b068.png" className="hero-bg" alt="a rainbow" />
         <h1 className="hero-title">Hi, this is Pattaraporn!</h1>
@@ -50,7 +50,7 @@ function AboutMe() {
         </div>
         <img src="https://assets.api.uizard.io/api/cdn/stream/f1288968-921f-4ccb-b628-d3e9de467710.png" alt="people around the world" className="section-side-img" />
       </section>
-    </main>
+    </>
   );
 }
 

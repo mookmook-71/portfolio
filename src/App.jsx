@@ -23,6 +23,7 @@ export const PageRoutes = [
 
 function App() {
   const AboutMe = lazy(() => import("./pages/aboutMe/AboutMe"));
+  const Portfolio = lazy(() => import("./pages/portfolio/Portfolio"));
 
   return (
     <BrowserRouter>
@@ -30,7 +31,7 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/about-me" element={<AboutMe />} />
-            <Route path="/portfolio" element={<>portfolio</>} />
+            <Route path="/portfolio" element={<Portfolio />} />
           </Route>
           <Route path="*" element={<Navigate to="/about-me" />} />
         </Routes>
