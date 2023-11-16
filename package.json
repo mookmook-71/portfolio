@@ -5,10 +5,12 @@
   "repository": "https://github.com/mookmook-71/portfolio.git",
   "author": "Pattaraporn Tripiyaratana <pattaraporn.tri@gmail.com>",
   "license": "MIT",
-  "module": "",
+  "homepage": "https://mookmook-71.github.com/portfolio",
   "scripts": {
     "dev": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -16,6 +18,7 @@
     "react-scripts": "^5.0.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "react-router-dom": "^6.18.0"
   },
   "browserslist": {
