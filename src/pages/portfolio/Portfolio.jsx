@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 const projects = [
   {
     name: `Project's name`,
@@ -27,6 +29,8 @@ const projects = [
 ];
 
 function Portfolio() {
+  const navigate = useNavigate();
+
   return (
     <>
       <img src="https://assets.api.uizard.io/api/cdn/stream/f6ccfb77-809f-4f7d-aada-72e3891214e4.jpg" alt="brick wall" className="portfolio-header-img" />
@@ -39,7 +43,7 @@ function Portfolio() {
           </div>
           <div className="project-list">
             {projects.map((project, i) => (
-              <div key={`project-${project.name}-${i}`} className="project">
+              <div key={`project-${project.name}-${i}`} className="project" onClick={() => navigate("/portfolio/detail")}>
                 <img src={project.imageUrl} alt={`project image no.${i}`} className="project-img" />
                 <h3 className="project-name">{project.name}</h3>
                 <div className="project-sub">

@@ -298,3 +298,51 @@ hr {
   z-index: 1;
   fill: rgb(3, 3, 3);
 }
+
+.portfolio.portfolio-detail .header {
+  width: 100%;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+.portfolio .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-detail .content-text {
+  padding: 0 2rem;
+}
+
+.portfolio-detail .content-text-header {
+  font-size: 3rem;
+}
+
+.portfolio-detail .carousel {
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-main {
+  width: 324px;
+  height: 525px;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-item-img {
+  width: 71px;
+  height: 83px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.back-btn a {
+  text-decoration: unset;
+  color: unset;
+}
