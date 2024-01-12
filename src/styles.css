@@ -2,6 +2,9 @@
 
 :root {
   --background-primary: #ffffff;
+  --black-primary: #2b2b2b;
+  --white-primary: #ffffff;
+  --secondary-purple: #8930e7;
 }
 
 * {
@@ -10,7 +13,39 @@
 
 body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: var(--black-primary);
   margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.875rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.375rem;
+  margin: 0;
+}
+
+.body-2 {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.25rem;
 }
 
 button {
@@ -123,54 +158,76 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 12rem;
-  margin: 0 0 3rem 0;
-  padding-top: 8rem;
+  flex-direction: column;
+  margin: 5rem 0 0 0;
+  padding: 2.5rem 0;
 }
 
-.hero-bg {
-  position: absolute;
-  height: 10rem;
-  width: auto;
-  left: 20rem;
-  top: 7rem;
+.hero-profile-img {
+  height: 240px;
+  width: 240px;
+  border-radius: 15rem;
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.2);
+  margin: 2.625rem 0;
 }
 
-.hero-title {
-  font-size: 3.75rem;
+.hero-sub {
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.75rem;
+  margin: 0;
+}
+
+.hero-sub-strong {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem;
+  color: var(--secondary-purple);
+}
+
+.icon-divider {
+  text-align: center;
+  margin: 2.625rem 0;
+}
+
+.icon-divider .icon {
+  height: 4rem;
+  width: 4rem;
 }
 
 .section {
-  display: flex;
-  padding: 3rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  padding: 4rem 10rem;
+  align-items: flex-start;
+  background-color: var(--black-primary);
+  color: var(--white-primary);
 }
 
-.section.reverse {
-  flex-direction: row-reverse;
-  background-color: rgb(237, 237, 237);
-}
-
-.section-wrapper {
-  display: flex;
-  flex-direction: column;
-  padding-top: 3.25rem;
+.section-revert {
+  background-color: var(--white-primary);
+  color: var(--black-primary);
 }
 
 .section-title {
-  font-size: 2.5rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.section-side-img {
-  padding: 0 3rem;
+.section-text {
+  margin: 0;
 }
 
 .section-btn {
   margin-top: 3rem;
-}
-
-.section-btn.center {
-  align-self: center;
 }
 
 .footer {
