@@ -12,10 +12,6 @@ export const PageRoutes = [
     redirectPath: "/portfolio",
   },
   {
-    display: "Resume",
-    redirectPath: "/resume",
-  },
-  {
     display: "Contact",
     redirectPath: "/contact",
   },
