@@ -25,6 +25,7 @@ function App() {
   const AboutMe = lazy(() => import("./pages/aboutMe/AboutMe"));
   const Portfolio = lazy(() => import("./pages/portfolio/Portfolio"));
   const PortfolioDetail = lazy(() => import("./pages/portfolio/PortfolioDetail"));
+  const Resume = lazy(() => import("./pages/resume/Resume"));
 
   return (
     <HashRouter>
@@ -34,6 +35,7 @@ function App() {
             <Route path="/about-me" element={<AboutMe />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/portfolio/detail" element={<PortfolioDetail />} />
+            <Route path="/resume" element={<Resume />} />
           </Route>
           <Route path="*" element={<Navigate to="/about-me" />} />
         </Routes>
