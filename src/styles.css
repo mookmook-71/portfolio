@@ -3,6 +3,7 @@
 :root {
   --background-primary: #ffffff;
   --black-primary: #2b2b2b;
+  --black-secondary: #000000;
   --white-primary: #ffffff;
   --secondary-purple: #8930e7;
 }
@@ -248,6 +249,12 @@ hr {
 .copyright-divider {
   width: 100%;
   margin-bottom: 1rem;
+  border: 1px solid var(--black-secondary);
+}
+
+.copyright-text {
+  font-size: 20px;
+  letter-spacing: -2;
 }
 
 .card {
@@ -286,10 +293,6 @@ hr {
 .portfolio .header-sub-title {
   font-size: 1.25rem;
   margin-bottom: 1rem;
-}
-
-.portfolio .divider {
-  width: 100%;
 }
 
 .portfolio-header-img {
