@@ -163,6 +163,10 @@ hr {
   padding: 2.5rem 0;
 }
 
+.hero-title {
+  text-align: center;
+}
+
 .hero-profile-img {
   height: 240px;
   width: 240px;
@@ -214,7 +218,7 @@ hr {
 }
 
 .section-title {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 0;
@@ -234,44 +238,16 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem 0 2rem 15rem;
-  background-color: rgb(237, 237, 237);
+  align-items: center;
+  margin-bottom: 8rem;
+  padding-top: 1.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
-.footer-wrapper {
-  display: flex;
-}
-
-.footer-list {
-  list-style-type: none;
-  margin-left: 3rem;
-}
-
-.footer-header:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.footer-list-item.header {
-  font-weight: bold;
-}
-
-.footer-list-item:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.footer-list-item:not(:last-child) {
-  margin-bottom: 2rem;
-}
-
-.footer .copyright {
-  text-align: center;
-}
-
-.footer .divider {
-  width: 75%;
-  margin: 3rem 0 2rem 0;
+.copyright-divider {
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .card {
