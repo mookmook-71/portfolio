@@ -5,6 +5,7 @@ import ProjectOverHaulImg from "../../assets/overhaul.png";
 import ProjectPartner from "../../assets/partner.png";
 import ProjectThaiContentGuideImg from "../../assets/thai-content-style-guild.png";
 import Footer from "../../components/footer/Footer";
+import BackToTop from "../../components/backToTop/backToTop";
 
 const projects = [
   {
@@ -28,6 +29,54 @@ const projects = [
     name: `Localization Style Guide`,
     shortDesc: "Streamlining Thai language standards for Grab from ground zero",
     imageUrl: ProjectThaiContentGuideImg,
+  },
+];
+
+const challenges = [
+  {
+    name: "Flight cancellation alert",
+  },
+  {
+    name: "Sports app promo",
+  },
+  {
+    name: "Sign-in error",
+  },
+  {
+    name: "Grocery subscription",
+  },
+  {
+    name: "Post-shutdown message",
+  },
+  {
+    name: "Commute incident alert",
+  },
+  {
+    name: "Real-time sports notification",
+  },
+  {
+    name: "Concert alert on music app",
+  },
+  {
+    name: "Expired credit card error",
+  },
+  {
+    name: "User location permission",
+  },
+  {
+    name: "Google meta description",
+  },
+  {
+    name: "Fake name error",
+  },
+  {
+    name: "Truck delivery notification",
+  },
+  {
+    name: "App downtime",
+  },
+  {
+    name: "The finale",
   },
 ];
 
@@ -77,7 +126,19 @@ function Portfolio() {
               </div>
             ))}
           </div>
-          <div className="back-to-top">Back to Top</div>
+
+          <div className="challenges">
+            <div className="challenge-title">Daily UX Writing Challenge</div>
+            <ul className="challenge-list">
+              {challenges.map((challenge, index) => (
+                <li className="challenge">{`Day ${index + 1}: ${
+                  challenge.name
+                }`}</li>
+              ))}
+            </ul>
+          </div>
+
+          <BackToTop />
           <Footer />
         </div>
       </div>
