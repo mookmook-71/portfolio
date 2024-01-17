@@ -9,7 +9,6 @@ function Layout() {
       <main className="main">
         <Outlet />
       </main>
-      <Footer />
     </>
   );
 }

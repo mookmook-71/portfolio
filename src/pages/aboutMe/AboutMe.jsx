@@ -1,4 +1,5 @@
 import ArrowDown from "../../assets/arrow-down.png";
+import Footer from "../../components/footer/Footer";
 
 function AboutMe() {
   return (
@@ -77,6 +78,7 @@ function AboutMe() {
           Singapore.
         </p>
       </section>
+      <Footer />
     </>
   );
 }
