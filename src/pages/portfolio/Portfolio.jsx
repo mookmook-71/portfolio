@@ -13,6 +13,7 @@ const projects = [
     shortDesc:
       "My first UX project: concept testing for a new e-wallet product in Thailand!",
     imageUrl: ProjectGrabImg,
+    redirectPath: `/portfolio/grab`
   },
   {
     name: `Chat Localization Overhaul`,
@@ -103,7 +104,7 @@ function Portfolio() {
               <div
                 key={`project-${project.name}-${i}`}
                 className="project"
-                onClick={() => navigate("/portfolio/detail")}
+                onClick={() => navigate(project.redirectPath)}
               >
                 <img
                   src={project.imageUrl}
