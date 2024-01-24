@@ -16,11 +16,11 @@ function AboutMe() {
           <br />
           <span className="hero-sub-strong">localization</span> to create
           impactful connections <br />
-          and smooth <span className="hero-sub-strong">user experience</span>
+          and smooth <span className="hero-sub-strong">user experience </span>
           🌈✨
         </p>
         <div className="icon-divider">
-          <img className="icon" src={ArrowDown} alt="next section arrow down" />
+          <img className="icon not-good" src={ArrowDown} alt="next section arrow down" />
         </div>
         <div className="text-center">
           <h2>My Expertise</h2>

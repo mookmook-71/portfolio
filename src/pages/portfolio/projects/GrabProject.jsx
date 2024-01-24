@@ -13,7 +13,7 @@ function GrabProject() {
       />
       <div className="portfolio portfolio-detail">
         <div className="card">
-          <div className="top">
+          <div className="project-topbar">
             <button className="btn btn-icon back-btn">
               <Link to="/portfolio">{"<"} Back</Link>
             </button>
@@ -21,24 +21,25 @@ function GrabProject() {
               <option value="grab">GrabPay Wallet Powered by KBank</option>
             </select>
           </div>
-          <div className="content">
+          <div className="project-title">
             <h3>GrabPay Wallet Powered by KBank</h3>
             <img src={GrabImg} alt="grab ads" className="project-content-img" />
+            </div>
 
-            <section>
-              <h6>Project overview</h6>
-              <p>
+            <div className="project-details"><section>
+              <h6 className="project-details-content">Project overview</h6>
+              <body4>
                 Grab is introducing a new e-wallet in collaboration with KBank.
                 This wallet allows users to easily top up and make cashless
                 payments for various Grab services in Thailand. Signing up
                 brings perks like lower fares, discounted bundles, and extra
                 reward points when using GrabPay Wallet. The challenge is
                 enticing users to explore and give this new product a try.
-              </p>
+                </body4>
             </section>
 
             <section>
-              <h6>Team I worked with</h6>
+              <h6 className="project-details-content">Team I worked with</h6>
               <p>
                 In this project, I worked closely with the regional team in
                 Singapore, the local team in Thailand, and our external partners
@@ -49,7 +50,7 @@ function GrabProject() {
             </section>
 
             <section>
-              <h6>How it started</h6>
+              <h6 className="project-details-content">How it started</h6>
               <p>
                 For this new product, the team decided to run a 2-day concept
                 testing session in Bangkok, Thailand. While the initial content
@@ -88,7 +89,7 @@ function GrabProject() {
             </p>
 
             <section>
-              <h6>What I learned</h6>
+              <h6 className="project-details-content">What I learned</h6>
               <p>
                 There’re many interesting insights from the testing. Here’re are
                 some keys things I learned and used to improved the content.
@@ -118,9 +119,9 @@ function GrabProject() {
             </section>
 
             <section>
-              <h6>Outcome</h6>
-              <div className="show-case-img-list">
-                <img src={GrabImg} alt="outcome-1" className="show-case-img" />
+              <h6 className="project-details-content">Outcome</h6>
+              <div className="project-deliverable-img">
+                <img src={GrabImg} alt="outcome-1" className="project-deliverable-img" />
               </div>
             </section>
 

@@ -112,7 +112,7 @@ function Portfolio() {
                   className="project-img"
                 />
                 <div className="project-content">
-                  <h3 className="project-name">{project.name}</h3>
+                  <h6 className="project-name">{project.name}</h6>
                   <div className="project-sub">
                     <small className="project-desc">{project.shortDesc}</small>
                     <button className="btn btn-icon">
