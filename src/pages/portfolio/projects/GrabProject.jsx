@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import GrabImg from "../../../assets/portfolio/grab.jpg";
-import BackToTop from '../../../components/backToTop/backToTop';
-import Footer from '../../../components/footer/Footer';
+import BackToTop from "../../../components/backToTop/backToTop";
+import Footer from "../../../components/footer/Footer";
 
 function GrabProject() {
   return (
@@ -21,12 +21,14 @@ function GrabProject() {
               <option value="grab">GrabPay Wallet Powered by KBank</option>
             </select>
           </div>
+
           <div className="project-title">
             <h3>GrabPay Wallet Powered by KBank</h3>
             <img src={GrabImg} alt="grab ads" className="project-content-img" />
-            </div>
+          </div>
 
-            <div className="project-details"><section>
+          <div className="project-details">
+            <section>
               <h6 className="project-details-content">Project overview</h6>
               <body4>
                 Grab is introducing a new e-wallet in collaboration with KBank.
@@ -35,7 +37,7 @@ function GrabProject() {
                 brings perks like lower fares, discounted bundles, and extra
                 reward points when using GrabPay Wallet. The challenge is
                 enticing users to explore and give this new product a try.
-                </body4>
+              </body4>
             </section>
 
             <section>
@@ -121,13 +123,16 @@ function GrabProject() {
             <section>
               <h6 className="project-details-content">Outcome</h6>
               <div className="project-deliverable-img">
-                <img src={GrabImg} alt="outcome-1" className="project-deliverable-img" />
+                <img
+                  src={GrabImg}
+                  alt="outcome-1"
+                  className="project-deliverable-img"
+                />
               </div>
             </section>
 
             <BackToTop />
             <Footer />
-
           </div>
         </div>
       </div>

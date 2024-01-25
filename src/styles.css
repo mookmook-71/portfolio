@@ -63,27 +63,27 @@ h4 {
 }
 
 h5 {
-font-size: 1.5625rem;
-font-style: normal;
-font-weight: var(--inter-semi-bold);
-line-height: normal;
-margin: 0;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: var(--inter-semi-bold);
+  line-height: normal;
+  margin: 0;
 }
 
 h6 {
-font-size: 1.25rem;
-font-style: normal;
-font-weight: var(--inter-semi-bold);
-line-height: 1.875rem;
-margin: 0;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: var(--inter-semi-bold);
+  line-height: 1.875rem;
+  margin: 0;
 }
 
 h7 {
   font-size: 1.0625rem;
-font-style: normal;
-font-weight: var(--inter-semi-bold);
-line-height: 1.875rem;
-margin: 0
+  font-style: normal;
+  font-weight: var(--inter-semi-bold);
+  line-height: 1.875rem;
+  margin: 0;
 }
 
 button {
@@ -101,6 +101,13 @@ p {
 
 ul {
   margin: 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
 body1 {
@@ -121,18 +128,18 @@ body2 {
 
 body3 {
   font-size: 1.125rem;
-font-style: normal;
-font-weight: var(--inter-regular);
-line-height: 1.875rem;
-margin: 0
+  font-style: normal;
+  font-weight: var(--inter-regular);
+  line-height: 1.875rem;
+  margin: 0;
 }
 
 body4 {
-font-size: 1rem;
-font-style: normal;
-font-weight: var(--inter-regular);
-line-height: 1.875rem;
-margin: 0;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: var(--inter-regular);
+  line-height: 1.875rem;
+  margin: 0;
 }
 
 .pt-0 {
@@ -311,7 +318,7 @@ margin: 0;
   flex-direction: column;
   justify-content: center;
   margin: 0;
-  height: 100%
+  height: 100%;
 }
 
 .footer {
@@ -393,7 +400,7 @@ margin: 0;
 }
 
 .project-title {
-display: contents;
+  display: contents;
 }
 
 .project-details {
@@ -402,7 +409,7 @@ display: contents;
 }
 
 .project-details-content {
-margin-block: 1rem;
+  margin-block: 1rem;
 }
 
 .project-name {

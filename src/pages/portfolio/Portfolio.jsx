@@ -1,11 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import ArrowRightImg from "../../assets/arrow-right.png";
 import ProjectGrabImg from "../../assets/grab.jpg";
-import ProjectOverHaulImg from "../../assets/overhaul.png";
+import ChatLocalization from "../../assets/overhaul.png";
 import ProjectPartner from "../../assets/partner.png";
 import ProjectThaiContentGuideImg from "../../assets/thai-content-style-guild.png";
 import Footer from "../../components/footer/Footer";
 import BackToTop from "../../components/backToTop/backToTop";
+import { PortfolioRoutes } from "../../App";
 
 const projects = [
   {
@@ -13,13 +14,14 @@ const projects = [
     shortDesc:
       "My first UX project: concept testing for a new e-wallet product in Thailand!",
     imageUrl: ProjectGrabImg,
-    redirectPath: `/portfolio/grab`
+    redirectPath: PortfolioRoutes.Grab
   },
   {
     name: `Chat Localization Overhaul`,
     shortDesc:
       "How I improve chatbot interactions via strategic conversational design",
-    imageUrl: ProjectOverHaulImg,
+    imageUrl: ChatLocalization,
+    redirectPath: PortfolioRoutes.ChatLocalization
   },
   {
     name: `Partner Cover`,

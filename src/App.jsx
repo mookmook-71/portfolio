@@ -1,7 +1,6 @@
 import { Suspense, lazy } from "react";
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import Layout from "./layout/Layout";
-import GrabProject from "./pages/portfolio/projects/GrabProject";
 
 export const PageRoutes = [
   {
@@ -20,6 +19,7 @@ export const PageRoutes = [
 
 export const PortfolioRoutes = {
   Grab: "/portfolio/grab",
+  ChatLocalization: "/portfolio/chat-localization",
 };
 
 function App() {
@@ -29,6 +29,8 @@ function App() {
     () => import("./pages/portfolio/PortfolioDetail"),
   );
   const Resume = lazy(() => import("./pages/resume/Resume"));
+  const GrabProject = lazy(() => import('./pages/portfolio/projects/GrabProject'));
+  const ChatLocalization = lazy(() => import('./pages/portfolio/projects/ChatLocalization'));
 
   return (
     <HashRouter>
@@ -39,6 +41,7 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/portfolio/detail" element={<PortfolioDetail />} />
             <Route path={PortfolioRoutes.Grab} element={<GrabProject />} />
+            <Route path={PortfolioRoutes.ChatLocalization} element={<ChatLocalization />} />
             <Route path="/resume" element={<Resume />} />
           </Route>
           <Route path="*" element={<Navigate to="/about-me" />} />
