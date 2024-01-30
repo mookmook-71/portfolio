@@ -113,7 +113,7 @@ function Portfolio() {
                   alt={`project image no.${i}`}
                   className="project-img"
                 />
-                <div className="project-content">
+                <div className="project-card">
                   <h6 className="project-name">{project.name}</h6>
                   <div className="project-sub">
                     <small className="project-desc">{project.shortDesc}</small>
