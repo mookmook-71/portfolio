@@ -116,6 +116,7 @@ th,
 td {
   border: 1px solid black;
   border-collapse: collapse;
+  padding: 0.62rem 0.75rem;
 }
 
 select {
@@ -393,11 +394,11 @@ body4 {
   margin-bottom: 1rem;
 }
 
-.portfolio-header-img {
+.portfolio-header-bg {
   height: 300px;
   width: 100%;
   position: absolute;
-  object-fit: cover;
+  background-color: var(--black-primary);
 }
 
 .project-list {
