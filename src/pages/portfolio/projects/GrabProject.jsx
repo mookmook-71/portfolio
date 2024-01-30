@@ -42,7 +42,7 @@ function GrabProject() {
             <div className="project-details">
               <section>
                 <h6 className="project-details-content">Project overview</h6>
-                <body4>
+                <p>
                   Grab is introducing a new e-wallet in collaboration with
                   KBank. This wallet allows users to easily top up and make
                   cashless payments for various Grab services in Thailand.
@@ -50,7 +50,7 @@ function GrabProject() {
                   and extra reward points when using GrabPay Wallet. The
                   challenge is enticing users to explore and give this new
                   product a try.
-                </body4>
+                </p>
               </section>
 
               <section>
