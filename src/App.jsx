@@ -1,6 +1,7 @@
 import { Suspense, lazy } from "react";
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
-import Layout from "./layout/Layout";
+import Layout, { PortfolioRoutes } from "./layout/Layout";
+import { ChallengesRoutes } from "./pages/portfolio/Portfolio";
 
 export const PageRoutes = [
   {
@@ -17,22 +18,19 @@ export const PageRoutes = [
   },
 ];
 
-export const PortfolioRoutes = {
-  Grab: "/portfolio/grab",
-  ChatLocalization: "/portfolio/chat-localization",
-  Partner: "/portfolio/partner-cover",
-};
-
 function App() {
   const AboutMe = lazy(() => import("./pages/aboutMe/AboutMe"));
-  const Portfolio = lazy(() => import("./pages/portfolio/Portfolio"));
-  const PortfolioDetail = lazy(
-    () => import("./pages/portfolio/PortfolioDetail"),
-  );
+  
   const Resume = lazy(() => import("./pages/resume/Resume"));
   const GrabProject = lazy(() => import('./pages/portfolio/projects/GrabProject'));
   const ChatLocalization = lazy(() => import('./pages/portfolio/projects/ChatLocalization'));
   const PartnerCover = lazy(() => import('./pages/portfolio/projects/PartnerCover'));
+  const StyleGuide = lazy(() => import('./pages/portfolio/projects/StyleGuide'));
+
+  const Portfolio = lazy(() => import("./pages/portfolio/Portfolio"));
+  const PortfolioDetail = lazy(
+    () => import("./pages/portfolio/PortfolioDetail"),
+  );
 
   return (
     <HashRouter>
@@ -45,6 +43,10 @@ function App() {
             <Route path={PortfolioRoutes.Grab} element={<GrabProject />} />
             <Route path={PortfolioRoutes.ChatLocalization} element={<ChatLocalization />} />
             <Route path={PortfolioRoutes.Partner} element={<PartnerCover />} />
+            <Route path={PortfolioRoutes.StyleGuide} element={<StyleGuide />  } />
+
+            <Route path={ChallengesRoutes.ChallengeDay1} element={<div>day 1</div> } />
+
             <Route path="/resume" element={<Resume />} />
           </Route>
           <Route path="*" element={<Navigate to="/about-me" />} />

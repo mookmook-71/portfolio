@@ -6,7 +6,7 @@ import ProjectPartner from "../../assets/partner.png";
 import ProjectThaiContentGuideImg from "../../assets/thai-content-style-guild.png";
 import Footer from "../../components/footer/Footer";
 import BackToTop from "../../components/backToTop/backToTop";
-import { PortfolioRoutes } from "../../App";
+import { PortfolioRoutes } from "../../layout/Layout";
 
 const projects = [
   {
@@ -33,12 +33,17 @@ const projects = [
     name: `Localization Style Guide`,
     shortDesc: "Streamlining Thai language standards for Grab from ground zero",
     imageUrl: ProjectThaiContentGuideImg,
+    redirectPath: PortfolioRoutes.StyleGuide
   },
 ];
-
+export const ChallengesRoutes = {
+  ChallengeDay1: "/portfolio/uxw-challenge/day1",
+  ChallengeDay2: "/portfolio/uxw-challenge/day2",
+}
 const challenges = [
   {
     name: "Flight cancellation alert",
+    redirectPath: ChallengesRoutes.ChallengeDay1
   },
   {
     name: "Sports app promo",
@@ -133,9 +138,9 @@ function Portfolio() {
             <div className="challenge-title">Daily UX Writing Challenge</div>
             <ul className="challenge-list">
               {challenges.map((challenge, index) => (
-                <li className="challenge">{`Day ${index + 1}: ${
-                  challenge.name
-                }`}</li>
+                <li className="challenge"
+                  onClick={() => navigate(challenge.redirectPath)}>{`Day ${index + 1}: ${challenge.name
+                    }`}</li>
               ))}
             </ul>
           </div>
