@@ -27,6 +27,7 @@ const projects = [
     name: `Partner Cover`,
     shortDesc: "What does “back-translation” have to do in content design?",
     imageUrl: ProjectPartner,
+    redirectPath: PortfolioRoutes.Partner
   },
   {
     name: `Localization Style Guide`,
