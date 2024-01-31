@@ -27,6 +27,7 @@ const projects = [
     name: `Partner Cover`,
     shortDesc: "What does “back-translation” have to do in content design?",
     imageUrl: ProjectPartner,
+    redirectPath: PortfolioRoutes.Partner
   },
   {
     name: `Localization Style Guide`,
@@ -88,10 +89,8 @@ function Portfolio() {
 
   return (
     <>
-      <img
-        src="https://assets.api.uizard.io/api/cdn/stream/f6ccfb77-809f-4f7d-aada-72e3891214e4.jpg"
-        alt="brick wall"
-        className="portfolio-header-img"
+      <div
+        className="portfolio-header-bg"
       />
       <div className="portfolio">
         <div className="card">

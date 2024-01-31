@@ -20,6 +20,7 @@ export const PageRoutes = [
 export const PortfolioRoutes = {
   Grab: "/portfolio/grab",
   ChatLocalization: "/portfolio/chat-localization",
+  Partner: "/portfolio/partner-cover",
 };
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
   const Resume = lazy(() => import("./pages/resume/Resume"));
   const GrabProject = lazy(() => import('./pages/portfolio/projects/GrabProject'));
   const ChatLocalization = lazy(() => import('./pages/portfolio/projects/ChatLocalization'));
+  const PartnerCover = lazy(() => import('./pages/portfolio/projects/PartnerCover'));
 
   return (
     <HashRouter>
@@ -42,6 +44,7 @@ function App() {
             <Route path="/portfolio/detail" element={<PortfolioDetail />} />
             <Route path={PortfolioRoutes.Grab} element={<GrabProject />} />
             <Route path={PortfolioRoutes.ChatLocalization} element={<ChatLocalization />} />
+            <Route path={PortfolioRoutes.Partner} element={<PartnerCover />} />
             <Route path="/resume" element={<Resume />} />
           </Route>
           <Route path="*" element={<Navigate to="/about-me" />} />
