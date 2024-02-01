@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import BackToTop from "../../../components/backToTop/backToTop";
 import Footer from "../../../components/footer/Footer";
-import SideImg from "../../../assets/overhaul.png";
+import SideImg from "../../../assets/portfolio/chat-overhaul.png";
 import OutcomeImg from "../../../assets/portfolio/chat-localization-outcome.png";
 
 function ChatLocalization() {

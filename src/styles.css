@@ -107,6 +107,11 @@ i {
   font-size: 1.05rem;
 }
 
+li {
+  line-height: 1.875rem;
+  font-size: 1.05rem;
+}
+
 ul {
   margin: 0;
 }

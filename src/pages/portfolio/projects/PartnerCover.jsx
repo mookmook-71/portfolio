@@ -1,5 +1,5 @@
 import React from "react";
-import CoverImg from "../../../assets/partner.png";
+import CoverImg from "../../../assets/portfolio/partner-cover.png";
 import { Link } from "react-router-dom";
 
 function PartnerCover() {
