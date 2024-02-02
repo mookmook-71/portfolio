@@ -124,6 +124,22 @@ td {
   padding: 0.62rem 0.75rem;
 }
 
+td:nth-child(1) {
+  width: 5%;
+}
+
+td:nth-child(2) {
+  width: 30%;
+}
+
+td:nth-child(3) {
+  width: 35%;
+}
+
+td:nth-child(4) {
+  width: 35%;
+}
+
 select {
   border-radius: 0.5rem;
   border: 1.3px solid var(--gray-secondary);
@@ -135,7 +151,7 @@ select option {
   padding: 0.6875rem 1.5rem;
 }
 
-body1 {
+.body-1 {
   font-size: 2rem;
   font-style: normal;
   font-weight: var(--inter-medium);
@@ -143,7 +159,7 @@ body1 {
   margin: 0;
 }
 
-body2 {
+.body-2 {
   font-size: 1.25rem;
   font-style: normal;
   font-weight: var(--inter-regular);
@@ -151,7 +167,7 @@ body2 {
   margin: 0;
 }
 
-body3 {
+.body-3 {
   font-size: 1.125rem;
   font-style: normal;
   font-weight: var(--inter-regular);
@@ -159,12 +175,16 @@ body3 {
   margin: 0;
 }
 
-body4 {
+.body-4 {
   font-size: 1rem;
   font-style: normal;
   font-weight: var(--inter-regular);
   line-height: 1.875rem;
   margin: 0;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .pt-0 {
@@ -352,8 +372,8 @@ body4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 8rem;
-  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-top: 2.5rem;
   padding-left: 5rem;
   padding-right: 5rem;
 }
@@ -486,7 +506,7 @@ body4 {
 }
 
 .project-outcome-img:not(:first-child) {
-  margin-top: 2.5rem;
+  margin-top: 0.5rem;
 }
 
 .project-name {
@@ -627,8 +647,40 @@ body4 {
   line-height: 3.25rem;
 }
 
+.project-title .challenge-card {
+  margin-top: 30px;
+}
+
 .challenge:hover {
   font-weight: var(--inter-semi-bold);
   text-decoration-line: underline;
   cursor: pointer;
+}
+
+.challenge-detail-title {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.challenge-detail-h3 {
+  margin-bottom: 40px;
+}
+
+.challenge-card {
+  width: 600px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 2px;
+}
+
+.challenge-card section:not(:first-child) {
+  margin-top: 30px;
+}
+
+.challenge-constraint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

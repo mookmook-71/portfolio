@@ -5,6 +5,8 @@ import Footer from "../../../components/footer/Footer";
 import GrabImg from "../../../assets/portfolio/grab.jpg";
 import GrabOutcome1 from "../../../assets/portfolio/outcome-grab.png";
 import GrabOutcome2 from "../../../assets/portfolio/outcome-grab-2.png";
+import GrabTesting1 from "../../../assets/portfolio/grab_testing1.JPG";
+import GrabTesting2 from "../../../assets/portfolio/grab_testing2.JPG"
 
 function GrabProject() {
   return (
@@ -88,7 +90,11 @@ function GrabProject() {
                 </p>
               </section>
               <div className="project-paragraph-img">
-                <div className="dummy-img"></div>
+                  <img
+                    src={GrabTesting1}
+                    alt="project grab outcome 1"
+                    className="project-outcome-img"
+                  />
               </div>
 
               <section>
@@ -98,7 +104,11 @@ function GrabProject() {
                 </p>
               </section>
               <div className="project-paragraph-img">
-                <div className="dummy-img"></div>
+                  <img
+                    src={GrabTesting2}
+                    alt="project grab outcome 1"
+                    className="project-outcome-img"
+                  />
               </div>
 
               <section>
@@ -136,11 +146,7 @@ function GrabProject() {
                       to turn it on.
                     </li>
                   </ul>
-                  <section>
-                    <div className="project-paragraph-img">
-                      <div className="dummy-img"></div>
-                    </div>
-                  </section>
+                  
                 </p>
               </section>
 

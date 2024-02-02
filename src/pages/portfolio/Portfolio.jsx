@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import ArrowRightImg from "../../assets/arrow-right.png";
 import ProjectGrabImg from "../../assets/grab.jpg";
-import ChatLocalization from "../../assets/overhaul.png";
-import ProjectPartner from "../../assets/partner.png";
+import ChatLocalization from "../../assets/chat-overhaul.png";
+import ProjectPartner from "../../assets/partner-cover.png";
 import ProjectThaiContentGuideImg from "../../assets/thai-content-style-guild.png";
 import Footer from "../../components/footer/Footer";
 import BackToTop from "../../components/backToTop/backToTop";
@@ -14,36 +14,36 @@ const projects = [
     shortDesc:
       "My first UX project: concept testing for a new e-wallet product in Thailand!",
     imageUrl: ProjectGrabImg,
-    redirectPath: PortfolioRoutes.Grab
+    redirectPath: PortfolioRoutes.Grab,
   },
   {
     name: `Chat Localization Overhaul`,
     shortDesc:
       "How I improve chatbot interactions via strategic conversational design",
     imageUrl: ChatLocalization,
-    redirectPath: PortfolioRoutes.ChatLocalization
+    redirectPath: PortfolioRoutes.ChatLocalization,
   },
   {
     name: `Partner Cover`,
     shortDesc: "What does “back-translation” have to do in content design?",
     imageUrl: ProjectPartner,
-    redirectPath: PortfolioRoutes.Partner
+    redirectPath: PortfolioRoutes.Partner,
   },
   {
     name: `Localization Style Guide`,
     shortDesc: "Streamlining Thai language standards for Grab from ground zero",
     imageUrl: ProjectThaiContentGuideImg,
-    redirectPath: PortfolioRoutes.StyleGuide
+    redirectPath: PortfolioRoutes.StyleGuide,
   },
 ];
 export const ChallengesRoutes = {
   ChallengeDay1: "/portfolio/uxw-challenge/day1",
   ChallengeDay2: "/portfolio/uxw-challenge/day2",
-}
+};
 const challenges = [
   {
     name: "Flight cancellation alert",
-    redirectPath: ChallengesRoutes.ChallengeDay1
+    redirectPath: ChallengesRoutes.ChallengeDay1,
   },
   {
     name: "Sports app promo",
@@ -94,9 +94,7 @@ function Portfolio() {
 
   return (
     <>
-      <div
-        className="portfolio-header-bg"
-      />
+      <div className="portfolio-header-bg" />
       <div className="portfolio">
         <div className="card">
           <div className="header">
@@ -138,9 +136,10 @@ function Portfolio() {
             <div className="challenge-title">Daily UX Writing Challenge</div>
             <ul className="challenge-list">
               {challenges.map((challenge, index) => (
-                <li className="challenge"
-                  onClick={() => navigate(challenge.redirectPath)}>{`Day ${index + 1}: ${challenge.name
-                    }`}</li>
+                <li
+                  className="challenge"
+                  onClick={() => navigate(challenge.redirectPath)}
+                >{`Day ${index + 1}: ${challenge.name}`}</li>
               ))}
             </ul>
           </div>

@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import BackToTop from "../../../components/backToTop/backToTop";
 import Footer from "../../../components/footer/Footer";
-import SideImg from "../../../assets/portfolio/chat-overhaul.png";
+import SideImg from "../../../assets/chat-overhaul.png";
 import OutcomeImg from "../../../assets/portfolio/chat-localization-outcome.png";
+import TableImg1 from "../../../assets/portfolio/chat-localization-table1.png";
+import TableImg2 from "../../../assets/portfolio/chat-localization-table2.png"
+import TableImg3 from "../../../assets/portfolio/chat-localization-table3.png"
+
 
 function ChatLocalization() {
   return (
@@ -98,7 +102,11 @@ function ChatLocalization() {
                         we’ll ever create a persona in the future, they know
                         Thai should be a female.
                       </td>
-                      <td></td>
+                      <td><img
+                    src={TableImg1}
+                    alt="project grab outcome 1"
+                    className="project-outcome-img"
+                  /></td>
                     </tr>
                     <tr>
                       <td>2</td>
@@ -113,7 +121,11 @@ function ChatLocalization() {
                         have to review the localization, do ask the professional
                         linguist.
                       </td>
-                      <td></td>
+                      <td><img
+                    src={TableImg2}
+                    alt="project grab outcome 1"
+                    className="project-outcome-img"
+                  /></td>
                     </tr>
                     <tr>
                       <td>3</td>
@@ -125,12 +137,15 @@ function ChatLocalization() {
                         Separate term base and have a different style guide
                         specifically for chat.
                       </td>
-                      <td></td>
+                      <td><img
+                    src={TableImg3}
+                    alt="project grab outcome 1"
+                    className="project-outcome-img"
+                  /></td>
                     </tr>
                   </tbody>
                 </table>
               </section>
-
               <section>
                 <h6 className="project-details-content">Outcome</h6>
                 <p>

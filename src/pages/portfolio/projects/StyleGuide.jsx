@@ -1,7 +1,6 @@
 import React from "react";
-import CoverImg from "../../../assets/partner.png";
+import CoverImg from "../../../assets/thai-content-style-guild.png";
 import { Link } from "react-router-dom";
-import GrabStyleGuide from "../../../assets/thai-content-style-guild.png";
 
 function StyleGuide() {
   return (
@@ -26,7 +25,7 @@ function StyleGuide() {
             <div className="project-title">
               <h3>Localization Style Guide</h3>
               <img
-                src={GrabStyleGuide}
+                src={CoverImg}
                 alt="grab ads"
                 className="project-content-img"
               />
@@ -75,6 +74,7 @@ function StyleGuide() {
                 </p><br></br>
                 <p>These are screenshots of the Thai style guide I created for Grab.</p>
               </section>
+
               </section>
             </div>
           </div>
