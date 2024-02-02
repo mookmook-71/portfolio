@@ -498,6 +498,10 @@ select option {
   width: 65%;
   height: 100px;
   background-color: var(--gray-primary);
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-outcome-img {
@@ -649,6 +653,10 @@ select option {
 
 .project-title .challenge-card {
   margin-top: 30px;
+}
+
+.project-sub-heading {
+  color: var(--gray-secondary)
 }
 
 .challenge:hover {

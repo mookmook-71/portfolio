@@ -8,7 +8,7 @@ import Footer from "../../components/footer/Footer";
 import BackToTop from "../../components/backToTop/backToTop";
 import { PortfolioRoutes } from "../../layout/Layout";
 
-const projects = [
+const Projects = [
   {
     name: `GrabPay Wallet Powered by KBank`,
     shortDesc:
@@ -36,11 +36,13 @@ const projects = [
     redirectPath: PortfolioRoutes.StyleGuide,
   },
 ];
+
 export const ChallengesRoutes = {
   ChallengeDay1: "/portfolio/uxw-challenge/day1",
   ChallengeDay2: "/portfolio/uxw-challenge/day2",
 };
-const challenges = [
+
+export const Challenges = [
   {
     name: "Flight cancellation alert",
     redirectPath: ChallengesRoutes.ChallengeDay1,
@@ -104,7 +106,7 @@ function Portfolio() {
             </div>
           </div>
           <div className="project-list">
-            {projects.map((project, i) => (
+            {Projects.map((project, i) => (
               <div
                 key={`project-${project.name}-${i}`}
                 className="project"
@@ -135,7 +137,7 @@ function Portfolio() {
           <div className="challenges">
             <div className="challenge-title">Daily UX Writing Challenge</div>
             <ul className="challenge-list">
-              {challenges.map((challenge, index) => (
+              {Challenges.map((challenge, index) => (
                 <li
                   className="challenge"
                   onClick={() => navigate(challenge.redirectPath)}
