@@ -49,6 +49,7 @@ export const Challenges = [
   },
   {
     name: "Sports app promo",
+    redirectPath: ChallengesRoutes.ChallengeDay2,
   },
   {
     name: "Sign-in error",

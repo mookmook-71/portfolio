@@ -45,6 +45,8 @@ function App() {
     import("./pages/portfolio/uxwchallenges/ChallengeDay1")
   );
 
+  const ChallengeDay2 = lazy(() => import('./pages/portfolio/uxwchallenges/ChallengeDay2'))
+
   const Portfolio = lazy(() => import("./pages/portfolio/Portfolio"));
   const PortfolioDetail = lazy(() =>
     import("./pages/portfolio/PortfolioDetail")
@@ -69,6 +71,10 @@ function App() {
             <Route
               path={ChallengesRoutes.ChallengeDay1}
               element={<ChallengeDay1 />}
+            />
+            <Route
+              path={ChallengesRoutes.ChallengeDay2}
+              element={<ChallengeDay2 />}
             />
 
             <Route path="/resume" element={<Resume />} />
