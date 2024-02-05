@@ -1,18 +1,20 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.13f10f4b.css",
-    "main.js": "/portfolio/static/js/main.21885867.js",
+    "main.js": "/portfolio/static/js/main.d2496220.js",
     "static/js/150.f1ea1762.chunk.js": "/portfolio/static/js/150.f1ea1762.chunk.js",
     "static/js/227.49119033.chunk.js": "/portfolio/static/js/227.49119033.chunk.js",
     "static/js/900.4eea21bc.chunk.js": "/portfolio/static/js/900.4eea21bc.chunk.js",
     "static/js/840.a8b5b2d5.chunk.js": "/portfolio/static/js/840.a8b5b2d5.chunk.js",
     "static/js/470.c14457f4.chunk.js": "/portfolio/static/js/470.c14457f4.chunk.js",
     "static/js/721.797dbe6b.chunk.js": "/portfolio/static/js/721.797dbe6b.chunk.js",
-    "static/js/91.1118a9ca.chunk.js": "/portfolio/static/js/91.1118a9ca.chunk.js",
+    "static/js/193.67de467e.chunk.js": "/portfolio/static/js/193.67de467e.chunk.js",
+    "static/js/991.e45f6d36.chunk.js": "/portfolio/static/js/991.e45f6d36.chunk.js",
     "static/js/128.b993f314.chunk.js": "/portfolio/static/js/128.b993f314.chunk.js",
     "static/media/uxw-day-1.jpg": "/portfolio/static/media/uxw-day-1.15f059396f9b3c17c8f9.jpg",
     "static/media/grab_testing2.JPG": "/portfolio/static/media/grab_testing2.c4fff0311089fbcad3e5.JPG",
     "static/media/grab_testing1.JPG": "/portfolio/static/media/grab_testing1.515dd911eb8e95edfe1b.JPG",
+    "static/media/uxw-day-2.jpg": "/portfolio/static/media/uxw-day-2.6fcdaee9bab2107d7227.jpg",
     "static/media/chat-localization-outcome.png": "/portfolio/static/media/chat-localization-outcome.f92503175722ce1893e6.png",
     "static/media/outcome-grab.png": "/portfolio/static/media/outcome-grab.497d9f7c7cf2c504a7b1.png",
     "static/media/outcome-grab-2.png": "/portfolio/static/media/outcome-grab-2.b31f13d5fc358b442eea.png",
@@ -25,18 +27,19 @@
     "static/media/chat-localization-table1.png": "/portfolio/static/media/chat-localization-table1.35a4ce6edb34ed4e1fcf.png",
     "index.html": "/portfolio/index.html",
     "main.13f10f4b.css.map": "/portfolio/static/css/main.13f10f4b.css.map",
-    "main.21885867.js.map": "/portfolio/static/js/main.21885867.js.map",
+    "main.d2496220.js.map": "/portfolio/static/js/main.d2496220.js.map",
     "150.f1ea1762.chunk.js.map": "/portfolio/static/js/150.f1ea1762.chunk.js.map",
     "227.49119033.chunk.js.map": "/portfolio/static/js/227.49119033.chunk.js.map",
     "900.4eea21bc.chunk.js.map": "/portfolio/static/js/900.4eea21bc.chunk.js.map",
     "840.a8b5b2d5.chunk.js.map": "/portfolio/static/js/840.a8b5b2d5.chunk.js.map",
     "470.c14457f4.chunk.js.map": "/portfolio/static/js/470.c14457f4.chunk.js.map",
     "721.797dbe6b.chunk.js.map": "/portfolio/static/js/721.797dbe6b.chunk.js.map",
-    "91.1118a9ca.chunk.js.map": "/portfolio/static/js/91.1118a9ca.chunk.js.map",
+    "193.67de467e.chunk.js.map": "/portfolio/static/js/193.67de467e.chunk.js.map",
+    "991.e45f6d36.chunk.js.map": "/portfolio/static/js/991.e45f6d36.chunk.js.map",
     "128.b993f314.chunk.js.map": "/portfolio/static/js/128.b993f314.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.13f10f4b.css",
-    "static/js/main.21885867.js"
+    "static/js/main.d2496220.js"
   ]
 }
