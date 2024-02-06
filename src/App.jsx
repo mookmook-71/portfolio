@@ -7,20 +7,20 @@ export const PageRoute = {
   AboutMe: "/about-me",
   Portfolio: "/portfolio",
   Contact: "/contact",
-}
+};
 
 export const PageRoutes = [
   {
     display: "About me",
-    redirectPath: PageRoute.AboutMe
+    redirectPath: PageRoute.AboutMe,
   },
   {
     display: "Portfolio",
-    redirectPath: PageRoute.Portfolio
+    redirectPath: PageRoute.Portfolio,
   },
   {
     display: "Contact",
-    redirectPath: PageRoute.Contact
+    redirectPath: PageRoute.Contact,
   },
 ];
 
@@ -43,6 +43,62 @@ function App() {
 
   const ChallengeDay1 = lazy(() =>
     import("./pages/portfolio/uxwchallenges/ChallengeDay1")
+  );
+
+  const ChallengeDay2 = lazy(() =>
+    import("./pages/portfolio/uxwchallenges/ChallengeDay2")
+  );
+
+  const ChallengeDay3 = lazy(() =>
+    import("./pages/portfolio/uxwchallenges/ChallengeDay3")
+  );
+
+  const ChallengeDay4 = lazy(() =>
+    import("./pages/portfolio/uxwchallenges/ChallengeDay4")
+  );
+
+  const ChallengeDay5 = lazy(() =>
+    import("./pages/portfolio/uxwchallenges/ChallengeDay5")
+  );
+
+  const ChallengeDay6 = lazy(() =>
+    import("./pages/portfolio/uxwchallenges/ChallengeDay6")
+  );
+
+  const ChallengeDay7 = lazy(() =>
+    import("./pages/portfolio/uxwchallenges/ChallengeDay7")
+  );
+
+  const ChallengeDay8 = lazy(() =>
+    import("./pages/portfolio/uxwchallenges/ChallengeDay8")
+  );
+
+  const ChallengeDay9 = lazy(() =>
+    import("./pages/portfolio/uxwchallenges/ChallengeDay9")
+  );
+
+  const ChallengeDay10 = lazy(() =>
+    import("./pages/portfolio/uxwchallenges/ChallengeDay10")
+  );
+
+  const ChallengeDay11 = lazy(() =>
+    import("./pages/portfolio/uxwchallenges/ChallengeDay11")
+  );
+
+  const ChallengeDay12 = lazy(() =>
+    import("./pages/portfolio/uxwchallenges/ChallengeDay12")
+  );
+
+  const ChallengeDay13 = lazy(() =>
+    import("./pages/portfolio/uxwchallenges/ChallengeDay13")
+  );
+
+  const ChallengeDay14 = lazy(() =>
+    import("./pages/portfolio/uxwchallenges/ChallengeDay14")
+  );
+
+  const ChallengeDay15 = lazy(() =>
+    import("./pages/portfolio/uxwchallenges/ChallengeDay15")
   );
 
   const Portfolio = lazy(() => import("./pages/portfolio/Portfolio"));
@@ -70,9 +126,64 @@ function App() {
               path={ChallengesRoutes.ChallengeDay1}
               element={<ChallengeDay1 />}
             />
-
-            <Route path="/resume" element={<Resume />} />
+            <Route
+              path={ChallengesRoutes.ChallengeDay2}
+              element={<ChallengeDay2 />}
+            />
+            <Route
+              path={ChallengesRoutes.ChallengeDay3}
+              element={<ChallengeDay3 />}
+            />
           </Route>
+          <Route
+            path={ChallengesRoutes.ChallengeDay4}
+            element={<ChallengeDay4 />}
+          />
+          <Route
+            path={ChallengesRoutes.ChallengeDay5}
+            element={<ChallengeDay5 />}
+          />
+          <Route
+            path={ChallengesRoutes.ChallengeDay6}
+            element={<ChallengeDay6 />}
+          />
+          <Route
+            path={ChallengesRoutes.ChallengeDay7}
+            element={<ChallengeDay7 />}
+          />
+          <Route
+            path={ChallengesRoutes.ChallengeDay8}
+            element={<ChallengeDay8 />}
+          />
+          <Route
+            path={ChallengesRoutes.ChallengeDay9}
+            element={<ChallengeDay9 />}
+          />
+          <Route
+            path={ChallengesRoutes.ChallengeDay10}
+            element={<ChallengeDay10 />}
+          />
+          <Route
+            path={ChallengesRoutes.ChallengeDay11}
+            element={<ChallengeDay11 />}
+          />
+          <Route
+            path={ChallengesRoutes.ChallengeDay12}
+            element={<ChallengeDay12 />}
+          />
+          <Route
+            path={ChallengesRoutes.ChallengeDay13}
+            element={<ChallengeDay13 />}
+          />
+          <Route
+            path={ChallengesRoutes.ChallengeDay14}
+            element={<ChallengeDay14 />}
+          />
+          <Route
+            path={ChallengesRoutes.ChallengeDay15}
+            element={<ChallengeDay15 />}
+          />
+          <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/about-me" />} />
         </Routes>
       </Suspense>

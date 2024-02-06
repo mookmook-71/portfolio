@@ -40,6 +40,19 @@ const Projects = [
 export const ChallengesRoutes = {
   ChallengeDay1: "/portfolio/uxw-challenge/day1",
   ChallengeDay2: "/portfolio/uxw-challenge/day2",
+  ChallengeDay3: "/portfolio/uxw-challenge/day3",
+  ChallengeDay4: "/portfolio/uxw-challenge/day4",
+  ChallengeDay5: "/portfolio/uxw-challenge/day5",
+  ChallengeDay6: "/portfolio/uxw-challenge/day6",
+  ChallengeDay7: "/portfolio/uxw-challenge/day7",
+  ChallengeDay8: "/portfolio/uxw-challenge/day8",
+  ChallengeDay9: "/portfolio/uxw-challenge/day9",
+  ChallengeDay10: "/portfolio/uxw-challenge/day10",
+  ChallengeDay11: "/portfolio/uxw-challenge/day11",
+  ChallengeDay12: "/portfolio/uxw-challenge/day12",
+  ChallengeDay13: "/portfolio/uxw-challenge/day13",
+  ChallengeDay14: "/portfolio/uxw-challenge/day14",
+  ChallengeDay15: "/portfolio/uxw-challenge/day15",
 };
 
 export const Challenges = [
@@ -49,45 +62,59 @@ export const Challenges = [
   },
   {
     name: "Sports app promo",
+    redirectPath: ChallengesRoutes.ChallengeDay2,
   },
   {
     name: "Sign-in error",
+    redirectPath: ChallengesRoutes.ChallengeDay3,
   },
   {
     name: "Grocery subscription",
+    redirectPath: ChallengesRoutes.ChallengeDay4,
   },
   {
     name: "Post-shutdown message",
+    redirectPath: ChallengesRoutes.ChallengeDay5,
   },
   {
     name: "Commute incident alert",
+    redirectPath: ChallengesRoutes.ChallengeDay6,
   },
   {
     name: "Real-time sports notification",
+    redirectPath: ChallengesRoutes.ChallengeDay7,
   },
   {
     name: "Concert alert on music app",
+    redirectPath: ChallengesRoutes.ChallengeDay8,
   },
   {
     name: "Expired credit card error",
+    redirectPath: ChallengesRoutes.ChallengeDay9,
   },
   {
     name: "User location permission",
+    redirectPath: ChallengesRoutes.ChallengeDay10,
   },
   {
     name: "Google meta description",
+    redirectPath: ChallengesRoutes.ChallengeDay11,
   },
   {
     name: "Fake name error",
+    redirectPath: ChallengesRoutes.ChallengeDay12,
   },
   {
     name: "Truck delivery notification",
+    redirectPath: ChallengesRoutes.ChallengeDay13,
   },
   {
     name: "App downtime",
+    redirectPath: ChallengesRoutes.ChallengeDay14,
   },
   {
     name: "The finale",
+    redirectPath: ChallengesRoutes.ChallengeDay15,
   },
 ];
 
