@@ -15,7 +15,7 @@ function ChallengeDay1() {
         <div className="card">
           <div className="project-topbar">
             <BackBtn redirectPath={PageRoute.Portfolio} />
-            <ChallengesDropdown className="ml-auto" />
+            <ChallengesDropdown activeIndex={0} className="ml-auto" />
           </div>
           <div className="project-content">
             <div className="challenge-detail-title">

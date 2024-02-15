@@ -134,55 +134,55 @@ function App() {
               path={ChallengesRoutes.ChallengeDay3}
               element={<ChallengeDay3 />}
             />
+            <Route
+              path={ChallengesRoutes.ChallengeDay4}
+              element={<ChallengeDay4 />}
+            />
+            <Route
+              path={ChallengesRoutes.ChallengeDay5}
+              element={<ChallengeDay5 />}
+            />
+            <Route
+              path={ChallengesRoutes.ChallengeDay6}
+              element={<ChallengeDay6 />}
+            />
+            <Route
+              path={ChallengesRoutes.ChallengeDay7}
+              element={<ChallengeDay7 />}
+            />
+            <Route
+              path={ChallengesRoutes.ChallengeDay8}
+              element={<ChallengeDay8 />}
+            />
+            <Route
+              path={ChallengesRoutes.ChallengeDay9}
+              element={<ChallengeDay9 />}
+            />
+            <Route
+              path={ChallengesRoutes.ChallengeDay10}
+              element={<ChallengeDay10 />}
+            />
+            <Route
+              path={ChallengesRoutes.ChallengeDay11}
+              element={<ChallengeDay11 />}
+            />
+            <Route
+              path={ChallengesRoutes.ChallengeDay12}
+              element={<ChallengeDay12 />}
+            />
+            <Route
+              path={ChallengesRoutes.ChallengeDay13}
+              element={<ChallengeDay13 />}
+            />
+            <Route
+              path={ChallengesRoutes.ChallengeDay14}
+              element={<ChallengeDay14 />}
+            />
+            <Route
+              path={ChallengesRoutes.ChallengeDay15}
+              element={<ChallengeDay15 />}
+            />
           </Route>
-          <Route
-            path={ChallengesRoutes.ChallengeDay4}
-            element={<ChallengeDay4 />}
-          />
-          <Route
-            path={ChallengesRoutes.ChallengeDay5}
-            element={<ChallengeDay5 />}
-          />
-          <Route
-            path={ChallengesRoutes.ChallengeDay6}
-            element={<ChallengeDay6 />}
-          />
-          <Route
-            path={ChallengesRoutes.ChallengeDay7}
-            element={<ChallengeDay7 />}
-          />
-          <Route
-            path={ChallengesRoutes.ChallengeDay8}
-            element={<ChallengeDay8 />}
-          />
-          <Route
-            path={ChallengesRoutes.ChallengeDay9}
-            element={<ChallengeDay9 />}
-          />
-          <Route
-            path={ChallengesRoutes.ChallengeDay10}
-            element={<ChallengeDay10 />}
-          />
-          <Route
-            path={ChallengesRoutes.ChallengeDay11}
-            element={<ChallengeDay11 />}
-          />
-          <Route
-            path={ChallengesRoutes.ChallengeDay12}
-            element={<ChallengeDay12 />}
-          />
-          <Route
-            path={ChallengesRoutes.ChallengeDay13}
-            element={<ChallengeDay13 />}
-          />
-          <Route
-            path={ChallengesRoutes.ChallengeDay14}
-            element={<ChallengeDay14 />}
-          />
-          <Route
-            path={ChallengesRoutes.ChallengeDay15}
-            element={<ChallengeDay15 />}
-          />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/about-me" />} />
         </Routes>

@@ -15,7 +15,7 @@ function ChallengeDay2() {
         <div className="card">
           <div className="project-topbar">
             <BackBtn redirectPath={PageRoute.Portfolio} />
-            <ChallengesDropdown className="ml-auto" />
+            <ChallengesDropdown activeIndex={1} className="ml-auto" />
           </div>
           <div className="project-content">
             <div className="challenge-detail-title">
@@ -93,9 +93,9 @@ function ChallengeDay2() {
                 <h6 className="project-details-content">User journey</h6>
                 <p className="body-4">
                   User takes care of their child &gt; takes a break &gt; scrolls
-                  through social media feed &gt; 📍{" "}
-                  <b>sees a promotional screen</b> &gt; downloads the app &gt;
-                  signs up for an account &gt; sets their favorite team &gt;
+                  through social media feed &gt; 📍
+                  <b>sees a promotional screen</b> &gt; downloads the app
+                  &gt;signs up for an account &gt; sets their favorite team &gt;
                   uses the app to receive updates
                 </p>
                 <br />
@@ -121,17 +121,15 @@ function ChallengeDay2() {
                       <b>Tired</b> — from taking care of their children
                     </li>
                     <li>
-                      <b>Interested</b> — in what the app can offer
+                      <b>Interested</b> — about consequences and uncertaintiesin
+                      what the app can offer
                     </li>
                     <li>
                       <b>Hopeful</b> — to stay connected to their favorite teams
                       during busy schedules
                     </li>
                     <li>
-                      <b>Confused</b> — uncertainty about reasons and next steps
-                    </li>
-                    <li>
-                      <b>Reluctant</b> — to try a new app despite interest
+                      <b>Reluctant</b> — to try a new app despite interest steps
                     </li>
                   </ul>
                 </p>
@@ -142,83 +140,30 @@ function ChallengeDay2() {
                   Information architecture
                 </h6>
                 <p className="body-4">
-                  <b>Heading:</b> what happens + which flight is affected
-                  <br />
-                  <b>Body:</b> why it happens + what action(s) we take
-                  <br />
-                  <b>CTA:</b> what they can do
-                </p>
-                <br />
-                <p>
-                  For the heading, I prioritize communicating the most important
-                  message to the passengers because this event immediately
-                  affects them. To enhance clarity, especially for those with
-                  multiple ongoing flights, I include the destination airport
-                  code. For the body, I start with the reason for the flight
-                  cancellation as it{"’"}s likely the first question people ask.
-                  Subsequently, I give details on possible actions or offerings
-                  from the airline.
+                  What information included and how to organize - Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id
+                  est laborum.
                 </p>
               </section>
 
               <section>
                 <h6 className="project-details-content">Thought process</h6>
                 <p className="body-4">
-                  Given the lack of specific post-cancellation instructions, I
-                  conducted research on common practices after flights are
-                  canceled due to poor weather. Options typically include
+                  Explain what and how - Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                  sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.
                 </p>
-                <br />
-                <ol>
-                  <li>ticket refunds</li>
-                  <li>replacement flights with seating preferences</li>
-                  <li>compensation</li>
-                  <li>food</li>
-                  <li>accommodation</li>
-                  <li>discount vouchers for future travel</li>
-                </ol>
-                <p>
-                  Then, I drafted three prompts in both English and Thai, each
-                  tailored to a different scenario. I intentionally avoided
-                  using alarming language such as 'bad news' or 'we regret to…'
-                  as it tends to unnecessarily emphasize the unfortunate
-                  situation to the users. Similarly, I avoided an overly
-                  exciting tone like 'good news! we’ve automatically rebooked
-                  your flight' since the optimal solution varies for each
-                  passenger. It's essential not to assume that every resolution
-                  will bring happiness. The primary focus is on clearly
-                  communicating that our decisions prioritize their safety
-                </p>
-                <br />
-                <p>
-                  While in UX writing it is a usual practice to avoid
-                  apologizing for external factors beyond our control, howver, I
-                  believe it is okay and maybe more appropriate to express that
-                  'we're sorry' in this situation. This aims to demonstrate our
-                  understanding and alleviate passengers' down emotions.
-                </p>
-                <br />
-                <ol>
-                  <li>
-                    The airline reschedules the flight and arranges
-                    accommodation, suitable for late-night flights where
-                    passengers can fly the next day.
-                    <div className="dummy-img">{"<insert draft image>"}</div>
-                  </li>
-                  <li>
-                    Passengers have the option to rebook or get a refund,
-                    particularly if the flight is significantly delayed giving
-                    them the choice not to fly and receive a refund.
-                    <div className="dummy-img">{"<insert draft image>"}</div>
-                  </li>
-                  <li>
-                    If the airline can't offer immediate solutions, passengers
-                    are encouraged to contact support, though this isn't the
-                    primary option in the CTA to avoid overwhelming customer
-                    support.
-                    <div className="dummy-img">{"<insert draft image>"}</div>
-                  </li>
-                </ol>
               </section>
 
               <section>
