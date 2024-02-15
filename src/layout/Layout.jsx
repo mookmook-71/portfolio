@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "../components/navBar/NavBar";
-import Footer from "../components/footer/Footer";
+import FloatingNav from "../components/floatingNav/FloatingNav";
 
 export const PortfolioRoutes = {
   Grab: "/portfolio/grab",
@@ -17,6 +17,7 @@ function Layout() {
       <main className="main">
         <Outlet />
       </main>
+      <FloatingNav />
     </>
   );
 }

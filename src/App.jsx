@@ -2,6 +2,7 @@ import { Suspense, lazy } from "react";
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import Layout, { PortfolioRoutes } from "./layout/Layout";
 import { ChallengesRoutes } from "./pages/portfolio/Portfolio";
+import Dummy from "./pages/Dummy";
 
 export const PageRoute = {
   AboutMe: "/about-me",
@@ -75,6 +76,10 @@ function App() {
             <Route
               path={ChallengesRoutes.ChallengeDay2}
               element={<ChallengeDay2 />}
+            />
+            <Route
+              path='/dummy'
+              element={<Dummy />}
             />
 
             <Route path="/resume" element={<Resume />} />
