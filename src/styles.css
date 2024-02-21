@@ -108,7 +108,7 @@ i {
 }
 
 li {
-  line-height: 1.875rem;
+  line-height: 2.25rem;
   font-size: 1.05rem;
 }
 
@@ -145,6 +145,7 @@ select {
   border: 1.3px solid var(--gray-secondary);
   background: var(--white-primary);
   padding: 0.69rem 1.12rem;
+  font-size: medium;
 }
 
 select option {
@@ -542,7 +543,7 @@ margin-bottom: 45px;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   height: 60px;
-  font-size: 18px;
+  font-size: 1.05rem;
   line-height: 30px;
   font-weight: var(--inter-regular);
   color: var(--text-small-black);
@@ -634,7 +635,7 @@ margin-bottom: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 90%;
   margin-bottom: 1.88rem;
 }
 
@@ -653,9 +654,9 @@ margin-bottom: 45px;
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
-  width: 100%;
+  width: 80%;
   color: var(--primary-black);
-  font-size: 1.25rem;
+  font-size: 18px;
   font-weight: var(--inter-regular);
   line-height: 3.25rem;
 }

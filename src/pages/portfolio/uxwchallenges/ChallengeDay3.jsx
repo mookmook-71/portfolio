@@ -2,6 +2,8 @@ import React from "react";
 import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
 import BackBtn from "../../../components/button/BackBtn";
 import { PageRoute } from "../../../App";
+
+import UserImg from "../../../assets/challenges/uxw-challenge-day-3.png";
 import ResultImg from "../../../assets/challenges/uxw-day-3.jpg";
 import BackToTop from "../../../components/backToTop/backToTop";
 import Footer from "../../../components/footer/Footer";
@@ -24,38 +26,55 @@ function ChallengeDay3() {
                 <section>
                   <h6>Scenario</h6>
                   <p className="body-4">
-                  The user entered the wrong email address to sign in to their account.
+                    The user entered the wrong email address to sign in to their
+                    account.
                   </p>
                 </section>
 
                 <section>
                   <h6>Challenge</h6>
                   <p className="body-4">
-                  Tell the user to enter the right email.
+                    Tell the user to enter the right email.
                   </p>
                 </section>
 
                 <section className="challenge-constraint">
-                  <p className="body-4">
-                    40 characters max
-                  </p>
+                  <p className="body-4">40 characters max</p>
                 </section>
               </ChallengeCard>
+            </div>
+
+            <div className="project-supporting-img">
+              <img
+                src={UserImg}
+                alt="upset user waiting at the airport"
+                className="project-supporting-img"
+              />
             </div>
 
             <div className="challenge-details">
               <section>
                 <h6 className="project-details-content">Voice and tone</h6>
                 <p className="body-4">
-                While we don’t know anything about the product here, I’m imagining a casual and helpful brand voice like a friend who’s always ready to lend a hand and simplify things for others. Instead of giving technical jargon like 'Error 400 malformed data!,' the explanation is broken down into simpler terms. In this case, the tone is conversational and straightforward as users only need to address a minor error.
+                  While we don’t know anything about the product here, I’m
+                  imagining a casual and helpful brand voice like a friend who’s
+                  always ready to lend a hand and simplify things for others.
+                  Instead of giving technical jargon like 'Error 400 malformed
+                  data!,' the explanation is broken down into simpler terms. In
+                  this case, the tone is conversational and straightforward as
+                  users only need to address a minor error.
                 </p>
               </section>
 
               <section>
-                <h6 className="project-details-content">Goal</h6>
+                <h6 className="project-details-content">Goals</h6>
                 <p className="body-4">
                   <ul>
-                    <li>Provide a solution to the problem to guide users on what went wrong and prompt them to fix their email input for a successful sign-in to their account</li>
+                    <li>
+                      Provide a solution to the problem to guide users on what
+                      went wrong and prompt them to fix their email input for a
+                      successful sign-in to their account
+                    </li>
                     <li>Prevent bounce rate on the sign-in flow</li>
                   </ul>
                 </p>
@@ -64,19 +83,18 @@ function ChallengeDay3() {
               <section>
                 <h6 className="project-details-content">Target users</h6>
                 <p className="body-4">
-                Users with previously registered accounts, potentially having multiple emails and might have forgotten the email address they used for this particular site
+                  Users with previously registered accounts, potentially having
+                  multiple emails and might have forgotten the email address
+                  they used for this particular site
                 </p>
               </section>
 
               <section>
                 <h6 className="project-details-content">User journey</h6>
                 <p className="body-4">
-                User enters the app &gt; 
-                navigates to the sign-in page &gt; 
-                enters their email &gt; 
-                  📍 <b>encounters an error message</b> &gt; 
-                  corrects the email &gt;
-                  successfully signs in &gt; 
+                  User enters the app &gt; navigates to the sign-in page &gt;
+                  enters their email &gt; 📍 <b>encounters an error message</b>{" "}
+                  &gt; corrects the email &gt; successfully signs in &gt;
                   continues using the app
                 </p>
                 <br />
@@ -86,7 +104,10 @@ function ChallengeDay3() {
                 <ul>
                   <li>Users don’t understand why they can’t sign in</li>
                   <li>Users complain and leave the app</li>
-                  <li>Brand loses users just because of an error message when they can simply fix the email</li>
+                  <li>
+                    Brand loses users just because of an error message when they
+                    can simply fix the email
+                  </li>
                 </ul>
               </section>
               <section>
@@ -95,59 +116,81 @@ function ChallengeDay3() {
                 </h6>
                 <p className="body-4">
                   <ul>
-                    <li><b>Confused</b> — about the sign-in issue</li>
-                    <li><b>Surprised</b> — caught off guard by the error</li>
-                    <li><b>Upset</b> — with the disrupted experience</li>
-                    <li><b>Helpless</b> — feeling powerless to resolve the issue</li>
-                    <li><b>Impatient</b> — seeking quick access and annoyed by delay</li>
-                    <li><b>Skeptical</b> — skepticism toward app reliability</li>
+                    <li>
+                      <b>Confused</b> — about the sign-in issue
+                    </li>
+                    <li>
+                      <b>Surprised</b> — caught off guard by the error
+                    </li>
+                    <li>
+                      <b>Upset</b> — with the disrupted experience
+                    </li>
+                    <li>
+                      <b>Helpless</b> — feeling powerless to resolve the issue
+                    </li>
+                    <li>
+                      <b>Impatient</b> — seeking quick access and annoyed by
+                      delay
+                    </li>
+                    <li>
+                      <b>Skeptical</b> — skepticism toward app reliability
+                    </li>
                   </ul>
                 </p>
               </section>
 
               <section>
-                <h6 className="project-details-content">
-                  Information architecture
-                </h6>
+                <h6 className="project-details-content">Thought processes</h6>
                 <p className="body-4">
-                  <b>Heading:</b> ??
-                  <br />
-                  <b>Body:</b> ??
-                  <br />
-                  <b>CTA:</b> ??
+                  I brainstormed potential reasons for incorrect email input and
+                  found that they could be any in the following
                 </p>
-                <br />
-                <p>
-                  For the heading, I prioritize communicating the most important
-                  message to the passengers because this event immediately
-                  affects them. To enhance clarity, especially for those with
-                  multiple ongoing flights, I include the destination airport
-                  code. For the body, I start with the reason for the flight
-                  cancellation as it{"’"}s likely the first question people ask.
-                  Subsequently, I give details on possible actions or offerings
-                  from the airline.
-                </p>
-              </section>
 
-              <section>
-                <h6 className="project-details-content">Thought process</h6>
-                <p className="body-4">
-                  ??</p>
+                <ol>
+                  <li>misspelling or typographical error</li>
+                  <li>forgetting the email used</li>
+                  <li>accidentally using a secondary email</li>
+                  <li>error from auto-fill</li>
+                  <li>
+                    confusion with similar-looking characters (e.g., 'l' and
+                    '1', 'o' and '0')
+                  </li>
+                  <li>copy-pasting mistake</li>
+                  <li>change of email since the last login</li>
+                </ol>
                 <br />
+
                 <p>
-                  ??</p>
-                  <p>
-                  ??</p>
-                  <p>
-                  ??</p>
-                  <p>
-                  ??</p>
-                <br />
-                <p>
-                  ??
+                  After that, I had a conversation with my friend to identify
+                  the primary reasons and he leaned towards numbers 1 and 2. So,
+                  these are the ones we're focusing on for content design. To
+                  keep it humble and consider other possibilities, I threw in a
+                  “maybe” before “typo or another email.” Ideally, I'd spell it
+                  out as 'there’s a typo or you’ve used another email to
+                  register' but space is a bit limited.
                 </p>
                 <br />
-                
+
+                <p>
+                  I choose to start with a feeler word like “Mmm...” to infuse a
+                  conversational tone simulating the moment when you ask a
+                  friend a question and there's a pause as they consider their
+                  response (like this emoji 🤔). It adds a touch of casual and
+                  approachable vibes to the interaction.
+                </p>
+                <br />
+
+                <p>
+                  This is a one-liner error message highlighted in red so it
+                  stands out from the other parts of the sign-in form,
+                  positioned right under the placeholder so that the users are
+                  clear on which information requires fixing. I intentionally
+                  omit the password placeholder in the design to handle this
+                  email-specific errors because there’ll be a separate strategy
+                  for scenarios that requires both ID and password on a single
+                  screen like "invalid username and password combination.
+                </p>
+                <br />
               </section>
 
               <section>

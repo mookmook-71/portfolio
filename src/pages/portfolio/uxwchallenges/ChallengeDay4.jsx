@@ -2,6 +2,9 @@ import React from "react";
 import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
 import BackBtn from "../../../components/button/BackBtn";
 import { PageRoute } from "../../../App";
+
+import UserImg from "../../../assets/challenges/uxw-challenge-day-4.png";
+import ServiceImg from "../../../assets/challenges/uxw-challenge-day-4-services.png";
 import ResultImg from "../../../assets/challenges/uxw-day-4.jpg";
 import BackToTop from "../../../components/backToTop/backToTop";
 import Footer from "../../../components/footer/Footer";
@@ -51,6 +54,14 @@ function ChallengeDay4() {
               </ChallengeCard>
             </div>
 
+            <div className="project-supporting-img">
+              <img
+                src={UserImg}
+                alt="upset user waiting at the airport"
+                className="project-supporting-img"
+              />
+            </div>
+
             <div className="challenge-details">
               <section>
                 <h6 className="project-details-content">Voice and tone</h6>
@@ -67,7 +78,7 @@ function ChallengeDay4() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Goal</h6>
+                <h6 className="project-details-content">Goals</h6>
                 <p className="body-4">
                   <ul>
                     <li>
@@ -140,31 +151,7 @@ function ChallengeDay4() {
               </section>
 
               <section>
-                <h6 className="project-details-content">
-                  Information architecture
-                </h6>
-                <p className="body-4">
-                  <b>Heading:</b> ??
-                  <br />
-                  <b>Body:</b> ??
-                  <br />
-                  <b>CTA:</b> ??
-                </p>
-                <br />
-                <p>
-                  For the heading, I prioritize communicating the most important
-                  message to the passengers because this event immediately
-                  affects them. To enhance clarity, especially for those with
-                  multiple ongoing flights, I include the destination airport
-                  code. For the body, I start with the reason for the flight
-                  cancellation as it{"’"}s likely the first question people ask.
-                  Subsequently, I give details on possible actions or offerings
-                  from the airline.
-                </p>
-              </section>
-
-              <section>
-                <h6 className="project-details-content">Thought process</h6>
+                <h6 className="project-details-content">Thought processes</h6>
                 <p className="body-4">
                   Users might encounter this promotional screen as soon as they
                   open the app or catalogue, not during the payment process. The
@@ -184,7 +171,17 @@ function ChallengeDay4() {
                   the last two as they resonate with most people. The next
                   paragraph highlights the nature of the product emphasizing 1)
                   a once-a-month delivery 2) with a flat fee.
-                </p><br />
+                </p>
+                <section>
+                  <br />
+                  <div className="project-supporting-img">
+                    <img
+                      src={ServiceImg}
+                      alt="upset user waiting at the airport"
+                      className="project-supporting-img"
+                    />
+                  </div>
+                </section>
                 <p>
                   Addressing the challenge of clearly communicating the
                   "once-a-month" part was a bit tricky for me. I wanted to avoid

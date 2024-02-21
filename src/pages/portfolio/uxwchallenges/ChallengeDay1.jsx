@@ -6,7 +6,8 @@ import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
 import BackBtn from "../../../components/button/BackBtn";
 import ChallengesDropdown from "../../../components/dropdown/ChallegesDropdown";
 import { PageRoute } from "../../../App";
-import UserImg from "../../../assets/challenges/uxw-day-1-user.png";
+
+import UserImg from "../../../assets/challenges/uxw-challenge-day-1.png";
 import AirlineOffersImg from "../../../assets/challenges/uxw-day-1-offers.png";
 import ResultImg from "../../../assets/challenges/uxw-day-1.jpg";
 
@@ -76,7 +77,7 @@ function ChallengeDay1() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Goal</h6>
+                <h6 className="project-details-content">Goals</h6>
                 <p className="body-4">
                   <ul>
                     <li>
@@ -185,7 +186,7 @@ function ChallengeDay1() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Thought process</h6>
+                <h6 className="project-details-content">Thought processes</h6>
                 <p className="body-4">
                   Given the lack of specific post-cancellation instructions, I
                   conducted research on common practices after flights are
