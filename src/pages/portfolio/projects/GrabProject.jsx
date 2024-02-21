@@ -6,7 +6,7 @@ import GrabImg from "../../../assets/portfolio/grab.jpg";
 import GrabOutcome1 from "../../../assets/portfolio/outcome-grab.png";
 import GrabOutcome2 from "../../../assets/portfolio/outcome-grab-2.png";
 import GrabTesting1 from "../../../assets/portfolio/grab_testing1.JPG";
-import GrabTesting2 from "../../../assets/portfolio/grab_testing2.JPG"
+import GrabTesting2 from "../../../assets/portfolio/grab_testing2.JPG";
 
 function GrabProject() {
   return (
@@ -19,11 +19,52 @@ function GrabProject() {
               <Link to="/portfolio">{"<"} Back</Link>
             </button>
             <select name="projects" id="projects" className="ml-auto">
-              <option value="grab">GrabPay Wallet Powered by KBank</option>
-              <option value="grab">GrabPay Wallet Powered by KBank</option>
-              <option value="grab">GrabPay Wallet Powered by KBank</option>
-              <option value="grab">GrabPay Wallet Powered by KBank</option>
-              <option value="grab">GrabPay Wallet Powered by KBank</option>
+              <option value="GrabProject">GrabPay Wallet Powered by KBank</option>
+              <option value="ChatLocalization">Chat localization</option>
+              <option value="grab">Partner cover</option>
+              <option value="grab">Localization style guide</option>
+              <option value="grab">
+                UX writing challenge day 1: flight cancellation alert
+              </option>
+              <option value="grab">
+                UX writing challenge day 2: sports app promotion
+              </option>
+              <option value="grab">
+                UX writing challenge day 3: sign-in error
+              </option>
+              <option value="grab">
+                UX writing challenge day 4: Grocery subscription
+              </option>
+              <option value="grab">
+                UX writing challenge day 5: Post-shutdown message
+              </option>
+              <option value="grab">
+                UX writing challenge day 6: Commute incident alert
+              </option>
+              <option value="grab">
+                UX writing challenge day 7: Real-time sports notification
+              </option>
+              <option value="grab">
+                UX writing challenge day 8: Concert alert on music app
+              </option>
+              <option value="grab">
+                UX writing challenge day 9: Expired credit card error
+              </option>
+              <option value="grab">
+                UX writing challenge day 10: User location permission
+              </option>
+              <option value="grab">
+                UX writing challenge day 11: Google meta description
+              </option>
+              <option value="grab">
+                UX writing challenge day 12: Fake name error
+              </option>
+              <option value="grab">
+                UX writing challenge day 13: Truck delivery notification
+              </option>
+              <option value="grab">
+                UX writing challenge day 14: App downtime
+              </option>
             </select>
           </div>
 
@@ -32,7 +73,7 @@ function GrabProject() {
               <h3>GrabPay Wallet Powered by KBank</h3>
               <img
                 src={GrabImg}
-                alt="grab ads"
+                alt="thumbnail photo of GrabPay Wallet Powered by KBank"
                 className="project-content-img"
               />
             </div>
@@ -90,11 +131,11 @@ function GrabProject() {
                 </p>
               </section>
               <div className="project-paragraph-img">
-                  <img
-                    src={GrabTesting1}
-                    alt="project grab outcome 1"
-                    className="project-outcome-img"
-                  />
+                <img
+                  src={GrabTesting1}
+                  alt="paper prototype for content testing"
+                  className="project-outcome-img"
+                />
               </div>
 
               <section>
@@ -104,11 +145,11 @@ function GrabProject() {
                 </p>
               </section>
               <div className="project-paragraph-img">
-                  <img
-                    src={GrabTesting2}
-                    alt="project grab outcome 1"
-                    className="project-outcome-img"
-                  />
+                <img
+                  src={GrabTesting2}
+                  alt="content variants for usability testing"
+                  className="project-outcome-img"
+                />
               </div>
 
               <section>
@@ -146,7 +187,6 @@ function GrabProject() {
                       to turn it on.
                     </li>
                   </ul>
-                  
                 </p>
               </section>
 
@@ -155,12 +195,12 @@ function GrabProject() {
                 <div className="project-deliverable-img">
                   <img
                     src={GrabOutcome1}
-                    alt="project grab outcome 1"
+                    alt="value proposition screen of GrabPay Wallet Powered by KBank"
                     className="project-outcome-img"
                   />
                   <img
                     src={GrabOutcome2}
-                    alt="project grab outcome 2"
+                    alt="landing point of GrabPay Wallet Powered by Kbank"
                     className="project-outcome-img"
                   />
                 </div>
