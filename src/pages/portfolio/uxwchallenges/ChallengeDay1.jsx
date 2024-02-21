@@ -1,11 +1,14 @@
 import React from "react";
-import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
-import BackBtn from "../../../components/button/BackBtn";
-import { PageRoute } from "../../../App";
-import ResultImg from "../../../assets/challenges/uxw-day-1.jpg";
 import BackToTop from "../../../components/backToTop/backToTop";
 import Footer from "../../../components/footer/Footer";
+
+import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
+import BackBtn from "../../../components/button/BackBtn";
 import ChallengesDropdown from "../../../components/dropdown/ChallegesDropdown";
+import { PageRoute } from "../../../App";
+import UserImg from "../../../assets/challenges/uxw-day-1-user.png";
+import AirlineOffersImg from "../../../assets/challenges/uxw-day-1-offers.png";
+import ResultImg from "../../../assets/challenges/uxw-day-1.jpg";
 
 function ChallengeDay1() {
   return (
@@ -49,6 +52,15 @@ function ChallengeDay1() {
                 </section>
               </ChallengeCard>
             </div>
+
+          
+              <div className="project-supporting-img">
+                  <img
+                    src={UserImg}
+                    alt="upset user waiting at the airport"
+                    className="project-supporting-img"
+                  />
+                  </div>
 
             <div className="challenge-details">
               <section>
@@ -180,6 +192,14 @@ function ChallengeDay1() {
                   canceled due to poor weather. Options typically include
                 </p>
                 <br />
+                <div className="project-supporting-img">
+                <img 
+                    src={AirlineOffersImg}
+                    alt="benefits when flight cancelled"
+                    width="600px"
+                    className="project-supporting-img"
+                  />
+                  </div>
                 <ol>
                   <li>ticket refunds</li>
                   <li>replacement flights with seating preferences</li>
