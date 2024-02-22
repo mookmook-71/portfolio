@@ -10,8 +10,10 @@ import { PageRoute } from "../../../App";
 import VoiceAndTone from "../../../assets/challenges/voice-and-tone.png";
 import Goals from "../../../assets/challenges/goals.png";
 import TargetUser from "../../../assets/challenges/target-user.png";
+import UserJourney from "../../../assets/challenges/user-journey.png";
 import ThoughtProcesses from "../../../assets/challenges/thought-processes.png";
 import FinalContent from "../../../assets/challenges/final-content.png";
+
 import UserImg from "../../../assets/challenges/uxw-challenge-day-1.png";
 import JourneyImg from "../../../assets/challenges/uxw-challenge-day-1-journey.png";
 import AirlineOffersImg from "../../../assets/challenges/uxw-challenge-day-1-offers.png";
@@ -30,6 +32,7 @@ function ChallengeDay1() {
             <BackBtn redirectPath={PageRoute.Portfolio} />
             <ChallengesDropdown activeIndex={0} className="ml-auto" />
           </div>
+
           <div className="project-content">
             <div className="challenge-detail-title">
               <h3 className="challenge-detail-h3">UXW Challenge Day 1</h3>
@@ -71,7 +74,7 @@ function ChallengeDay1() {
               />
             </div>
 
-            <div className="challenge-details">
+            <div className="challenge-topic">
               <section>
                 <div className="challenge-topic">
                   <img
@@ -132,6 +135,13 @@ function ChallengeDay1() {
               </section>
 
               <section>
+                <div className="challenge-topic">
+                  <img
+                    src={UserJourney}
+                    alt="user journey and emotional state section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <img src={JourneyImg} alt="user journey" width="100%" />
 
                 <p className="project-sub-heading">
@@ -179,14 +189,13 @@ function ChallengeDay1() {
               </section>
 
               <section>
-              <div className="challenge-topic">
+                <div className="challenge-topic">
                   <img
                     src={ThoughtProcesses}
                     alt="thought processes section"
                     className="challenge-topic"
                   />
                 </div>
-
                 <p className="body-4">
                   Given the lack of specific post-cancellation instructions, I
                   conducted research on common practices after flights are
@@ -277,7 +286,7 @@ function ChallengeDay1() {
               </section>
 
               <section>
-              <div className="challenge-topic">
+                <div className="challenge-topic">
                   <img
                     src={FinalContent}
                     alt="final content section"

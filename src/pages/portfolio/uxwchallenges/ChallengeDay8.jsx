@@ -1,13 +1,21 @@
 import React from "react";
+import BackToTop from "../../../components/backToTop/backToTop";
+import Footer from "../../../components/footer/Footer";
+
 import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
 import BackBtn from "../../../components/button/BackBtn";
+import ChallengesDropdown from "../../../components/dropdown/ChallegesDropdown";
 import { PageRoute } from "../../../App";
+
+import VoiceAndTone from "../../../assets/challenges/voice-and-tone.png";
+import Goals from "../../../assets/challenges/goals.png";
+import TargetUser from "../../../assets/challenges/target-user.png";
+import UserJourney from "../../../assets/challenges/user-journey.png";
+import ThoughtProcesses from "../../../assets/challenges/thought-processes.png";
+import FinalContent from "../../../assets/challenges/final-content.png";
 
 import UserImg from "../../../assets/challenges/uxw-challenge-day-8.png";
 import ResultImg from "../../../assets/challenges/uxw-day-9.jpg";
-import BackToTop from "../../../components/backToTop/backToTop";
-import Footer from "../../../components/footer/Footer";
-import ChallengesDropdown from "../../../components/dropdown/ChallegesDropdown";
 
 function ChallengeDay8() {
   return (
@@ -61,7 +69,13 @@ function ChallengeDay8() {
 
             <div className="challenge-details">
               <section>
-                <h6 className="project-details-content">Voice and tone</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={VoiceAndTone}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   Myoosik, a music app that I try to incorporate with my
                   nickname Mook, is vibrant and personalized. When notifying
@@ -71,7 +85,13 @@ function ChallengeDay8() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Goals</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={Goals}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   <ul>
                     <li>
@@ -84,7 +104,13 @@ function ChallengeDay8() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Target users</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={TargetUser}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   Casual music fan who attends live concerts occasionally and
                   has general interest in music as shown by a music player app
@@ -93,7 +119,13 @@ function ChallengeDay8() {
               </section>
 
               <section>
-                <h6 className="project-details-content">User journey</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={UserJourney}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   ?? &gt; ?? &gt; ?? &gt; 📍 <b>??</b> &gt; ?? &gt; ?? &gt; ??
                   &gt; ?? &gt; ?? &gt; ?? &gt; ?? &gt; ?? &gt;
@@ -107,36 +139,15 @@ function ChallengeDay8() {
                   <li>User misses the concert of their favourite band</li>
                 </ul>
               </section>
-              <section>
-                <h6 className="project-details-content">
-                  User’s emotional state
-                </h6>
-                <p className="body-4">
-                  <ul>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                  </ul>
-                </p>
-              </section>
 
               <section>
-                <h6 className="project-details-content">Thought processes</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={ThoughtProcesses}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   Because of the limited character space, the heading only
                   includes crucial details such as the artist or band's name and
@@ -170,7 +181,13 @@ function ChallengeDay8() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Final content</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={FinalContent}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <div className="project-deliverable-img">
                   <img
                     src={ResultImg}

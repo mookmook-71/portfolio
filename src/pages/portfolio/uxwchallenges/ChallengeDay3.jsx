@@ -1,13 +1,22 @@
 import React from "react";
-import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
-import BackBtn from "../../../components/button/BackBtn";
-import { PageRoute } from "../../../App";
-
-import UserImg from "../../../assets/challenges/uxw-challenge-day-3.png";
-import ResultImg from "../../../assets/challenges/uxw-day-3.jpg";
 import BackToTop from "../../../components/backToTop/backToTop";
 import Footer from "../../../components/footer/Footer";
+
+import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
+import BackBtn from "../../../components/button/BackBtn";
 import ChallengesDropdown from "../../../components/dropdown/ChallegesDropdown";
+import { PageRoute } from "../../../App";
+
+import VoiceAndTone from "../../../assets/challenges/voice-and-tone.png";
+import Goals from "../../../assets/challenges/goals.png";
+import TargetUser from "../../../assets/challenges/target-user.png";
+import UserJourney from "../../../assets/challenges/user-journey.png";
+import ThoughtProcesses from "../../../assets/challenges/thought-processes.png";
+import FinalContent from "../../../assets/challenges/final-content.png";
+
+import UserImg from "../../../assets/challenges/uxw-challenge-day-3.png";
+import JourneyImg from "../../../assets/challenges/uxw-challenge-day-3-journey.png";
+import ResultImg from "../../../assets/challenges/uxw-day-3.jpg";
 
 function ChallengeDay3() {
   return (
@@ -54,7 +63,13 @@ function ChallengeDay3() {
 
             <div className="challenge-details">
               <section>
-                <h6 className="project-details-content">Voice and tone</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={VoiceAndTone}
+                    alt="voice and tone section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   While we don’t know anything about the product here, I’m
                   imagining a casual and helpful brand voice like a friend who’s
@@ -67,7 +82,13 @@ function ChallengeDay3() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Goals</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={Goals}
+                    alt="goals section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   <ul>
                     <li>
@@ -81,7 +102,13 @@ function ChallengeDay3() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Target users</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={TargetUser}
+                    alt="target user section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   Users with previously registered accounts, potentially having
                   multiple emails and might have forgotten the email address
@@ -90,14 +117,19 @@ function ChallengeDay3() {
               </section>
 
               <section>
-                <h6 className="project-details-content">User journey</h6>
-                <p className="body-4">
-                  User enters the app &gt; navigates to the sign-in page &gt;
-                  enters their email &gt; 📍 <b>encounters an error message</b>{" "}
-                  &gt; corrects the email &gt; successfully signs in &gt;
-                  continues using the app
-                </p>
-                <br />
+              <div className="challenge-topic">
+                  <img
+                    src={UserJourney}
+                    alt="user journey and emotional state section"
+                    className="challenge-topic"
+                  />
+                </div>
+                <img 
+                  src={JourneyImg} 
+                  alt="user journey" 
+                  width="100%" 
+                  />
+
                 <p className="project-sub-heading">
                   ☝ What happens if the message is unsuccessful?
                 </p>
@@ -110,37 +142,16 @@ function ChallengeDay3() {
                   </li>
                 </ul>
               </section>
-              <section>
-                <h6 className="project-details-content">
-                  User’s emotional state
-                </h6>
-                <p className="body-4">
-                  <ul>
-                    <li>
-                      <b>Confused</b> — about the sign-in issue
-                    </li>
-                    <li>
-                      <b>Surprised</b> — caught off guard by the error
-                    </li>
-                    <li>
-                      <b>Upset</b> — with the disrupted experience
-                    </li>
-                    <li>
-                      <b>Helpless</b> — feeling powerless to resolve the issue
-                    </li>
-                    <li>
-                      <b>Impatient</b> — seeking quick access and annoyed by
-                      delay
-                    </li>
-                    <li>
-                      <b>Skeptical</b> — skepticism toward app reliability
-                    </li>
-                  </ul>
-                </p>
-              </section>
+            
 
               <section>
-                <h6 className="project-details-content">Thought processes</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={ThoughtProcesses}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   I brainstormed potential reasons for incorrect email input and
                   found that they could be any in the following
@@ -194,7 +205,13 @@ function ChallengeDay3() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Final content</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={FinalContent}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <div className="project-deliverable-img">
                   <img
                     src={ResultImg}

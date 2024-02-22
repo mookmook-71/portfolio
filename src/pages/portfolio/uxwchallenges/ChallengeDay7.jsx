@@ -1,13 +1,22 @@
 import React from "react";
-import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
-import BackBtn from "../../../components/button/BackBtn";
-import { PageRoute } from "../../../App";
-
-import UserImg from "../../../assets/challenges/uxw-challenge-day-7.png";
-import ResultImg from "../../../assets/challenges/uxw-day-7.jpg";
 import BackToTop from "../../../components/backToTop/backToTop";
 import Footer from "../../../components/footer/Footer";
+
+import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
+import BackBtn from "../../../components/button/BackBtn";
 import ChallengesDropdown from "../../../components/dropdown/ChallegesDropdown";
+import { PageRoute } from "../../../App";
+
+import VoiceAndTone from "../../../assets/challenges/voice-and-tone.png";
+import Goals from "../../../assets/challenges/goals.png";
+import TargetUser from "../../../assets/challenges/target-user.png";
+import UserJourney from "../../../assets/challenges/user-journey.png";
+import ThoughtProcesses from "../../../assets/challenges/thought-processes.png";
+import FinalContent from "../../../assets/challenges/final-content.png";
+
+import UserImg from "../../../assets/challenges/uxw-challenge-day-7.png";
+import JourneyImg from "../../../assets/challenges/uxw-challenge-day-7-journey.png";
+import ResultImg from "../../../assets/challenges/uxw-day-7.jpg";
 
 function ChallengeDay7() {
   return (
@@ -60,7 +69,13 @@ function ChallengeDay7() {
 
             <div className="challenge-details">
               <section>
-                <h6 className="project-details-content">Voice and tone</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={VoiceAndTone}
+                    alt="voice and tone section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   The voice is sporty, up-to-date, and reliable with an
                   enthusiastic tone keeping it short for speedy updates.
@@ -68,7 +83,13 @@ function ChallengeDay7() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Goals</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={Goals}
+                    alt="goals section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   <ul>
                     <li>
@@ -82,7 +103,13 @@ function ChallengeDay7() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Target users</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={TargetUser}
+                    alt="target user section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   Sports fan who wants to catch their favorite team's live
                   action but is occupied with another commitment at a wedding
@@ -90,12 +117,15 @@ function ChallengeDay7() {
               </section>
 
               <section>
-                <h6 className="project-details-content">User journey</h6>
-                <p className="body-4">
-                  ?? &gt; ?? &gt; ?? &gt; 📍 <b>??</b> &gt; ?? &gt; ?? &gt; ??
-                  &gt; ?? &gt; ?? &gt; ?? &gt; ?? &gt; ?? &gt;
-                </p>
-                <br />
+              <div className="challenge-topic">
+                  <img
+                    src={UserJourney}
+                    alt="user journey and emotional state section"
+                    className="challenge-topic"
+                  />
+                </div>
+                <img src={JourneyImg} alt="user journey" width="100%" />
+
                 <p className="project-sub-heading">
                   ☝ What happens if the message is unsuccessful?
                 </p>
@@ -107,36 +137,16 @@ function ChallengeDay7() {
                   </li>
                 </ul>
               </section>
-              <section>
-                <h6 className="project-details-content">
-                  User’s emotional state
-                </h6>
-                <p className="body-4">
-                  <ul>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                  </ul>
-                </p>
-              </section>
+              
 
               <section>
-                <h6 className="project-details-content">Thought processes</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={ThoughtProcesses}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   I think this is a continuation of challenge day 2. Imagine
                   someone downloads the app after seeing a promotional screen
@@ -196,7 +206,13 @@ function ChallengeDay7() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Final content</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={FinalContent}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <div className="project-deliverable-img">
                   <img
                     src={ResultImg}

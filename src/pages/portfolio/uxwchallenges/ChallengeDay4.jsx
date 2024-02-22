@@ -1,14 +1,23 @@
 import React from "react";
-import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
-import BackBtn from "../../../components/button/BackBtn";
-import { PageRoute } from "../../../App";
-
-import UserImg from "../../../assets/challenges/uxw-challenge-day-4.png";
-import ServiceImg from "../../../assets/challenges/uxw-challenge-day-4-services.png";
-import ResultImg from "../../../assets/challenges/uxw-day-4.jpg";
 import BackToTop from "../../../components/backToTop/backToTop";
 import Footer from "../../../components/footer/Footer";
+
+import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
+import BackBtn from "../../../components/button/BackBtn";
 import ChallengesDropdown from "../../../components/dropdown/ChallegesDropdown";
+import { PageRoute } from "../../../App";
+
+import VoiceAndTone from "../../../assets/challenges/voice-and-tone.png";
+import Goals from "../../../assets/challenges/goals.png";
+import TargetUser from "../../../assets/challenges/target-user.png";
+import UserJourney from "../../../assets/challenges/user-journey.png";
+import ThoughtProcesses from "../../../assets/challenges/thought-processes.png";
+import FinalContent from "../../../assets/challenges/final-content.png";
+
+import UserImg from "../../../assets/challenges/uxw-challenge-day-4.png";
+import JourneyImg from "../../../assets/challenges/uxw-challenge-day-4-journey.png";
+import ServiceImg from "../../../assets/challenges/uxw-challenge-day-4-services.png";
+import ResultImg from "../../../assets/challenges/uxw-day-4.jpg";
 
 function ChallengeDay4() {
   return (
@@ -64,7 +73,13 @@ function ChallengeDay4() {
 
             <div className="challenge-details">
               <section>
-                <h6 className="project-details-content">Voice and tone</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={VoiceAndTone}
+                    alt="voice and tone section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   I choose a customer-friendly and approachable voice to make
                   the brand sound easy to talk to. It’s the supermarket with
@@ -78,7 +93,13 @@ function ChallengeDay4() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Goals</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={Goals}
+                    alt="goals section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   <ul>
                     <li>
@@ -95,7 +116,13 @@ function ChallengeDay4() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Target users</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={TargetUser}
+                    alt="target user section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   Customers who are currently shopping inside the supermarket,
                   potentially regulars as evidenced by their use of the
@@ -108,15 +135,15 @@ function ChallengeDay4() {
               </section>
 
               <section>
-                <h6 className="project-details-content">User journey</h6>
-                <p className="body-4">
-                  User goes to a supermarket &gt; opens the app &gt; searches
-                  for exclusive deals and discounted items 📍{" "}
-                  <b>sees a promotional screen</b> &gt; continues shopping with
-                  heavy baskets &gt; checks out &gt; heads home wondering if
-                  there's a better shopping approach
-                </p>
-                <br />
+              <div className="challenge-topic">
+                  <img
+                    src={UserJourney}
+                    alt="user journey and emotional state section"
+                    className="challenge-topic"
+                  />
+                </div>
+                <img src={JourneyImg} alt="user journey" width="100%" />
+
                 <p className="project-sub-heading">
                   ☝ What happens if the message is unsuccessful?
                 </p>
@@ -128,30 +155,16 @@ function ChallengeDay4() {
                   </li>
                 </ul>
               </section>
-              <section>
-                <h6 className="project-details-content">
-                  User’s emotional state
-                </h6>
-                <p className="body-4">
-                  <ul>
-                    <li>
-                      <b>Disrupted</b> — greeted by a promotional page instead
-                      of seeing deals
-                    </li>
-                    <li>
-                      <b>Surprised</b> — to see new product they’ve never seen
-                      at this supermarket
-                    </li>
-                    <li>
-                      <b>Curious</b> — about the potential benefits of the
-                      delivery service
-                    </li>
-                  </ul>
-                </p>
-              </section>
+              
 
               <section>
-                <h6 className="project-details-content">Thought processes</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={ThoughtProcesses}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   Users might encounter this promotional screen as soon as they
                   open the app or catalogue, not during the payment process. The
@@ -207,7 +220,13 @@ function ChallengeDay4() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Final content</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={FinalContent}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <div className="project-deliverable-img">
                   <img
                     src={ResultImg}
