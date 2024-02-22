@@ -505,18 +505,27 @@ select option {
   align-items: center;
 }
 
+.inline-img {
+  display: block;
+  margin-block: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .project-outcome-img {
   width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-supporting-img {
-width: 80%;
-height: auto;
-display: block;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 45px;
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
 }
 
 .project-outcome-img:not(:first-child) {
@@ -579,7 +588,7 @@ margin-bottom: 45px;
 }
 
 .project.deliverable-img {
-  width: 95%;
+  width: 100%;
 }
 
 .portfolio-detail .content-text {
@@ -666,7 +675,7 @@ margin-bottom: 45px;
 }
 
 .project-sub-heading {
-  color: var(--gray-secondary)
+  color: var(--gray-secondary);
 }
 
 .challenge:hover {
@@ -680,6 +689,11 @@ margin-bottom: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.challenge-topic {
+  height: 50px;
+  margin-bottom: 1.25rem;
 }
 
 .challenge-detail-h3 {
