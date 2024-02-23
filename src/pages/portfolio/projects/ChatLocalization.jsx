@@ -82,40 +82,39 @@ function ChatLocalization() {
               <section>
                 <h6 className="project-details-content">Project overview</h6>
                 <p>
-                  Revamp Thai localization of GrabChat for Grab customer and
-                  driver apps
+                  Revamp Thai localization of chatbot scripts for Grab customer
+                  and driver apps
                 </p>
               </section>
 
               <section>
                 <h6 className="project-details-content">Team</h6>
-                <p>Content design, customer experience, localization</p>
+                <p>Content Design, Localization, Customer Experience (CE)</p>
               </section>
 
               <section>
                 <h6 className="project-details-content">Background</h6>
                 <p>
-                  The initial strategy explicitly informed users that they were
-                  interacting with a bot to manage expectations and prevent
-                  frustration in case their concerns couldn't be fully
-                  addressed. We were cautious about using overly human-like
-                  language, as it could lead to misunderstandings and
-                  potentially erode user trust and loyalty. Our aim was to apply
-                  a consistent product content style guide across all products,
-                  including the chatbot.
+                  The initial strategy for GrabChat explicitly informed users
+                  that they were interacting with a bot to manage their
+                  expectations and prevent frustration in case their concerns
+                  couldn't be fully addressed. We were cautious about using
+                  overly human-like language as it could lead to
+                  misunderstanding and potentially erode user's trust and
+                  loyalty. Additionally, our aim was to apply a consistent
+                  content style across all products including chatbot.
                 </p>
                 <br />
                 <p>
                   However, I later discovered that writing for microcopy differs
-                  from writing for a chatbot. Conversations with the Customer
-                  Experience (CE) team revealed a preference for making GrabChat
-                  sound as human as possible. Surprisingly, users appeared more
-                  comfortable when unaware they were conversing with a bot.
-                  Frontliners in the CE team have their own distinct language
-                  style when communicating with customers, which differs from
-                  our in-app style. I also discussed unique challenges with
-                  conversational designers, particularly regarding non-English
-                  languages, such as Thai
+                  from writing for chatbots. It was actually "Conversation
+                  Design". Conversations with the CE team revealed a preference
+                  for making GrabChat sound as humanly as possible. Users
+                  appeared more comfortable when unaware they are conversing
+                  with a bot. CE frontliners also have their own distinct
+                  language style when communicating directly with customers which is
+                  different from our in-app style. Then, I discussed unique
+                  challenges of Thai language with the conversation designer.
                 </p>
               </section>
 
@@ -134,14 +133,14 @@ function ChatLocalization() {
                         Gender neutral doesn’t work if you want to sound natural
                         in Thai as in real life we would have to end the
                         sentences with gender particles like kha (ค่ะ) and krab
-                        (ครับ)
+                        (ครับ).
                       </td>
                       <td>
-                        Align with the CS team whether we’ll use a feminine or
+                        Align with the CE team whether we’ll use a feminine or
                         masculine tone and stick to it. Inform the content
                         designers so they’re aware of the gender aspect. If
                         we’ll ever create a persona in the future, they know
-                        Thai should be a female.
+                        Thai should be female.
                       </td>
                       <td>
                         <img
@@ -196,15 +195,16 @@ function ChatLocalization() {
               <section>
                 <h6 className="project-details-content">Outcome</h6>
                 <p>
-                  After I refined the chat script according to our new strategy
-                  and received an approval from the CS team, we were ready to go
+                  After I refined the chat scripts according to our new strategy
+                  and received an approval from the CE team, we were ready to
+                  go.
                 </p>
                 <br />
                 <p>
                   The final content was more conversational and natural. Bonus
                   point, we managed to make it more concise. Usually, we would
-                  be worried about Thai being too long as Thai is generally
-                  longer than English.
+                  be worried about Thai being too long as it is generally longer
+                  than English.
                 </p>
               </section>
               <img

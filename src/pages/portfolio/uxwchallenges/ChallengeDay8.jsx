@@ -121,7 +121,7 @@ function ChallengeDay8() {
               <section>
               <div className="challenge-topic">
                   <img
-                    src={UserJourney}
+                    src={TargetUser}
                     alt="thought processes section"
                     className="challenge-topic"
                   />
