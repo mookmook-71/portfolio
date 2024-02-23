@@ -79,6 +79,11 @@ function FloatingNav() {
     setIsActive((prev) => !prev);
   }
 
+  function handleSelectResume() {
+    window.open("/#" + PageRoute.Resume, "_blank");
+    setIsActive(false);
+  }
+
   useChain(
     [hamburgerRef, closeRef, resumeMenuRef, menuItemRef],
     [0, 0, 0.1, 0.1]
@@ -113,6 +118,7 @@ function FloatingNav() {
         <animated.div
           style={resumeMenuStyle}
           className={`floating-nav-img menu`}
+          onClick={() => handleSelectResume()}
         >
           <img src={ResumeIcon} alt="inactive nav menu" />
         </animated.div>
@@ -120,7 +126,7 @@ function FloatingNav() {
         <animated.div
           style={menuItemStyle}
           className={`floating-nav-menu`}
-          onClick={() => window.open('/#' + PageRoute.Resume, "_blank")}
+          onClick={() => handleSelectResume()}
         >
           <b>Download resume</b>
         </animated.div>

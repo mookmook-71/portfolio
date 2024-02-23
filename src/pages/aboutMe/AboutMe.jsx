@@ -1,16 +1,13 @@
 import ArrowDown from "../../assets/arrow-down.png";
 import Footer from "../../components/footer/Footer";
+import ProfileImg from "../../assets/profile/profile.jpg";
 
 function AboutMe() {
   return (
     <>
       <section className="hero">
         <h1 className="hero-title">Hi hi 👋🏻 this is Pattaraporn!</h1>
-        <img
-          src="https://placekitten.com/240/240"
-          className="hero-profile-img"
-          alt="profile"
-        />
+        <img src={ProfileImg} className="hero-profile-img" alt="profile" />
         <p className="hero-sub">
           I turn words into bridges, crafting precise and culturally attuned{" "}
           <br />
