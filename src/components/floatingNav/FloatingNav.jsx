@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { animated, useChain, useSpring, useSpringRef } from "react-spring";
 
 import HamburgerIcon from "../../assets/hamburger.png";
 import CloseIcon from "../../assets/close.png";
 import ResumeIcon from "../../assets/resume_menu.png";
+import { PageRoute } from "../../App";
 
 const hamburgerExitDuration = 300;
 const hamburgerEnterDuration = 100;
@@ -113,10 +114,14 @@ function FloatingNav() {
           style={resumeMenuStyle}
           className={`floating-nav-img menu`}
         >
-          <img src={ResumeIcon} alt="inactive nav menu" onClick={() => {}} />
+          <img src={ResumeIcon} alt="inactive nav menu" />
         </animated.div>
 
-        <animated.div style={menuItemStyle} className={`floating-nav-menu`}>
+        <animated.div
+          style={menuItemStyle}
+          className={`floating-nav-menu`}
+          onClick={() => window.open('/#' + PageRoute.Resume, "_blank")}
+        >
           <b>Download resume</b>
         </animated.div>
       </div>

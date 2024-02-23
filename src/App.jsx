@@ -8,6 +8,7 @@ export const PageRoute = {
   AboutMe: "/about-me",
   Portfolio: "/portfolio",
   Contact: "/contact",
+  Resume: "/resume",
 };
 
 export const PageRoutes = [
@@ -184,8 +185,8 @@ function App() {
             />
           </Route>
           <Route path="/dummy" element={<Dummy />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/about-me" />} />
+          <Route path={PageRoute.Resume} element={<Resume />} />
+          <Route element={<Navigate to={PageRoute.AboutMe} />} />
         </Routes>
       </Suspense>
     </HashRouter>
