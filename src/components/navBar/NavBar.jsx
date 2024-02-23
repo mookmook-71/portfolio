@@ -1,12 +1,12 @@
 import { useMemo } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { PageRoutes } from "../../App";
+import { TopNavMenus } from "../../App";
 
 function NavBar() {
   const navigate = useNavigate();
   const location = useLocation();
   const pages = useMemo(() => {
-    return PageRoutes.map((p) => ({
+    return TopNavMenus.map((p) => ({
       ...p,
       isActive: location.pathname === p.redirectPath,
     }));

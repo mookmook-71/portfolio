@@ -11,7 +11,7 @@ export const PageRoute = {
   Resume: "/resume",
 };
 
-export const PageRoutes = [
+export const TopNavMenus = [
   {
     display: "About me",
     redirectPath: PageRoute.AboutMe,
@@ -25,6 +25,13 @@ export const PageRoutes = [
     redirectPath: PageRoute.Contact,
   },
 ];
+
+const FeatureToggle = {
+  ExperiencedProjects: true,
+  WritingChallenge: false,
+  Contact: false,
+  Resume: true,
+};
 
 function App() {
   const AboutMe = lazy(() => import("./pages/aboutMe/AboutMe"));
@@ -113,80 +120,106 @@ function App() {
       <Suspense fallback={<>loading...</>}>
         <Routes>
           <Route element={<Layout />}>
-            <Route path="/about-me" element={<AboutMe />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/portfolio/detail" element={<PortfolioDetail />} />
-            <Route path={PortfolioRoutes.Grab} element={<GrabProject />} />
-            <Route
-              path={PortfolioRoutes.ChatLocalization}
-              element={<ChatLocalization />}
-            />
-            <Route path={PortfolioRoutes.Partner} element={<PartnerCover />} />
-            <Route path={PortfolioRoutes.StyleGuide} element={<StyleGuide />} />
-            <Route
-              path={ChallengesRoutes.ChallengeDay1}
-              element={<ChallengeDay1 />}
-            />
-            <Route
-              path={ChallengesRoutes.ChallengeDay2}
-              element={<ChallengeDay2 />}
-            />
-            <Route
-              path={ChallengesRoutes.ChallengeDay3}
-              element={<ChallengeDay3 />}
-            />
-            <Route
-              path={ChallengesRoutes.ChallengeDay4}
-              element={<ChallengeDay4 />}
-            />
-            <Route
-              path={ChallengesRoutes.ChallengeDay5}
-              element={<ChallengeDay5 />}
-            />
-            <Route
-              path={ChallengesRoutes.ChallengeDay6}
-              element={<ChallengeDay6 />}
-            />
-            <Route
-              path={ChallengesRoutes.ChallengeDay7}
-              element={<ChallengeDay7 />}
-            />
-            <Route
-              path={ChallengesRoutes.ChallengeDay8}
-              element={<ChallengeDay8 />}
-            />
-            <Route
-              path={ChallengesRoutes.ChallengeDay9}
-              element={<ChallengeDay9 />}
-            />
-            <Route
-              path={ChallengesRoutes.ChallengeDay10}
-              element={<ChallengeDay10 />}
-            />
-            <Route
-              path={ChallengesRoutes.ChallengeDay11}
-              element={<ChallengeDay11 />}
-            />
-            <Route
-              path={ChallengesRoutes.ChallengeDay12}
-              element={<ChallengeDay12 />}
-            />
-            <Route
-              path={ChallengesRoutes.ChallengeDay13}
-              element={<ChallengeDay13 />}
-            />
-            <Route
-              path={ChallengesRoutes.ChallengeDay14}
-              element={<ChallengeDay14 />}
-            />
-            <Route
-              path={ChallengesRoutes.ChallengeDay15}
-              element={<ChallengeDay15 />}
-            />
+            <Route path={PageRoute.AboutMe} element={<AboutMe />} />
+            {FeatureToggle.ExperiencedProjects && (
+              <>
+                <Route
+                  exact
+                  path={PageRoute.Portfolio}
+                  element={<Portfolio />}
+                />
+                <Route
+                  exact
+                  path={PortfolioRoutes.Grab}
+                  element={<GrabProject />}
+                />
+                <Route
+                  exact
+                  path={PortfolioRoutes.ChatLocalization}
+                  element={<ChatLocalization />}
+                />
+                <Route
+                  exact
+                  path={PortfolioRoutes.Partner}
+                  element={<PartnerCover />}
+                />
+                <Route
+                  exact
+                  path={PortfolioRoutes.StyleGuide}
+                  element={<StyleGuide />}
+                />
+              </>
+            )}
+            {FeatureToggle.WritingChallenge && (
+              <>
+                <Route
+                  path={ChallengesRoutes.ChallengeDay1}
+                  element={<ChallengeDay1 />}
+                />
+                <Route
+                  path={ChallengesRoutes.ChallengeDay2}
+                  element={<ChallengeDay2 />}
+                />
+                <Route
+                  path={ChallengesRoutes.ChallengeDay3}
+                  element={<ChallengeDay3 />}
+                />
+                <Route
+                  path={ChallengesRoutes.ChallengeDay4}
+                  element={<ChallengeDay4 />}
+                />
+                <Route
+                  path={ChallengesRoutes.ChallengeDay5}
+                  element={<ChallengeDay5 />}
+                />
+                <Route
+                  path={ChallengesRoutes.ChallengeDay6}
+                  element={<ChallengeDay6 />}
+                />
+                <Route
+                  path={ChallengesRoutes.ChallengeDay7}
+                  element={<ChallengeDay7 />}
+                />
+                <Route
+                  path={ChallengesRoutes.ChallengeDay8}
+                  element={<ChallengeDay8 />}
+                />
+                <Route
+                  path={ChallengesRoutes.ChallengeDay9}
+                  element={<ChallengeDay9 />}
+                />
+                <Route
+                  path={ChallengesRoutes.ChallengeDay10}
+                  element={<ChallengeDay10 />}
+                />
+                <Route
+                  path={ChallengesRoutes.ChallengeDay11}
+                  element={<ChallengeDay11 />}
+                />
+                <Route
+                  path={ChallengesRoutes.ChallengeDay12}
+                  element={<ChallengeDay12 />}
+                />
+                <Route
+                  path={ChallengesRoutes.ChallengeDay13}
+                  element={<ChallengeDay13 />}
+                />
+                <Route
+                  path={ChallengesRoutes.ChallengeDay14}
+                  element={<ChallengeDay14 />}
+                />
+                <Route
+                  path={ChallengesRoutes.ChallengeDay15}
+                  element={<ChallengeDay15 />}
+                />
+              </>
+            )}
           </Route>
           <Route path="/dummy" element={<Dummy />} />
-          <Route path={PageRoute.Resume} element={<Resume />} />
-          <Route element={<Navigate to={PageRoute.AboutMe} />} />
+          {FeatureToggle.Resume && (
+            <Route exact path={PageRoute.Resume} element={<Resume />} />
+          )}
+          <Route path="*" element={<Navigate to={PageRoute.AboutMe} />} />
         </Routes>
       </Suspense>
     </HashRouter>

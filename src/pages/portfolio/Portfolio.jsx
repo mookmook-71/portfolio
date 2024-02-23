@@ -166,6 +166,7 @@ function Portfolio() {
             <ul className="challenge-list">
               {Challenges.map((challenge, index) => (
                 <li
+                  key={`ux-writing-challenge-${index}`}
                   className="challenge"
                   onClick={() => navigate(challenge.redirectPath)}
                 >{`Day ${index + 1}: ${challenge.name}`}</li>
