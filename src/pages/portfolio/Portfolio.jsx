@@ -8,9 +8,9 @@ import Footer from "../../components/footer/Footer";
 import BackToTop from "../../components/backToTop/backToTop";
 import { PortfolioRoutes } from "../../layout/Layout";
 
-const Projects = [
+export const Projects = [
   {
-    name: `GrabPay Wallet Powered by KBankkk`,
+    name: `GrabPay Wallet Powered by KBank`,
     shortDesc:
       "My first UX project: concept testing for a new e-wallet product in Thailand!",
     imageUrl: ProjectGrabImg,

@@ -8,6 +8,8 @@ import StyleGuide1 from "../../../assets/portfolio/styleguide-1.png";
 import StyleGuide2 from "../../../assets/portfolio/styleguide-2.png";
 import StyleGuide3 from "../../../assets/portfolio/styleguide-3.png";
 import StyleGuide4 from "../../../assets/portfolio/styleguide-4.png";
+import ProjectDropdown from "../../../components/dropdown/ProjectDropdown";
+import { PortfolioRoutes } from "../../../layout/Layout";
 
 function StyleGuide() {
   return (
@@ -19,54 +21,10 @@ function StyleGuide() {
             <button className="btn btn-icon back-btn">
               <Link to="/portfolio">{"<"} Back</Link>
             </button>
-            <select name="projects" id="projects" className="ml-auto">
-              <option value="grab">GrabPay Wallet Powered by KBank</option>
-              <option value="grab">Chat localization</option>
-              <option value="grab">Partner cover</option>
-              <option value="grab">Localization style guide</option>
-              <option value="grab">
-                UX writing challenge day 1: flight cancellation alert
-              </option>
-              <option value="grab">
-                UX writing challenge day 2: sports app promotion
-              </option>
-              <option value="grab">
-                UX writing challenge day 3: sign-in error
-              </option>
-              <option value="grab">
-                UX writing challenge day 4: Grocery subscription
-              </option>
-              <option value="grab">
-                UX writing challenge day 5: Post-shutdown message
-              </option>
-              <option value="grab">
-                UX writing challenge day 6: Commute incident alert
-              </option>
-              <option value="grab">
-                UX writing challenge day 7: Real-time sports notification
-              </option>
-              <option value="grab">
-                UX writing challenge day 8: Concert alert on music app
-              </option>
-              <option value="grab">
-                UX writing challenge day 9: Expired credit card error
-              </option>
-              <option value="grab">
-                UX writing challenge day 10: User location permission
-              </option>
-              <option value="grab">
-                UX writing challenge day 11: Google meta description
-              </option>
-              <option value="grab">
-                UX writing challenge day 12: Fake name error
-              </option>
-              <option value="grab">
-                UX writing challenge day 13: Truck delivery notification
-              </option>
-              <option value="grab">
-                UX writing challenge day 14: App downtime
-              </option>
-            </select>
+            <ProjectDropdown
+              className="ml-auto"
+              activeIndex={PortfolioRoutes.StyleGuide}
+            />
           </div>
 
           <div className="project-content">

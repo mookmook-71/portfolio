@@ -5,6 +5,8 @@ import Footer from "../../../components/footer/Footer";
 import CoverImg from "../../../assets/partner-cover.png";
 import { Link } from "react-router-dom";
 import AppImage from "../../../assets/portfolio/partner-cover-app.png";
+import ProjectDropdown from "../../../components/dropdown/ProjectDropdown";
+import { PortfolioRoutes } from "../../../layout/Layout";
 
 function PartnerCover() {
   return (
@@ -16,54 +18,10 @@ function PartnerCover() {
             <button className="btn btn-icon back-btn">
               <Link to="/portfolio">{"<"} Back</Link>
             </button>
-            <select name="projects" id="projects" className="ml-auto">
-              <option value="grab">GrabPay Wallet Powered by KBank</option>
-              <option value="grab">Chat localization</option>
-              <option value="grab">Partner cover</option>
-              <option value="grab">Localization style guide</option>
-              <option value="grab">
-                UX writing challenge day 1: flight cancellation alert
-              </option>
-              <option value="grab">
-                UX writing challenge day 2: sports app promotion
-              </option>
-              <option value="grab">
-                UX writing challenge day 3: sign-in error
-              </option>
-              <option value="grab">
-                UX writing challenge day 4: Grocery subscription
-              </option>
-              <option value="grab">
-                UX writing challenge day 5: Post-shutdown message
-              </option>
-              <option value="grab">
-                UX writing challenge day 6: Commute incident alert
-              </option>
-              <option value="grab">
-                UX writing challenge day 7: Real-time sports notification
-              </option>
-              <option value="grab">
-                UX writing challenge day 8: Concert alert on music app
-              </option>
-              <option value="grab">
-                UX writing challenge day 9: Expired credit card error
-              </option>
-              <option value="grab">
-                UX writing challenge day 10: User location permission
-              </option>
-              <option value="grab">
-                UX writing challenge day 11: Google meta description
-              </option>
-              <option value="grab">
-                UX writing challenge day 12: Fake name error
-              </option>
-              <option value="grab">
-                UX writing challenge day 13: Truck delivery notification
-              </option>
-              <option value="grab">
-                UX writing challenge day 14: App downtime
-              </option>
-            </select>
+            <ProjectDropdown
+              className="ml-auto"
+              activeIndex={PortfolioRoutes.Partner}
+            />
           </div>
 
           <div className="project-content">
@@ -167,9 +125,9 @@ function PartnerCover() {
                 <h6 className="project-details-content">
                   Content strategy and output
                 </h6>
-                <h7 className="project-details-content">
+                <h6 className="project-details-content">
                   Consider target users
-                </h7>
+                </h6>
                 <p>
                   We wrote with caring and supportive voice to show that we
                   genuinely care about our drivers considering many of them are
@@ -181,9 +139,9 @@ function PartnerCover() {
                   are going to be hassle-free.
                 </p>
                 <br />
-                <h7 className="project-details-content">
+                <h6 className="project-details-content">
                   Comply with legal requirements
-                </h7>
+                </h6>
                 <p>
                   When it comes to financial and insurance products, working
                   with the legal and compliance team is inevitable. When dealing

@@ -7,6 +7,8 @@ import GrabOutcome1 from "../../../assets/portfolio/outcome-grab.png";
 import GrabOutcome2 from "../../../assets/portfolio/outcome-grab-2.png";
 import GrabTesting1 from "../../../assets/portfolio/grab_testing1.JPG";
 import GrabTesting2 from "../../../assets/portfolio/grab_testing2.JPG";
+import ProjectDropdown from "../../../components/dropdown/ProjectDropdown";
+import { PortfolioRoutes } from "../../../layout/Layout";
 
 function GrabProject() {
   return (
@@ -18,54 +20,10 @@ function GrabProject() {
             <button className="btn btn-icon back-btn">
               <Link to="/portfolio">{"<"} Back</Link>
             </button>
-            <select name="projects" id="projects" className="ml-auto">
-              <option value="GrabProject">GrabPay Wallet Powered by KBank</option>
-              <option value="ChatLocalization">Chat localization</option>
-              <option value="grab">Partner cover</option>
-              <option value="grab">Localization style guide</option>
-              <option value="grab">
-                UX writing challenge day 1: flight cancellation alert
-              </option>
-              <option value="grab">
-                UX writing challenge day 2: sports app promotion
-              </option>
-              <option value="grab">
-                UX writing challenge day 3: sign-in error
-              </option>
-              <option value="grab">
-                UX writing challenge day 4: Grocery subscription
-              </option>
-              <option value="grab">
-                UX writing challenge day 5: Post-shutdown message
-              </option>
-              <option value="grab">
-                UX writing challenge day 6: Commute incident alert
-              </option>
-              <option value="grab">
-                UX writing challenge day 7: Real-time sports notification
-              </option>
-              <option value="grab">
-                UX writing challenge day 8: Concert alert on music app
-              </option>
-              <option value="grab">
-                UX writing challenge day 9: Expired credit card error
-              </option>
-              <option value="grab">
-                UX writing challenge day 10: User location permission
-              </option>
-              <option value="grab">
-                UX writing challenge day 11: Google meta description
-              </option>
-              <option value="grab">
-                UX writing challenge day 12: Fake name error
-              </option>
-              <option value="grab">
-                UX writing challenge day 13: Truck delivery notification
-              </option>
-              <option value="grab">
-                UX writing challenge day 14: App downtime
-              </option>
-            </select>
+            <ProjectDropdown
+              className="ml-auto"
+              activeIndex={PortfolioRoutes.Grab}
+            />
           </div>
 
           <div className="project-content">
@@ -165,29 +123,28 @@ function GrabProject() {
                   There’re many interesting insights from the testing. Here’re
                   are some keys things I learned and used to improved the
                   content.
-                  <ul className="project-details-list">
-                    <li>
-                      The participants initially thought it was just a Kbank
-                      promotion on Grab app. We had to make it clear that it's a
-                      new product. The message needed to be shorter, straight to
-                      the point, with a clear action to take before diving into
-                      the benefits.
-                    </li>
-                    <li>
-                      Some had the perception that money paid with GrabPay was
-                      going to be automatically deducted from their Kbank
-                      account. This made them concerned about the money safety.
-                    </li>
-                    <li>
-                      For the CTA button, “Register” performs best. “Link” makes
-                      the users think their KBank balanced will be synced with
-                      Grab. “Sign up” sounds formal and like a big deal.
-                      “Activate” makes them feel that there’s already a
-                      connection between Kbank account and Grab, and they need
-                      to turn it on.
-                    </li>
-                  </ul>
                 </p>
+                <ul className="project-details-list">
+                  <li>
+                    The participants initially thought it was just a Kbank
+                    promotion on Grab app. We had to make it clear that it's a
+                    new product. The message needed to be shorter, straight to
+                    the point, with a clear action to take before diving into
+                    the benefits.
+                  </li>
+                  <li>
+                    Some had the perception that money paid with GrabPay was
+                    going to be automatically deducted from their Kbank account.
+                    This made them concerned about the money safety.
+                  </li>
+                  <li>
+                    For the CTA button, “Register” performs best. “Link” makes
+                    the users think their KBank balanced will be synced with
+                    Grab. “Sign up” sounds formal and like a big deal.
+                    “Activate” makes them feel that there’s already a connection
+                    between Kbank account and Grab, and they need to turn it on.
+                  </li>
+                </ul>
               </section>
 
               <section>

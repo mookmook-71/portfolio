@@ -35,7 +35,6 @@ const FeatureToggle = {
 
 function App() {
   const AboutMe = lazy(() => import("./pages/aboutMe/AboutMe"));
-
   const Resume = lazy(() => import("./pages/resume/Resume"));
   const GrabProject = lazy(() =>
     import("./pages/portfolio/projects/GrabProject")
