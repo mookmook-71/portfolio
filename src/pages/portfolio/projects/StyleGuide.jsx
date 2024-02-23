@@ -63,29 +63,35 @@ function StyleGuide() {
                   <h6 className="project-details-content">What I did</h6>
                   <ul className="project-details-list">
                     <li>
-                      Conducted a competitive analysis of content style guides.
+                      Conducted competitive analysis of localization style
+                      guides.
                     </li>
                     <li>
-                      Reviewed the existing brand content style guide for
-                      English.
+                      Reviewed the existing Grab's English content style guide
+                      to see what can be adopted to the localization guide.
                     </li>
                     <li>
-                      Crafted a comprehensive style guide for the Thai language
+                      Crafted a comprehensive style guide for Thai language
                       covering UX principles, Grab’s voice and tone, formatting
                       standards, Thai-specific writing guidelines, localization
                       considerations, and a quick glossary of frequently used
                       terms (separated from the main glossary).
                     </li>
-                    <li>Invited relevant colleagues for feedback.</li>
+                    <li>
+                      Invited relevant stakeholders to review and collected
+                      feedback.
+                    </li>
                     <li>
                       Published the style guide and shared it with the content
                       design and localization team.
                     </li>
                     <li>
-                      Promoted it to a wider audience within the country team.
+                      Promoted it to a wider audience within Thailand country
+                      team.
                     </li>
                     <li>
-                      Maintained the style guide to ensure it stayed up-to-date.
+                      Maintained the style guide to ensure it's always
+                      up-to-date.
                     </li>
                     <li>
                       Used it for onboarding new Thai linguists and external
@@ -97,17 +103,14 @@ function StyleGuide() {
                 <section>
                   <h6 className="project-details-content">Team contribution</h6>
                   <p>
-                    The style guide I that developed became a template for all
-                    other languages. I included sample topics for sections like
-                    grammars or language-specific standards even though they
-                    weren't applicable to Thai, to provide the localization team
-                    with ideas on how to fill the template
+                    Style guide that I developed became a template for all other
+                    languages.
                   </p>
-                  <br></br>
-                  <p>
-                    These are screenshots of the Thai style guide I created for
-                    Grab.
-                  </p>
+
+                  <section>
+                    <h6 className="project-details-content">Sample</h6>
+                    <p>Check out some screenshots below.</p>
+                  </section>
 
                   <div className="project-paragraph-img">
                     <img

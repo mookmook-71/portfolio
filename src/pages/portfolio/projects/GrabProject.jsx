@@ -41,11 +41,11 @@ function GrabProject() {
                 <h6 className="project-details-content">Project overview</h6>
                 <p>
                   Grab is introducing a new e-wallet in collaboration with
-                  KBank. This wallet allows users to easily top up and make
-                  cashless payments for various Grab services in Thailand.
-                  Signing up brings perks like lower fares, discounted bundles,
-                  and extra reward points when using GrabPay Wallet. The
-                  challenge is enticing users to explore and give this new
+                  Kasikornbank (KBank). This wallet allows users to easily top
+                  up and make cashless payments for various Grab services in
+                  Thailand. Signing up brings perks like lower fares, discounted
+                  bundles and extra reward points when using GrabPay Wallet.
+                  Challenge is enticing users to explore and give this new
                   product a try.
                 </p>
               </section>
@@ -54,25 +54,24 @@ function GrabProject() {
                 <h6 className="project-details-content">Team I worked with</h6>
                 <p>
                   In this project, I worked closely with the regional team in
-                  Singapore, the local team in Thailand, and our external
-                  partners from Kbank. My primary collaboration was with the
-                  content designer who is responsible for drafting English
-                  source content alongside the product designer and project
-                  managers.
+                  Singapore, local team and business partner from KBank in
+                  Thailand. My primary collaboration was with the content
+                  designer who is responsible for writing English source content
+                  alongside the product designer and project managers.
                 </p>
               </section>
 
               <section>
                 <h6 className="project-details-content">How it started</h6>
                 <p>
-                  For this new product, the team decided to run a 2-day concept
-                  testing session in Bangkok, Thailand. While the initial
+                  Since this was a new product, the team decided to run a 2-day
+                  concept testing in Bangkok, Thailand. While the initial
                   content was crafted in English*, my involvement was crucial
-                  for reviewing, suggesting improvements, and localizing the
-                  user interface into Thai language for usability testing. Also,
-                  I helped ensure that our outsourced Thai moderator had a solid
+                  for reviewing, suggesting improvements and localizing the user
+                  interface into Thai for the testing. Also, I helped ensure
+                  that our outsourced Thai research moderator had a solid
                   understanding of the product before the interviews. Later, I
-                  worked on aligning the Thai content with our Kbank partners.
+                  worked on aligning Thai content with the partner bank.
                 </p>
                 <br />
                 <i>
@@ -84,8 +83,8 @@ function GrabProject() {
 
               <section>
                 <p className="body-4">
-                  We used both digital and paper prototypes but here's a peek at
-                  the paper version…
+                  We used both digital and paper prototypes and here's a sneak
+                  peek at the paper version…
                 </p>
               </section>
               <div className="project-paragraph-img">
@@ -113,7 +112,7 @@ function GrabProject() {
               <section>
                 <p className="body-4">
                   Then, we tested different CTA buttons to find the most
-                  preferred one.
+                  preferred Thai wording.
                 </p>
               </section>
 
@@ -148,7 +147,7 @@ function GrabProject() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Outcome</h6>
+                <h6 className="project-details-content">Sample outcome</h6>
                 <div className="project-deliverable-img">
                   <img
                     src={GrabOutcome1}

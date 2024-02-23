@@ -35,8 +35,8 @@ function AboutMe() {
           </h4>
         </div>
         <p className="section-text body-2">
-          I've been involved in various projects, including academic work,
-          interviews, and video subtitles. My expertise lies in localizing
+          I've been involved in various projects such as academic work,
+          interviews and video subtitles. My expertise lies in localizing
           software for mobile apps and websites. In this specialized field, I've
           established style guides, glossaries and other language assets to
           ensure top-quality localization. I also provide localization audit and
@@ -50,10 +50,10 @@ function AboutMe() {
         </div>
         <p className="section-text body-2">
           Collaborating within a vibrant UX team comprising content designers,
-          product designers, researchers, project managers, engineers, and many
-          more, I contribute to crafting content that enhances the user
-          experience. I help ensure that the content design meets usability,
-          accessibility, and user-centric standards, while also being
+          product designers, researchers, project managers, engineers and many
+          more, I contribute to creating content that enhances the user
+          experience. I help teams make sure that the content design meets usability,
+          accessibility and user-centric standards while also being
           localization-friendly so the brand is ready to go local and global.
         </p>
       </section>
@@ -63,7 +63,7 @@ function AboutMe() {
           <h4>Blog writing</h4>
         </div>
         <p className="section-text body-2">
-          I share my Korean travel and language-learning experiences through
+          In my free time, I share my Korean travel and language-learning experience through
           blog articles giving the readers a glimpse into the culture, language
           and adventures of Korea.
         </p>
@@ -75,7 +75,7 @@ function AboutMe() {
         </div>
         <p className="section-text body-2">
           I offer personalized lessons to help Thai language learners achieve
-          their goals. My students come from italy, Myanmar, Korea, China and
+          their goals. My students come from the US, Italy, Myanmar, Korea, China and
           Singapore.
         </p>
       </section>
