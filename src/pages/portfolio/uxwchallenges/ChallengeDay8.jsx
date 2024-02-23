@@ -1,11 +1,21 @@
 import React from "react";
-import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
-import BackBtn from "../../../components/button/BackBtn";
-import { PageRoute } from "../../../App";
-import ResultImg from "../../../assets/challenges/uxw-day-9.jpg";
 import BackToTop from "../../../components/backToTop/backToTop";
 import Footer from "../../../components/footer/Footer";
+
+import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
+import BackBtn from "../../../components/button/BackBtn";
 import ChallengesDropdown from "../../../components/dropdown/ChallegesDropdown";
+import { PageRoute } from "../../../App";
+
+import VoiceAndTone from "../../../assets/challenges/voice-and-tone.png";
+import Goals from "../../../assets/challenges/goals.png";
+import TargetUser from "../../../assets/challenges/target-user.png";
+import UserJourney from "../../../assets/challenges/user-journey.png";
+import ThoughtProcesses from "../../../assets/challenges/thought-processes.png";
+import FinalContent from "../../../assets/challenges/final-content.png";
+
+import UserImg from "../../../assets/challenges/uxw-challenge-day-8.png";
+import ResultImg from "../../../assets/challenges/uxw-day-9.jpg";
 
 function ChallengeDay8() {
   return (
@@ -24,14 +34,16 @@ function ChallengeDay8() {
                 <section>
                   <h6>Scenario</h6>
                   <p className="body-4">
-                  The user is a casual music fan and (on occasion) goes to live concerts. They have a music player app on their phone.
+                    The user is a casual music fan and (on occasion) goes to
+                    live concerts. They have a music player app on their phone.
                   </p>
                 </section>
 
                 <section>
                   <h6>Challenge</h6>
                   <p className="body-4">
-                  Tell the user that one of their favorite bands is playing live in their town. How would you compel them to want to go?
+                    Tell the user that one of their favorite bands is playing
+                    live in their town. How would you compel them to want to go?
                   </p>
                 </section>
 
@@ -47,124 +59,135 @@ function ChallengeDay8() {
               </ChallengeCard>
             </div>
 
+            <div className="project-supporting-img">
+              <img
+                src={UserImg}
+                alt="upset user waiting at the airport"
+                className="project-supporting-img"
+              />
+            </div>
+
             <div className="challenge-details">
               <section>
-                <h6 className="project-details-content">Voice and tone</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={VoiceAndTone}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
-                Myoosik, a music app that I try to incorporate with my nickname Mook, is vibrant and personalized. When notifying users about an upcoming concert featuring their favorite band or artist, the tone is designed to be exciting and engaging.
+                  Myoosik, a music app that I try to incorporate with my
+                  nickname Mook, is vibrant and personalized. When notifying
+                  users about an upcoming concert featuring their favorite band
+                  or artist, the tone is designed to be exciting and engaging.
                 </p>
               </section>
 
               <section>
-                <h6 className="project-details-content">Goal</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={Goals}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   <ul>
-                    <li>List</li>
-                    <li>List</li>
-                    <li>List</li>
+                    <li>
+                      Evoke the user’s sense of anticipation and excitement
+                      about the event
+                    </li>
+                    <li>Act as a music promoter</li>
                   </ul>
                 </p>
               </section>
 
               <section>
-                <h6 className="project-details-content">Target users</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={TargetUser}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
-                  ??
+                  Casual music fan who attends live concerts occasionally and
+                  has general interest in music as shown by a music player app
+                  on their phone
                 </p>
               </section>
 
               <section>
-                <h6 className="project-details-content">User journey</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={UserJourney}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
-                ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  📍 <b>??</b> &gt; 
-                  ?? &gt;
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt;
+                  ?? &gt; ?? &gt; ?? &gt; 📍 <b>??</b> &gt; ?? &gt; ?? &gt; ??
+                  &gt; ?? &gt; ?? &gt; ?? &gt; ?? &gt; ?? &gt;
                 </p>
                 <br />
                 <p className="project-sub-heading">
                   ☝ What happens if the message is unsuccessful?
                 </p>
                 <ul>
-                  <li>??</li>
-                  <li>??</li>
-                  <li>??</li>
-                  <li>??</li>
-                  <li>??</li>
-                  <li>??</li>
+                  <li>User discards the message</li>
+                  <li>User misses the concert of their favourite band</li>
                 </ul>
               </section>
+
               <section>
-                <h6 className="project-details-content">
-                  User’s emotional state
-                </h6>
+                <div className="challenge-topic">
+                  <img
+                    src={ThoughtProcesses}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
-                  <ul>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                  </ul>
+                  Because of the limited character space, the heading only
+                  includes crucial details such as the artist or band's name and
+                  the city. I also incorporate "Live" to emphasize that this
+                  experience is distinct from recorded shows typically watched
+                  or listened to online via the music app.
                 </p>
+                <br />
+
+                <p>
+                  Moving on to the next section, I include the date, a crucial
+                  piece of information for fans to plan their schedules, invite
+                  friends, and make necessary arrangements. The inspiration for
+                  the magical vibe comes from the UI herself where her shows
+                  usually feel enchanting and her voice is angelic. Actually I
+                  personally think this part of the message should be
+                  personalized to match the unique characteristics of the artist
+                  instead of writing a generic one. For example, considering
+                  that pop music might evoke a different vibe than rock music.
+                </p>
+                <br />
+
+                <p>
+                  For the CTA, I selected "See Tickets" over "Buy Ticket"
+                  because it allows users to explore different pricing options
+                  based on seating zones. Additionally, the term "See Tickets"
+                  implies that users can gather more information before making a
+                  purchase decision.
+                </p>
+                <br />
               </section>
 
               <section>
-                <h6 className="project-details-content">
-                  Information architecture
-                </h6>
-                <p className="body-4">
-                  <b>Heading:</b> ??
-                  <br />
-                  <b>Body:</b> ??
-                  <br />
-                  <b>CTA:</b> ??
-                </p>
-                <br />
-                <p>
-                  For the heading, I prioritize communicating the most important
-                  message to the passengers because this event immediately
-                  affects them. To enhance clarity, especially for those with
-                  multiple ongoing flights, I include the destination airport
-                  code. For the body, I start with the reason for the flight
-                  cancellation as it{"’"}s likely the first question people ask.
-                  Subsequently, I give details on possible actions or offerings
-                  from the airline.
-                </p>
-              </section>
-
-              <section>
-                <h6 className="project-details-content">Thought process</h6>
-                <p className="body-4">
-                  ??</p>
-                <br />
-                <p>
-                  ??</p>
-                  <p>
-                  ??</p>
-                  <p>
-                  ??</p>
-                  <p>
-                  ??</p>
-                <br />
-                <p>
-                  ??
-                </p>
-                <br />
-                
-              </section>
-
-              <section>
-                <h6 className="project-details-content">Final content</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={FinalContent}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <div className="project-deliverable-img">
                   <img
                     src={ResultImg}

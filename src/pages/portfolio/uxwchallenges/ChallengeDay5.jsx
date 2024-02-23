@@ -1,11 +1,22 @@
 import React from "react";
-import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
-import BackBtn from "../../../components/button/BackBtn";
-import { PageRoute } from "../../../App";
-import ResultImg from "../../../assets/challenges/uxw-day-5-en.jpg";
 import BackToTop from "../../../components/backToTop/backToTop";
 import Footer from "../../../components/footer/Footer";
+
+import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
+import BackBtn from "../../../components/button/BackBtn";
 import ChallengesDropdown from "../../../components/dropdown/ChallegesDropdown";
+import { PageRoute } from "../../../App";
+
+import VoiceAndTone from "../../../assets/challenges/voice-and-tone.png";
+import Goals from "../../../assets/challenges/goals.png";
+import TargetUser from "../../../assets/challenges/target-user.png";
+import UserJourney from "../../../assets/challenges/user-journey.png";
+import ThoughtProcesses from "../../../assets/challenges/thought-processes.png";
+import FinalContent from "../../../assets/challenges/final-content.png";
+
+import UserImg from "../../../assets/challenges/uxw-challenge-day-5.png";
+import JourneyImg from "../../../assets/challenges/uxw-challenge-day-5-journey.png";
+import ResultImg from "../../../assets/challenges/uxw-day-5-en.jpg";
 
 function ChallengeDay5() {
   return (
@@ -24,14 +35,19 @@ function ChallengeDay5() {
                 <section>
                   <h6>Scenario</h6>
                   <p className="body-4">
-                  The user works in graphic design. While critiquing a design in a mobile app, their phone abruptly turns off. When they restart the phone, they reopen the app.
+                    The user works in graphic design. While critiquing a design
+                    in a mobile app, their phone abruptly turns off. When they
+                    restart the phone, they reopen the app.
                   </p>
                 </section>
 
                 <section>
                   <h6>Challenge</h6>
                   <p className="body-4">
-                  Write a message that the user will read immediately upon opening the app. What do they need to know? What steps (if any) do they need to take to recover their content? What if they can't recover the content?
+                    Write a message that the user will read immediately upon
+                    opening the app. What do they need to know? What steps (if
+                    any) do they need to take to recover their content? What if
+                    they can't recover the content?
                   </p>
                 </section>
 
@@ -47,124 +63,184 @@ function ChallengeDay5() {
               </ChallengeCard>
             </div>
 
+            <div className="project-supporting-img">
+              <img
+                src={UserImg}
+                alt="upset user waiting at the airport"
+                className="project-supporting-img"
+              />
+            </div>
+
             <div className="challenge-details">
               <section>
-                <h6 className="project-details-content">Voice and tone</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={VoiceAndTone}
+                    alt="voice and tone section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
-                A friendly and straightforward graphic design app that's easily accessible from anywhere without the need for desktop access. In the happy path where data has been saved successfully, the tone is calm and reassuring. However, if users lose some or all their changes due to an unexpected phone shutdown, the message is designed to be honest and clear. It's not overly apologetic since the app closure is also beyond our control as it occurs when the user's phone unexpectedly turns off. Nevertheless, we express regret for any inconvenience caused by the loss of time and effort spent in the app.
+                  A friendly and straightforward graphic design app that's
+                  easily accessible from anywhere without the need for desktop
+                  access. In the happy path where data has been saved
+                  successfully, the tone is calm and reassuring. However, if
+                  users lose some or all their changes due to an unexpected
+                  phone shutdown, the message is designed to be honest and
+                  clear. It's not overly apologetic since the app closure is
+                  also beyond our control as it occurs when the user's phone
+                  unexpectedly turns off. Nevertheless, we express regret for
+                  any inconvenience caused by the loss of time and effort spent
+                  in the app.
                 </p>
               </section>
 
               <section>
-                <h6 className="project-details-content">Goal</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={Goals}
+                    alt="goals section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   <ul>
-                    <li>List</li>
-                    <li>List</li>
-                    <li>List</li>
+                    <li>Manage user's expectation after re-opening the app</li>
+                    <li>Mitigate user's worry or frustration with words</li>
                   </ul>
                 </p>
               </section>
 
               <section>
-                <h6 className="project-details-content">Target users</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={TargetUser}
+                    alt="target user section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
-                  ??
+                  A graphic designer who’s critiquing a design on a mobile app
+                  before finalizing it
                 </p>
               </section>
 
               <section>
-                <h6 className="project-details-content">User journey</h6>
-                <p className="body-4">
-                ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  📍 <b>??</b> &gt; 
-                  ?? &gt;
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt;
-                </p>
-                <br />
+              <div className="challenge-topic">
+                  <img
+                    src={UserJourney}
+                    alt="user journey and emotional state section"
+                    className="challenge-topic"
+                  />
+                </div>
+                <img src={JourneyImg} alt="user journey" width="100%" />
+
                 <p className="project-sub-heading">
                   ☝ What happens if the message is unsuccessful?
                 </p>
                 <ul>
-                  <li>??</li>
-                  <li>??</li>
-                  <li>??</li>
-                  <li>??</li>
-                  <li>??</li>
-                  <li>??</li>
+                  <li>
+                    Users need to track down how much progress has been lost by
+                    themselves
+                  </li>
+                  <li>Users feel lost and upset</li>
+                  <li>Users feel like they wasted time on the app</li>
+                  <li>Users miss their deadline</li>
                 </ul>
               </section>
+              
+
               <section>
-                <h6 className="project-details-content">
-                  User’s emotional state
-                </h6>
+              <div className="challenge-topic">
+                  <img
+                    src={ThoughtProcesses}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
-                  <ul>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                  </ul>
+                  As I read through the scenario, I immediately wondered if
+                  there's an autosave feature… Well, it’s a concern based on my
+                  past experiences. Without specific details, I think it's
+                  useful to imagine potential scenarios and create content for
+                  each as a practice. In reality, engineering team should be
+                  able to give us the answer about the presence or absence of
+                  autosave. Now, let's consider the possible cases:
+                </p>
+                <ol>
+                  <li>Autosave saves the day (most ideal)</li>
+                  <li>
+                    Partial data preservation (seen in softwares like Microsoft
+                    Word, I think this is not a bad idea at all as it allows
+                    users to choose resume version)
+                  </li>
+                  <li>
+                    Total data loss (least ideal but a possible situation)
+                  </li>
+                </ol>
+
+                <p>
+                  At this point, I have three scenarios but two information
+                  architectures. I decided to group scenarios 2 and 3 together
+                  since the main idea is the same — users losing their data.
+                  While the content may vary slightly, the fundamental approach
+                  to conveying information remains consistent.
+                </p>
+                <br />
+                <p>
+                  The structure difference between the data saved and not saved
+                  version is due to the distinct emphasis on the happy and
+                  unhappy paths. In the secured data scenario or copy version 1,
+                  the content aims to be a hero, coming to the user's rescue.
+                  Therefore, the heading is more straightforward, prioritizing
+                  reassurance over an elaborate explanation. Conversely, in the
+                  event of unexpected issues, I prefer a less direct approach by
+                  using “Looking like app closed unexpectedly…” because we also
+                  didn’t know that the phone would turn off forcing the app to
+                  close too.{" "}
+                </p>
+                <br />
+
+                <p>
+                  When do we begin a conversation by being indirect? Imagine a
+                  student submitting a late assignment to their teacher. Instead
+                  of immediately acknowledging the lateness, the student might
+                  approach the teacher, expressing that they faced unexpected
+                  challenges or technical difficulties while working on the
+                  assignment. This initial explanation, without directly stating
+                  the lateness, allows for a more nuanced and less
+                  confrontational conversation. It's a strategy to soften the
+                  impact of the situation before delving into a detailed
+                  explanation.
+                </p>
+                <br />
+
+                <p>
+                  In copy version 2, I include the last change time to help
+                  users estimate the extent of changes that might be lost when
+                  viewing the saved file. While the app may not display all
+                  saved versions like desktop software does, this addition
+                  should provide users with valuable information. As for copy
+                  version 3, I honestly inform the users that 'We’re unable to
+                  recover your recent changes.' and what they can do it
+                  reopening the file.
+                </p>
+                <br />
+
+                <p>
+                  (I enjoyed searching for matching illustrations for the
+                  content. Hope you like them too!)
                 </p>
               </section>
 
               <section>
-                <h6 className="project-details-content">
-                  Information architecture
-                </h6>
-                <p className="body-4">
-                  <b>Heading:</b> ??
-                  <br />
-                  <b>Body:</b> ??
-                  <br />
-                  <b>CTA:</b> ??
-                </p>
-                <br />
-                <p>
-                  For the heading, I prioritize communicating the most important
-                  message to the passengers because this event immediately
-                  affects them. To enhance clarity, especially for those with
-                  multiple ongoing flights, I include the destination airport
-                  code. For the body, I start with the reason for the flight
-                  cancellation as it{"’"}s likely the first question people ask.
-                  Subsequently, I give details on possible actions or offerings
-                  from the airline.
-                </p>
-              </section>
-
-              <section>
-                <h6 className="project-details-content">Thought process</h6>
-                <p className="body-4">
-                  ??</p>
-                <br />
-                <p>
-                  ??</p>
-                  <p>
-                  ??</p>
-                  <p>
-                  ??</p>
-                  <p>
-                  ??</p>
-                <br />
-                <p>
-                  ??
-                </p>
-                <br />
-                
-              </section>
-
-              <section>
-                <h6 className="project-details-content">Final content</h6>
+              <div className="challenge-topic">
+                  <img
+                    src={FinalContent}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <div className="project-deliverable-img">
                   <img
                     src={ResultImg}

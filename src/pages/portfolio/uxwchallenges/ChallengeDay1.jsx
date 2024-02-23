@@ -1,11 +1,26 @@
 import React from "react";
-import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
-import BackBtn from "../../../components/button/BackBtn";
-import { PageRoute } from "../../../App";
-import ResultImg from "../../../assets/challenges/uxw-day-1.jpg";
 import BackToTop from "../../../components/backToTop/backToTop";
 import Footer from "../../../components/footer/Footer";
+
+import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
+import BackBtn from "../../../components/button/BackBtn";
 import ChallengesDropdown from "../../../components/dropdown/ChallegesDropdown";
+import { PageRoute } from "../../../App";
+
+import VoiceAndTone from "../../../assets/challenges/voice-and-tone.png";
+import Goals from "../../../assets/challenges/goals.png";
+import TargetUser from "../../../assets/challenges/target-user.png";
+import UserJourney from "../../../assets/challenges/user-journey.png";
+import ThoughtProcesses from "../../../assets/challenges/thought-processes.png";
+import FinalContent from "../../../assets/challenges/final-content.png";
+
+import UserImg from "../../../assets/challenges/uxw-challenge-day-1.png";
+import JourneyImg from "../../../assets/challenges/uxw-challenge-day-1-journey.png";
+import AirlineOffersImg from "../../../assets/challenges/uxw-challenge-day-1-offers.png";
+import Draft1Img from "../../../assets/challenges/uxw-challenge-day-1-draft1.png";
+import Draft2Img from "../../../assets/challenges/uxw-challenge-day-1-draft2.png";
+import Draft3Img from "../../../assets/challenges/uxw-challenge-day-1-draft3.png";
+import ResultImg from "../../../assets/challenges/uxw-day-1.jpg";
 
 function ChallengeDay1() {
   return (
@@ -17,6 +32,7 @@ function ChallengeDay1() {
             <BackBtn redirectPath={PageRoute.Portfolio} />
             <ChallengesDropdown activeIndex={0} className="ml-auto" />
           </div>
+
           <div className="project-content">
             <div className="challenge-detail-title">
               <h3 className="challenge-detail-h3">UXW Challenge Day 1</h3>
@@ -50,9 +66,23 @@ function ChallengeDay1() {
               </ChallengeCard>
             </div>
 
-            <div className="challenge-details">
+            <div className="project-supporting-img">
+              <img
+                src={UserImg}
+                alt="upset user waiting at the airport"
+                className="project-supporting-img"
+              />
+            </div>
+
+            <div className="challenge-topic">
               <section>
-                <h6 className="project-details-content">Voice and tone</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={VoiceAndTone}
+                    alt="voice and tone section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   I’m writing this with my dedicated flight attendant friend in
                   mind (Hey Nanny! yes I’m thinking of you haha). I want the
@@ -64,7 +94,13 @@ function ChallengeDay1() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Goal</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={Goals}
+                    alt="goals section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   <ul>
                     <li>
@@ -81,7 +117,13 @@ function ChallengeDay1() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Target users</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={TargetUser}
+                    alt="target user section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   Passengers of a canceled flight due to bad weather. Some may
                   be okay with rescheduling, but many are likely to be unhappy.
@@ -93,13 +135,15 @@ function ChallengeDay1() {
               </section>
 
               <section>
-                <h6 className="project-details-content">User journey</h6>
-                <p className="body-4">
-                  Passenger books and pays for the flight &gt; eagerly goes to
-                  the airport &gt; opens the app &gt; 📍
-                  <b>sees cancellation notification</b> &gt; adjusts their plans
-                </p>
-                <br />
+                <div className="challenge-topic">
+                  <img
+                    src={UserJourney}
+                    alt="user journey and emotional state section"
+                    className="challenge-topic"
+                  />
+                </div>
+                <img src={JourneyImg} alt="user journey" width="100%" />
+
                 <p className="project-sub-heading">
                   ☝ What happens if the message is unsuccessful?
                 </p>
@@ -118,34 +162,6 @@ function ChallengeDay1() {
                     turns to them for assistance
                   </li>
                 </ul>
-              </section>
-              <section>
-                <h6 className="project-details-content">
-                  User’s emotional state
-                </h6>
-                <p className="body-4">
-                  <ul>
-                    <li>
-                      <b>Disappointed</b> — plans are suddenly disrupted
-                    </li>
-                    <li>
-                      <b>Worried</b> — about consequences and uncertainties
-                    </li>
-                    <li>
-                      <b>Upset</b> — emotional distress from sudden changes
-                    </li>
-                    <li>
-                      <b>Confused</b> — uncertainty about reasons and next steps
-                    </li>
-                    <li>
-                      <b>Sad</b> — emotional attachment to the purpose of the
-                      trip
-                    </li>
-                    <li>
-                      <b>Lost</b> — unsure about how to proceed
-                    </li>
-                  </ul>
-                </p>
               </section>
 
               <section>
@@ -173,13 +189,19 @@ function ChallengeDay1() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Thought process</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={ThoughtProcesses}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   Given the lack of specific post-cancellation instructions, I
                   conducted research on common practices after flights are
                   canceled due to poor weather. Options typically include
                 </p>
-                <br />
+
                 <ol>
                   <li>ticket refunds</li>
                   <li>replacement flights with seating preferences</li>
@@ -188,6 +210,13 @@ function ChallengeDay1() {
                   <li>accommodation</li>
                   <li>discount vouchers for future travel</li>
                 </ol>
+
+                <img
+                  src={AirlineOffersImg}
+                  alt="benefits when flight cancelled"
+                  width="100%"
+                />
+
                 <p>
                   Then, I drafted three prompts in both English and Thai, each
                   tailored to a different scenario. I intentionally avoided
@@ -214,12 +243,28 @@ function ChallengeDay1() {
                     The airline reschedules the flight and arranges
                     accommodation, suitable for late-night flights where
                     passengers can fly the next day.
-                    <div className="dummy-img">{"<insert draft image>"}</div>
+                    <div>
+                      <img
+                        className="inline-img"
+                        src={Draft1Img}
+                        alt="benefits when flight cancelled"
+                        width="90%"
+                      />
+                    </div>
                   </li>
+
                   <li>
                     Passengers have the option to rebook or get a refund,
                     particularly if the flight is significantly delayed giving
                     them the choice not to fly and receive a refund.
+                    <div>
+                      <img
+                        className="inline-img"
+                        src={Draft2Img}
+                        alt="benefits when flight cancelled"
+                        width="90%"
+                      />
+                    </div>
                     <div className="dummy-img">{"<insert draft image>"}</div>
                   </li>
                   <li>
@@ -227,13 +272,28 @@ function ChallengeDay1() {
                     are encouraged to contact support, though this isn't the
                     primary option in the CTA to avoid overwhelming customer
                     support.
+                    <div>
+                      <img
+                        className="inline-img"
+                        src={Draft3Img}
+                        alt="benefits when flight cancelled"
+                        width="90%"
+                      />
+                    </div>
                     <div className="dummy-img">{"<insert draft image>"}</div>
                   </li>
                 </ol>
               </section>
 
               <section>
-                <h6 className="project-details-content">Final content</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={FinalContent}
+                    alt="final content section"
+                    className="challenge-topic"
+                  />
+                </div>
+
                 <div className="project-deliverable-img">
                   <img
                     src={ResultImg}

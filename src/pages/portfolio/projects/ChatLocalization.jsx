@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import BackToTop from "../../../components/backToTop/backToTop";
 import Footer from "../../../components/footer/Footer";
+
 import SideImg from "../../../assets/chat-overhaul.png";
 import OutcomeImg from "../../../assets/portfolio/chat-localization-outcome.png";
 import TableImg1 from "../../../assets/portfolio/chat-localization-table1.png";
-import TableImg2 from "../../../assets/portfolio/chat-localization-table2.png"
-import TableImg3 from "../../../assets/portfolio/chat-localization-table3.png"
-
+import TableImg2 from "../../../assets/portfolio/chat-localization-table2.png";
+import TableImg3 from "../../../assets/portfolio/chat-localization-table3.png";
 
 function ChatLocalization() {
   return (
@@ -20,10 +20,51 @@ function ChatLocalization() {
             </button>
             <select name="projects" id="projects" className="ml-auto">
               <option value="grab">GrabPay Wallet Powered by KBank</option>
-              <option value="grab">GrabPay Wallet Powered by KBank</option>
-              <option value="grab">GrabPay Wallet Powered by KBank</option>
-              <option value="grab">GrabPay Wallet Powered by KBank</option>
-              <option value="grab">GrabPay Wallet Powered by KBank</option>
+              <option value="grab">Chat localization</option>
+              <option value="grab">Partner cover</option>
+              <option value="grab">Localization style guide</option>
+              <option value="grab">
+                UX writing challenge day 1: flight cancellation alert
+              </option>
+              <option value="grab">
+                UX writing challenge day 2: sports app promotion
+              </option>
+              <option value="grab">
+                UX writing challenge day 3: sign-in error
+              </option>
+              <option value="grab">
+                UX writing challenge day 4: Grocery subscription
+              </option>
+              <option value="grab">
+                UX writing challenge day 5: Post-shutdown message
+              </option>
+              <option value="grab">
+                UX writing challenge day 6: Commute incident alert
+              </option>
+              <option value="grab">
+                UX writing challenge day 7: Real-time sports notification
+              </option>
+              <option value="grab">
+                UX writing challenge day 8: Concert alert on music app
+              </option>
+              <option value="grab">
+                UX writing challenge day 9: Expired credit card error
+              </option>
+              <option value="grab">
+                UX writing challenge day 10: User location permission
+              </option>
+              <option value="grab">
+                UX writing challenge day 11: Google meta description
+              </option>
+              <option value="grab">
+                UX writing challenge day 12: Fake name error
+              </option>
+              <option value="grab">
+                UX writing challenge day 13: Truck delivery notification
+              </option>
+              <option value="grab">
+                UX writing challenge day 14: App downtime
+              </option>
             </select>
           </div>
 
@@ -102,11 +143,13 @@ function ChatLocalization() {
                         we’ll ever create a persona in the future, they know
                         Thai should be a female.
                       </td>
-                      <td><img
-                    src={TableImg1}
-                    alt="project grab outcome 1"
-                    className="project-outcome-img"
-                  /></td>
+                      <td>
+                        <img
+                          src={TableImg1}
+                          alt="project grab outcome 1"
+                          className="project-outcome-img"
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>2</td>
@@ -121,11 +164,13 @@ function ChatLocalization() {
                         have to review the localization, do ask the professional
                         linguist.
                       </td>
-                      <td><img
-                    src={TableImg2}
-                    alt="project grab outcome 1"
-                    className="project-outcome-img"
-                  /></td>
+                      <td>
+                        <img
+                          src={TableImg2}
+                          alt="project grab outcome 1"
+                          className="project-outcome-img"
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>3</td>
@@ -137,11 +182,13 @@ function ChatLocalization() {
                         Separate term base and have a different style guide
                         specifically for chat.
                       </td>
-                      <td><img
-                    src={TableImg3}
-                    alt="project grab outcome 1"
-                    className="project-outcome-img"
-                  /></td>
+                      <td>
+                        <img
+                          src={TableImg3}
+                          alt="project grab outcome 1"
+                          className="project-outcome-img"
+                        />
+                      </td>
                     </tr>
                   </tbody>
                 </table>

@@ -10,7 +10,7 @@ import { PortfolioRoutes } from "../../layout/Layout";
 
 const Projects = [
   {
-    name: `GrabPay Wallet Powered by KBank`,
+    name: `GrabPay Wallet Powered by KBankkk`,
     shortDesc:
       "My first UX project: concept testing for a new e-wallet product in Thailand!",
     imageUrl: ProjectGrabImg,
@@ -61,7 +61,7 @@ export const Challenges = [
     redirectPath: ChallengesRoutes.ChallengeDay1,
   },
   {
-    name: "Sports app promo",
+    name: "Sports app promotion",
     redirectPath: ChallengesRoutes.ChallengeDay2,
   },
   {

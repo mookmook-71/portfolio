@@ -68,7 +68,7 @@ function ChallengeDay14() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Goal</h6>
+                <h6 className="project-details-content">Goals</h6>
                 <p className="body-4">
                   <ul>
                     <li>Let users know about the current issue preventing app
@@ -156,7 +156,7 @@ function ChallengeDay14() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Thought process</h6>
+                <h6 className="project-details-content">Thought processes</h6>
                 <p className="body-4">??</p>
                 <br />
                 <p>??</p>

@@ -2,6 +2,8 @@ import React from "react";
 import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
 import BackBtn from "../../../components/button/BackBtn";
 import { PageRoute } from "../../../App";
+
+import UserImg from "../../../assets/challenges/uxw-challenge-day-11.png";
 import ResultImg from "../../../assets/challenges/uxw-day-11.jpg";
 import BackToTop from "../../../components/backToTop/backToTop";
 import Footer from "../../../components/footer/Footer";
@@ -24,14 +26,17 @@ function ChallengeDay11() {
                 <section>
                   <h6>Scenario</h6>
                   <p className="body-4">
-                  An elderly user is doing a Google search to find an easy way to buy contact lenses online.
+                    An elderly user is doing a Google search to find an easy way
+                    to buy contact lenses online.
                   </p>
                 </section>
 
                 <section>
                   <h6>Challenge</h6>
                   <p className="body-4">
-                  Write a title and meta description for a website that sells subscription contact lenses delivered to a user every 30 days—convince them to try it.
+                    Write a title and meta description for a website that sells
+                    subscription contact lenses delivered to a user every 30
+                    days—convince them to try it.
                   </p>
                 </section>
 
@@ -45,21 +50,36 @@ function ChallengeDay11() {
               </ChallengeCard>
             </div>
 
+            <div className="project-supporting-img">
+              <img
+                src={UserImg}
+                alt="upset user waiting at the airport"
+                className="project-supporting-img"
+              />
+            </div>
+
             <div className="challenge-details">
               <section>
                 <h6 className="project-details-content">Voice and tone</h6>
                 <p className="body-4">
-                Optique, the brand I just created haha, is like a friendly neighborhood pharmacy—reliable, easy to access, and simple. I'll use a clear and reassuring tone to encourage customers to try our new product.
+                  Optique, the brand I just created haha, is like a friendly
+                  neighborhood pharmacy—reliable, easy to access, and simple.
+                  I'll use a clear and reassuring tone to encourage customers to
+                  try our new product.
                 </p>
               </section>
 
               <section>
-                <h6 className="project-details-content">Goal</h6>
+                <h6 className="project-details-content">Goals</h6>
                 <p className="body-4">
                   <ul>
-                    <li>List</li>
-                    <li>List</li>
-                    <li>List</li>
+                    <li>
+                      Persuade users to consider subscribing to contact lenses
+                      services
+                    </li>
+                    <li>Stand out among other results on the search page</li>
+                    <li>Build brand awareness</li>
+                    <li>Boost conversion rates</li>
                   </ul>
                 </p>
               </section>
@@ -67,37 +87,28 @@ function ChallengeDay11() {
               <section>
                 <h6 className="project-details-content">Target users</h6>
                 <p className="body-4">
-                  ??
+                  Elderly with a moderate level of familiarity with internet
+                  search and online shopping
                 </p>
               </section>
 
               <section>
                 <h6 className="project-details-content">User journey</h6>
                 <p className="body-4">
-                ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  📍 <b>??</b> &gt; 
-                  ?? &gt;
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt;
+                  ?? &gt; ?? &gt; ?? &gt; 📍 <b>??</b> &gt; ?? &gt; ?? &gt; ??
+                  &gt; ?? &gt; ?? &gt; ?? &gt; ?? &gt; ?? &gt;
                 </p>
                 <br />
                 <p className="project-sub-heading">
                   ☝ What happens if the message is unsuccessful?
                 </p>
                 <ul>
-                  <li>??</li>
-                  <li>??</li>
-                  <li>??</li>
-                  <li>??</li>
-                  <li>??</li>
-                  <li>??</li>
+                  <li>Users scroll away</li>
+                  <li>Users choose another brand</li>
+                  <li>
+                    Brand misses potential customers and valuable user data
+                  </li>
+                  <li>Brand's SEO ranking declines</li>
                 </ul>
               </section>
               <section>
@@ -106,59 +117,43 @@ function ChallengeDay11() {
                 </h6>
                 <p className="body-4">
                   <ul>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
+                    <li>
+                      <b>??</b> — ??
+                    </li>
+                    <li>
+                      <b>??</b> — ??
+                    </li>
+                    <li>
+                      <b>??</b> — ??
+                    </li>
+                    <li>
+                      <b>??</b> — ??
+                    </li>
+                    <li>
+                      <b>??</b> — ??
+                    </li>
+                    <li>
+                      <b>??</b> — ??
+                    </li>
                   </ul>
                 </p>
               </section>
 
               <section>
-                <h6 className="project-details-content">
-                  Information architecture
-                </h6>
-                <p className="body-4">
-                  <b>Heading:</b> ??
-                  <br />
-                  <b>Body:</b> ??
-                  <br />
-                  <b>CTA:</b> ??
-                </p>
+                <h6 className="project-details-content">Thought processes</h6>
+                <p className="body-4">??</p>
                 <br />
                 <p>
-                  For the heading, I prioritize communicating the most important
-                  message to the passengers because this event immediately
-                  affects them. To enhance clarity, especially for those with
-                  multiple ongoing flights, I include the destination airport
-                  code. For the body, I start with the reason for the flight
-                  cancellation as it{"’"}s likely the first question people ask.
-                  Subsequently, I give details on possible actions or offerings
-                  from the airline.
-                </p>
-              </section>
-
-              <section>
-                <h6 className="project-details-content">Thought process</h6>
-                <p className="body-4">
-                  ??</p>
-                <br />
-                <p>
-                  ??</p>
-                  <p>
-                  ??</p>
-                  <p>
-                  ??</p>
-                  <p>
-                  ??</p>
-                <br />
-                <p>
-                  ??
+                  When users perform a Google search, they encounter two
+                  important elements: the title tag and the meta description.
+                  The title tag is a clickable heading limited to 60 characters
+                  which should be concise and unique to effectively represent
+                  the page's main idea or selling point. Directly beneath it,
+                  the meta description provides a brief supplementary context.
+                  It's essential to incorporate relevant keywords naturally,
+                  avoid excessive use, and present a clear call-to-action.
                 </p>
                 <br />
-                
               </section>
 
               <section>

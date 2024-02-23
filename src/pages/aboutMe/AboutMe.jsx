@@ -20,7 +20,11 @@ function AboutMe() {
           🌈✨
         </p>
         <div className="icon-divider">
-          <img className="icon not-good" src={ArrowDown} alt="next section arrow down" />
+          <img
+            className="icon not-good"
+            src={ArrowDown}
+            alt="next section arrow down"
+          />
         </div>
         <div className="text-center">
           <h2>My Expertise</h2>
@@ -34,12 +38,12 @@ function AboutMe() {
           </h4>
         </div>
         <p className="section-text body-2">
-          I've engaged in a wide spectrum of projects, covering academic
-          materials, interviews, surveys, and video subtitles. My expertise
-          revolves around software localization for mobile apps and websites. In
-          this specialized field, I've established style guides, glossaries and
-          other language assets to ensure top-quality localization. I also
-          provide localization audit and consultation to my client.
+          I've been involved in various projects, including academic work,
+          interviews, and video subtitles. My expertise lies in localizing
+          software for mobile apps and websites. In this specialized field, I've
+          established style guides, glossaries and other language assets to
+          ensure top-quality localization. I also provide localization audit and
+          consultation to my client.
         </p>
       </section>
 

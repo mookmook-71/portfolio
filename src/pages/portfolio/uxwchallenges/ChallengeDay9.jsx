@@ -2,6 +2,8 @@ import React from "react";
 import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
 import BackBtn from "../../../components/button/BackBtn";
 import { PageRoute } from "../../../App";
+
+import UserImg from "../../../assets/challenges/uxw-challenge-day-9.png";
 import ResultImg from "../../../assets/challenges/uxw-day-9.jpg";
 import BackToTop from "../../../components/backToTop/backToTop";
 import Footer from "../../../components/footer/Footer";
@@ -24,14 +26,16 @@ function ChallengeDay9() {
                 <section>
                   <h6>Scenario</h6>
                   <p className="body-4">
-                  The user is trying to rent a car using an application but the credit card on file has expired.
+                    The user is trying to rent a car using an application but
+                    the credit card on file has expired.
                   </p>
                 </section>
 
                 <section>
                   <h6>Challenge</h6>
                   <p className="body-4">
-                  Write them an error message so that they can correct the problem.
+                    Write them an error message so that they can correct the
+                    problem.
                   </p>
                 </section>
 
@@ -45,21 +49,35 @@ function ChallengeDay9() {
               </ChallengeCard>
             </div>
 
+            <div className="project-supporting-img">
+              <img
+                src={UserImg}
+                alt="upset user waiting at the airport"
+                className="project-supporting-img"
+              />
+            </div>
+
             <div className="challenge-details">
               <section>
                 <h6 className="project-details-content">Voice and tone</h6>
                 <p className="body-4">
-                For this challenge, I'm adopting a considerate and simple voice to empathize with users and guide them effectively. The tone remains professional and not too casual since handling users' payment information is a sensitive topic.
+                  For this challenge, I'm adopting a considerate and simple
+                  voice to empathize with users and guide them effectively. The
+                  tone remains professional and not too casual since handling
+                  users' payment information is a sensitive topic.
                 </p>
               </section>
 
               <section>
-                <h6 className="project-details-content">Goal</h6>
+                <h6 className="project-details-content">Goals</h6>
                 <p className="body-4">
                   <ul>
-                    <li>List</li>
-                    <li>List</li>
-                    <li>List</li>
+                    <li>
+                      Guide users to correct their credit card information to
+                      proceed with their booking
+                    </li>
+                    <li>Prevent users from dropping out at the last step</li>
+                    <li>Improve the booking completion rate</li>
                   </ul>
                 </p>
               </section>
@@ -67,37 +85,34 @@ function ChallengeDay9() {
               <section>
                 <h6 className="project-details-content">Target users</h6>
                 <p className="body-4">
-                  ??
+                  Adult who has planned to go on a trip for the upcoming holiday
+                  and is a credit card holder
                 </p>
               </section>
 
               <section>
                 <h6 className="project-details-content">User journey</h6>
                 <p className="body-4">
-                ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  📍 <b>??</b> &gt; 
-                  ?? &gt;
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt; 
-                  ?? &gt;
+                  ?? &gt; ?? &gt; ?? &gt; 📍 <b>??</b> &gt; ?? &gt; ?? &gt; ??
+                  &gt; ?? &gt; ?? &gt; ?? &gt; ?? &gt; ?? &gt;
                 </p>
                 <br />
                 <p className="project-sub-heading">
                   ☝ What happens if the message is unsuccessful?
                 </p>
                 <ul>
-                  <li>??</li>
-                  <li>??</li>
-                  <li>??</li>
-                  <li>??</li>
-                  <li>??</li>
-                  <li>??</li>
+                  <li>Users might abandon the booking process</li>
+                  <li>Booking is unsuccessful</li>
+                  <li>
+                    Users waste time attempting to book but ultimately fail
+                  </li>
+                  <li>
+                    Users lack clarity on why their credit card couldn't go
+                    through
+                  </li>
+                  <li>Users perceive the rental system as problematic</li>
+                  <li>Users experience frustration</li>
+                  <li>Users might contact customer support for assistance</li>
                 </ul>
               </section>
               <section>
@@ -106,59 +121,56 @@ function ChallengeDay9() {
                 </h6>
                 <p className="body-4">
                   <ul>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
-                    <li><b>??</b> — ??</li>
+                    <li>
+                      <b>??</b> — ??
+                    </li>
+                    <li>
+                      <b>??</b> — ??
+                    </li>
+                    <li>
+                      <b>??</b> — ??
+                    </li>
+                    <li>
+                      <b>??</b> — ??
+                    </li>
+                    <li>
+                      <b>??</b> — ??
+                    </li>
+                    <li>
+                      <b>??</b> — ??
+                    </li>
                   </ul>
                 </p>
               </section>
 
               <section>
-                <h6 className="project-details-content">
-                  Information architecture
-                </h6>
+                <h6 className="project-details-content">Thought processes</h6>
                 <p className="body-4">
-                  <b>Heading:</b> ??
-                  <br />
-                  <b>Body:</b> ??
-                  <br />
-                  <b>CTA:</b> ??
+                  I avoid filler words like 'oops, whoops, uh-oh' to avoid
+                  upsetting users who have gone through multiple steps. Instead,
+                  the content focuses on being helpful by presenting users with
+                  possible solutions.
                 </p>
                 <br />
-                <p>
-                  For the heading, I prioritize communicating the most important
-                  message to the passengers because this event immediately
-                  affects them. To enhance clarity, especially for those with
-                  multiple ongoing flights, I include the destination airport
-                  code. For the body, I start with the reason for the flight
-                  cancellation as it{"’"}s likely the first question people ask.
-                  Subsequently, I give details on possible actions or offerings
-                  from the airline.
-                </p>
-              </section>
 
-              <section>
-                <h6 className="project-details-content">Thought process</h6>
-                <p className="body-4">
-                  ??</p>
-                <br />
                 <p>
-                  ??</p>
-                  <p>
-                  ??</p>
-                  <p>
-                  ??</p>
-                  <p>
-                  ??</p>
-                <br />
-                <p>
-                  ??
+                  If users accidentally entered the wrong date, they can easily
+                  update their card details and proceed. However, if the card
+                  has really expired, I suggest they switch to a new card. While
+                  it's possible that the bank could be causing the issue,
+                  suggesting contacting the bank at this stage where users are
+                  close to completing the booking might not be the most
+                  practical solution so I don’t include that here.
                 </p>
                 <br />
-                
+
+                <p>
+                  Before finalizing, I decide to modify 'Your card is expired'
+                  to 'Your entered card is expired' to clarify that it might not
+                  be their actual card expiring, but an issue with the entered
+                  information.
+                </p>
+                <br />
               </section>
 
               <section>
