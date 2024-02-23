@@ -20,10 +20,10 @@ export const TopNavMenus = [
     display: "Portfolio",
     redirectPath: PageRoute.Portfolio,
   },
-  {
-    display: "Contact",
-    redirectPath: PageRoute.Contact,
-  },
+  // {
+  //   display: "Contact",
+  //   redirectPath: PageRoute.Contact,
+  // },
 ];
 
 const FeatureToggle = {
