@@ -122,7 +122,8 @@ function FloatingNav() {
   }
 
   function handleSelectResume() {
-    window.open("/#" + PageRoute.Resume, "_blank");
+    const Github_Hashed_Route = '/portfolio/#';
+    window.open(Github_Hashed_Route + PageRoute.Resume, "_blank");
     setIsActive(false);
   }
 
@@ -131,6 +132,7 @@ function FloatingNav() {
       "https://www.linkedin.com/in/pattaraporn-tripiyaratana",
       "_blank"
     );
+    setIsActive(false);
   }
 
   useChain(
