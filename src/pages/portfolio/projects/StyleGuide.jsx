@@ -74,7 +74,7 @@ function StyleGuide() {
                       Crafted a comprehensive style guide for Thai language
                       covering UX principles, Grab’s voice and tone, formatting
                       standards, Thai-specific writing guidelines, localization
-                      considerations, and a quick glossary of frequently used
+                      considerations and a quick glossary of frequently used
                       terms (separated from the main glossary).
                     </li>
                     <li>

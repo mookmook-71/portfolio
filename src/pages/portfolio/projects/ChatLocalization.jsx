@@ -66,12 +66,12 @@ function ChatLocalization() {
                 <p>
                   However, I later discovered that writing for microcopy differs
                   from writing for chatbots. It was actually "Conversation
-                  Design". Conversations with the CE team revealed a preference
+                  Design". Meetings with the CE team revealed a preference
                   for making GrabChat sound as humanly as possible. Users
                   appeared more comfortable when unaware they are conversing
                   with a bot. CE frontliners also have their own distinct
                   language style when communicating directly with customers which is
-                  different from our in-app style. Then, I discussed unique
+                  different from our in-app style. After that, I discussed unique
                   challenges of Thai language with the conversation designer.
                 </p>
               </section>

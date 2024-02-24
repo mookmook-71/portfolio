@@ -45,7 +45,7 @@ function GrabProject() {
                   up and make cashless payments for various Grab services in
                   Thailand. Signing up brings perks like lower fares, discounted
                   bundles and extra reward points when using GrabPay Wallet.
-                  Challenge is enticing users to explore and give this new
+                  Challenge is enticing users to explore and give this
                   product a try.
                 </p>
               </section>
@@ -54,10 +54,10 @@ function GrabProject() {
                 <h6 className="project-details-content">Team I worked with</h6>
                 <p>
                   In this project, I worked closely with the regional team in
-                  Singapore, local team and business partner from KBank in
+                  Singapore, local team and bank partner in
                   Thailand. My primary collaboration was with the content
                   designer who is responsible for writing English source content
-                  alongside the product designer and project managers.
+                  alongside the product designer and product manager.
                 </p>
               </section>
 
@@ -71,13 +71,13 @@ function GrabProject() {
                   interface into Thai for the testing. Also, I helped ensure
                   that our outsourced Thai research moderator had a solid
                   understanding of the product before the interviews. Later, I
-                  worked on aligning Thai content with the partner bank.
+                  worked on aligning Thai content with the bank partner.
                 </p>
                 <br />
                 <i>
-                  *(We always get English content first. Localization comes
+                  *Note: We always get English content first. Localization comes
                   later regardless of the market because most stakeholders are
-                  English speakers.)
+                  English speakers.
                 </i>
               </section>
 
@@ -120,28 +120,28 @@ function GrabProject() {
                 <h6 className="project-details-content">What I learned</h6>
                 <p>
                   There’re many interesting insights from the testing. Here’re
-                  are some keys things I learned and used to improved the
+                  are some key things I learned and used to improved the
                   content.
                 </p>
                 <ul className="project-details-list">
                   <li>
-                    The participants initially thought it was just a Kbank
-                    promotion on Grab app. We had to make it clear that it's a
-                    new product. The message needed to be shorter, straight to
-                    the point, with a clear action to take before diving into
+                    Participants initially thought it was just Kbank
+                    promotion on Grab app so we had to make it clearer that this was a
+                    new product. The message needed to be shorter and straight to
+                    the point with a clear CTA to take before diving into
                     the benefits.
                   </li>
                   <li>
-                    Some had the perception that money paid with GrabPay was
+                    Some had perception that money paid with GrabPay was
                     going to be automatically deducted from their Kbank account.
                     This made them concerned about the money safety.
                   </li>
                   <li>
                     For the CTA button, “Register” performs best. “Link” makes
-                    the users think their KBank balanced will be synced with
-                    Grab. “Sign up” sounds formal and like a big deal.
+                    the users think their KBank balance will be synced with
+                    Grab. “Sign up” sounds like a big deal and too formal.
                     “Activate” makes them feel that there’s already a connection
-                    between Kbank account and Grab, and they need to turn it on.
+                    between Kbank account and Grab which they need to turn on.
                   </li>
                 </ul>
               </section>

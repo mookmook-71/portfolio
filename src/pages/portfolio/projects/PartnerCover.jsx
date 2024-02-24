@@ -68,7 +68,7 @@ function PartnerCover() {
                   While our company typically drafts all products in English
                   first, this particular project took a different approach. The
                   country team opted for a full Thai language launch since our
-                  end-users are drivers who are all Thai citizens. This aimed to
+                  end-users are only Thai citizen drivers. This aimed to
                   streamline communication and reduce unnecessary discussions on
                   English content within our local internal teams such as
                   marketing and comms as well as our local partner, Chubbs. As a
@@ -111,7 +111,7 @@ function PartnerCover() {
                 </h6>
                 <p>
                   When dealing with financial and insurance products,
-                  collaboration with the legal and compliance team is crucial
+                  collaboration with the Legal and Compliance team is crucial
                   and inevitable. There are specific terms we must adhere to,
                   terms to avoid, and legal jargon that may be uncommon in
                   everyday language but holds significance in the legal context.
