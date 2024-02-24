@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[227],{5227:(e,r,t)=>{t.r(r),t.d(r,{default:()=>s});var o=t(184);const s=function(){return(0,o.jsx)(o.Fragment,{children:(0,o.jsx)("iframe",{src:"https://docs.google.com/gview?url=https://github.com/mookmook-71/portfolio/raw/main/src/assets/(Resume)%20Pattaraporn%20Tripiyaratana.pdf&embedded=true",style:{width:"100%",height:"100vh"},frameborder:"0"})})}}}]);
+//# sourceMappingURL=227.d8cb5272.chunk.js.map
