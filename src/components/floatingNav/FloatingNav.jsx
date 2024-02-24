@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { animated, useChain, useSpring, useSpringRef } from "react-spring";
 
-import HamburgerIcon from "../../assets/hamburger.png";
-import CloseIcon from "../../assets/close.png";
-import ResumeIcon from "../../assets/resume_menu.png";
 import { PageRoute } from "../../App";
+
+import DefaultStateIcon from "../../assets/icons/floating button_default.png";
+import CloseIcon from "../../assets/icons/floating button_close.png";
+import ResumeIcon from "../../assets/icons/floating button_resume.png";
+import LinkedInIcon from "../../assets/icons/floating button_linkedin.png";
 
 const hamburgerExitDuration = 300;
 const hamburgerEnterDuration = 100;
@@ -33,9 +35,9 @@ function FloatingNav() {
     },
   });
 
-  const resumeMenuRef = useSpringRef();
-  const resumeMenuStyle = useSpring({
-    ref: resumeMenuRef,
+  const resumeIconRef = useSpringRef();
+  const resumeIconStyle = useSpring({
+    ref: resumeIconRef,
     to: [
       {
         transform: isActive
@@ -49,10 +51,9 @@ function FloatingNav() {
       },
     ],
   });
-
-  const menuItemRef = useSpringRef();
-  const menuItemStyle = useSpring({
-    ref: menuItemRef,
+  const resumeMenuRef = useSpringRef();
+  const resumeMenuStyle = useSpring({
+    ref: resumeMenuRef,
     from: {
       width: "10px",
       height: "45px",
@@ -75,6 +76,47 @@ function FloatingNav() {
     ],
   });
 
+  const linkedInIconRef = useSpringRef();
+  const linkedInIconStyle = useSpring({
+    ref: linkedInIconRef,
+    to: [
+      {
+        transform: isActive
+          ? "translate3D(0px, -140px, 0)"
+          : "translate3D(0px, -140px, 0)",
+      },
+      {
+        transform: isActive
+          ? "translate3D(-157px, -140px, 0)"
+          : "translate3D(0px, 0px, 0)",
+      },
+    ],
+  });
+  const linkedInMenuRef = useSpringRef();
+  const linkedInMenuStyle = useSpring({
+    ref: linkedInMenuRef,
+    from: {
+      width: "10px",
+      height: "45px",
+    },
+    to: [
+      {
+        width: isActive ? "60px" : "10px",
+        height: isActive ? "60px" : "45px",
+        transform: isActive
+          ? "translate3D(0px, -140px, 0)"
+          : "translate3D(0px, -140px, 0)",
+      },
+      {
+        width: isActive ? "230px" : "10px",
+        height: isActive ? "63px" : "60px",
+        transform: isActive
+          ? "translate3D(-75px, -140px, 0)"
+          : "translate3D(0px, 0px, 0)",
+      },
+    ],
+  });
+
   function handleClickMenu(_isActive) {
     setIsActive((prev) => !prev);
   }
@@ -84,9 +126,23 @@ function FloatingNav() {
     setIsActive(false);
   }
 
+  function handleSelectLinkedIn() {
+    window.open(
+      "https://www.linkedin.com/in/pattaraporn-tripiyaratana",
+      "_blank"
+    );
+  }
+
   useChain(
-    [hamburgerRef, closeRef, resumeMenuRef, menuItemRef],
-    [0, 0, 0.1, 0.1]
+    [
+      hamburgerRef,
+      closeRef,
+      resumeIconRef,
+      resumeMenuRef,
+      linkedInIconRef,
+      linkedInMenuRef,
+    ],
+    [0, 0, 0.1, 0.1, 0.1, 0.1]
   );
 
   return (
@@ -109,26 +165,42 @@ function FloatingNav() {
           className={`floating-nav-img behind main-menu`}
         >
           <img
-            src={HamburgerIcon}
+            src={DefaultStateIcon}
             alt="inactive nav menu"
             onClick={() => handleClickMenu(true)}
           />
         </animated.div>
 
+        {/* Resume */}
         <animated.div
-          style={resumeMenuStyle}
+          style={resumeIconStyle}
           className={`floating-nav-img menu`}
           onClick={() => handleSelectResume()}
         >
           <img src={ResumeIcon} alt="inactive nav menu" />
         </animated.div>
-
         <animated.div
-          style={menuItemStyle}
+          style={resumeMenuStyle}
           className={`floating-nav-menu`}
           onClick={() => handleSelectResume()}
         >
           <b>Download resume</b>
+        </animated.div>
+
+        {/*  LinkedIn*/}
+        <animated.div
+          style={{ ...linkedInIconStyle, zIndex: "10" }}
+          className={`floating-nav-img menu`}
+          onClick={() => handleSelectLinkedIn()}
+        >
+          <img src={LinkedInIcon} alt="inactive nav menu" />
+        </animated.div>
+        <animated.div
+          style={linkedInMenuStyle}
+          className={`floating-nav-menu`}
+          onClick={() => handleSelectLinkedIn()}
+        >
+          <b>Visit my Linkedin</b>
         </animated.div>
       </div>
     </>
