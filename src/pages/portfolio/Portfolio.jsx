@@ -7,6 +7,7 @@ import ProjectThaiContentGuideImg from "../../assets/thai-content-style-guild.pn
 import Footer from "../../components/footer/Footer";
 import BackToTop from "../../components/backToTop/backToTop";
 import { PortfolioRoutes } from "../../layout/Layout";
+import { FeatureToggle } from "../../App";
 
 export const Projects = [
   {
@@ -161,24 +162,32 @@ function Portfolio() {
             ))}
           </div>
 
-          <div className="challenges">
-            <div className="challenge-title">Daily UX Writing Challenge</div>
-            <ul className="challenge-list">
-              {Challenges.map((challenge, index) => (
-                <li
-                  key={`ux-writing-challenge-${index}`}
-                  className="challenge"
-                  onClick={() => navigate(challenge.redirectPath)}
-                >{`Day ${index + 1}: ${challenge.name}`}</li>
-              ))}
-            </ul>
-          </div>
+          <WritingChallenge />
 
-          <BackToTop />
+          {/* <BackToTop /> */}
           <Footer />
         </div>
       </div>
     </>
+  );
+}
+
+function WritingChallenge() {
+  return FeatureToggle.WritingChallenge ? (
+    <div className="challenges">
+      <div className="challenge-title">Daily UX Writing Challenge</div>
+      <ul className="challenge-list">
+        {Challenges.map((challenge, index) => (
+          <li
+            key={`ux-writing-challenge-${index}`}
+            className="challenge"
+            onClick={() => navigate(challenge.redirectPath)}
+          >{`Day ${index + 1}: ${challenge.name}`}</li>
+        ))}
+      </ul>
+    </div>
+  ) : (
+    <></>
   );
 }
 
