@@ -4,7 +4,7 @@ function Resume() {
   return (
     <>
       <iframe
-        src="https://docs.google.com/gview?url=https://github.com/mookmook-71/portfolio/raw/dev/src/assets/(Resume)%20Pattaraporn%20Tripiyaratana.pdf&embedded=true"
+        src="https://docs.google.com/gview?url=https://github.com/mookmook-71/portfolio/raw/main/src/assets/(Resume)%20Pattaraporn%20Tripiyaratana.pdf&embedded=true"
         style={style}
         frameborder="0"
       ></iframe>
