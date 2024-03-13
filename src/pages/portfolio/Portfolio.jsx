@@ -5,7 +5,6 @@ import ChatLocalization from "../../assets/chat-overhaul.png";
 import ProjectPartner from "../../assets/partner-cover.png";
 import ProjectThaiContentGuideImg from "../../assets/thai-content-style-guild.png";
 import Footer from "../../components/footer/Footer";
-import BackToTop from "../../components/backToTop/backToTop";
 import { PortfolioRoutes } from "../../layout/Layout";
 import { FeatureToggle } from "../../App";
 
@@ -173,6 +172,8 @@ function Portfolio() {
 }
 
 function WritingChallenge() {
+  const navigate = useNavigate();
+
   return FeatureToggle.WritingChallenge ? (
     <div className="challenges">
       <div className="challenge-title">Daily UX Writing Challenge</div>
