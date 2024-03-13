@@ -28,7 +28,7 @@ export const TopNavMenus = [
 
 export const FeatureToggle = {
   ExperiencedProjects: true,
-  WritingChallenge: false,
+  WritingChallenge: true,
   Contact: false,
   Resume: true,
 };
