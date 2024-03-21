@@ -28,6 +28,7 @@ function ChallengeDay3() {
             <BackBtn redirectPath={PageRoute.Portfolio} />
             <ChallengesDropdown className="ml-auto" />
           </div>
+
           <div className="project-content">
             <div className="challenge-detail-title">
               <h3 className="challenge-detail-h3">UXW Challenge Day 3</h3>
@@ -82,7 +83,7 @@ function ChallengeDay3() {
               </section>
 
               <section>
-              <div className="challenge-topic">
+                <div className="challenge-topic">
                   <img
                     src={Goals}
                     alt="goals section"
@@ -102,7 +103,7 @@ function ChallengeDay3() {
               </section>
 
               <section>
-              <div className="challenge-topic">
+                <div className="challenge-topic">
                   <img
                     src={TargetUser}
                     alt="target user section"
@@ -117,18 +118,14 @@ function ChallengeDay3() {
               </section>
 
               <section>
-              <div className="challenge-topic">
+                <div className="challenge-topic">
                   <img
                     src={UserJourney}
                     alt="user journey and emotional state section"
                     className="challenge-topic"
                   />
                 </div>
-                <img 
-                  src={JourneyImg} 
-                  alt="user journey" 
-                  width="100%" 
-                  />
+                <img src={JourneyImg} alt="user journey" width="100%" />
 
                 <p className="project-sub-heading">
                   ☝ What happens if the message is unsuccessful?
@@ -142,10 +139,9 @@ function ChallengeDay3() {
                   </li>
                 </ul>
               </section>
-            
 
               <section>
-              <div className="challenge-topic">
+                <div className="challenge-topic">
                   <img
                     src={ThoughtProcesses}
                     alt="thought processes section"
@@ -205,7 +201,7 @@ function ChallengeDay3() {
               </section>
 
               <section>
-              <div className="challenge-topic">
+                <div className="challenge-topic">
                   <img
                     src={FinalContent}
                     alt="thought processes section"

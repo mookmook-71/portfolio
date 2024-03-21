@@ -74,7 +74,7 @@ function ChallengeDay1() {
               />
             </div>
 
-            <div className="challenge-topic">
+            <div className="challenge-details">
               <section>
                 <div className="challenge-topic">
                   <img

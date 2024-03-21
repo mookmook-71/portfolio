@@ -90,7 +90,7 @@ function ChallengeDay2() {
                   people interested and leave a positive impression.
                 </p>
               </section>
-            </div>
+            
 
             <section>
               <div className="challenge-topic">
@@ -193,6 +193,7 @@ function ChallengeDay2() {
 
         <BackToTop />
         <Footer />
+      </div>
       </div>
     </>
   );
