@@ -15,6 +15,7 @@ import ThoughtProcesses from "../../../assets/challenges/thought-processes.png";
 import FinalContent from "../../../assets/challenges/final-content.png";
 
 import UserImg from "../../../assets/challenges/uxw-challenge-day-8.png";
+import JourneyImg from "../../../assets/challenges/uxw-challenge-day-8-journey.png";
 import ResultImg from "../../../assets/challenges/uxw-day-9.jpg";
 
 function ChallengeDay8() {
@@ -69,7 +70,7 @@ function ChallengeDay8() {
 
             <div className="challenge-details">
               <section>
-              <div className="challenge-topic">
+                <div className="challenge-topic">
                   <img
                     src={VoiceAndTone}
                     alt="thought processes section"
@@ -85,7 +86,7 @@ function ChallengeDay8() {
               </section>
 
               <section>
-              <div className="challenge-topic">
+                <div className="challenge-topic">
                   <img
                     src={Goals}
                     alt="thought processes section"
@@ -104,7 +105,7 @@ function ChallengeDay8() {
               </section>
 
               <section>
-              <div className="challenge-topic">
+                <div className="challenge-topic">
                   <img
                     src={TargetUser}
                     alt="thought processes section"
@@ -119,18 +120,15 @@ function ChallengeDay8() {
               </section>
 
               <section>
-              <div className="challenge-topic">
+                <div className="challenge-topic">
                   <img
-                    src={TargetUser}
-                    alt="thought processes section"
+                    src={UserJourney}
+                    alt="user journey and emotional state section"
                     className="challenge-topic"
                   />
                 </div>
-                <p className="body-4">
-                  ?? &gt; ?? &gt; ?? &gt; 📍 <b>??</b> &gt; ?? &gt; ?? &gt; ??
-                  &gt; ?? &gt; ?? &gt; ?? &gt; ?? &gt; ?? &gt;
-                </p>
-                <br />
+                <img src={JourneyImg} alt="user journey" width="100%" />
+
                 <p className="project-sub-heading">
                   ☝ What happens if the message is unsuccessful?
                 </p>

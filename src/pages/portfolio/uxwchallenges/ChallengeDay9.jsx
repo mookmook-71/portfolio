@@ -1,13 +1,22 @@
 import React from "react";
-import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
-import BackBtn from "../../../components/button/BackBtn";
-import { PageRoute } from "../../../App";
-
-import UserImg from "../../../assets/challenges/uxw-challenge-day-9.png";
-import ResultImg from "../../../assets/challenges/uxw-day-9.jpg";
 import BackToTop from "../../../components/backToTop/backToTop";
 import Footer from "../../../components/footer/Footer";
+
+import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
+import BackBtn from "../../../components/button/BackBtn";
 import ChallengesDropdown from "../../../components/dropdown/ChallegesDropdown";
+import { PageRoute } from "../../../App";
+
+import VoiceAndTone from "../../../assets/challenges/voice-and-tone.png";
+import Goals from "../../../assets/challenges/goals.png";
+import TargetUser from "../../../assets/challenges/target-user.png";
+import UserJourney from "../../../assets/challenges/user-journey.png";
+import ThoughtProcesses from "../../../assets/challenges/thought-processes.png";
+import FinalContent from "../../../assets/challenges/final-content.png";
+
+import UserImg from "../../../assets/challenges/uxw-challenge-day-9.png";
+import JourneyImg from "../../../assets/challenges/uxw-challenge-day-9-journey.png";
+import ResultImg from "../../../assets/challenges/uxw-day-9.jpg";
 
 function ChallengeDay9() {
   return (
@@ -59,7 +68,13 @@ function ChallengeDay9() {
 
             <div className="challenge-details">
               <section>
-                <h6 className="project-details-content">Voice and tone</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={VoiceAndTone}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   For this challenge, I'm adopting a considerate and simple
                   voice to empathize with users and guide them effectively. The
@@ -69,7 +84,13 @@ function ChallengeDay9() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Goals</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={Goals}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   <ul>
                     <li>
@@ -83,7 +104,13 @@ function ChallengeDay9() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Target users</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={TargetUser}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   Adult who has planned to go on a trip for the upcoming holiday
                   and is a credit card holder
@@ -91,12 +118,15 @@ function ChallengeDay9() {
               </section>
 
               <section>
-                <h6 className="project-details-content">User journey</h6>
-                <p className="body-4">
-                  ?? &gt; ?? &gt; ?? &gt; 📍 <b>??</b> &gt; ?? &gt; ?? &gt; ??
-                  &gt; ?? &gt; ?? &gt; ?? &gt; ?? &gt; ?? &gt;
-                </p>
-                <br />
+                <div className="challenge-topic">
+                  <img
+                    src={UserJourney}
+                    alt="user journey and emotional state section"
+                    className="challenge-topic"
+                  />
+                </div>
+                <img src={JourneyImg} alt="user journey" width="100%" />
+
                 <p className="project-sub-heading">
                   ☝ What happens if the message is unsuccessful?
                 </p>
@@ -115,36 +145,15 @@ function ChallengeDay9() {
                   <li>Users might contact customer support for assistance</li>
                 </ul>
               </section>
-              <section>
-                <h6 className="project-details-content">
-                  User’s emotional state
-                </h6>
-                <p className="body-4">
-                  <ul>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                    <li>
-                      <b>??</b> — ??
-                    </li>
-                  </ul>
-                </p>
-              </section>
 
               <section>
-                <h6 className="project-details-content">Thought processes</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={ThoughtProcesses}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   I avoid filler words like 'oops, whoops, uh-oh' to avoid
                   upsetting users who have gone through multiple steps. Instead,
@@ -170,11 +179,16 @@ function ChallengeDay9() {
                   be their actual card expiring, but an issue with the entered
                   information.
                 </p>
-                <br />
               </section>
 
               <section>
-                <h6 className="project-details-content">Final content</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={FinalContent}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <div className="project-deliverable-img">
                   <img
                     src={ResultImg}

@@ -1,11 +1,22 @@
 import React from "react";
-import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
-import BackBtn from "../../../components/button/BackBtn";
-import { PageRoute } from "../../../App";
-import ResultImg from "../../../assets/challenges/uxw-day-14.jpg";
 import BackToTop from "../../../components/backToTop/backToTop";
 import Footer from "../../../components/footer/Footer";
+
+import ChallengeCard from "../../../components/card/challenge/ChallengeCard";
+import BackBtn from "../../../components/button/BackBtn";
 import ChallengesDropdown from "../../../components/dropdown/ChallegesDropdown";
+import { PageRoute } from "../../../App";
+
+import VoiceAndTone from "../../../assets/challenges/voice-and-tone.png";
+import Goals from "../../../assets/challenges/goals.png";
+import TargetUser from "../../../assets/challenges/target-user.png";
+import UserJourney from "../../../assets/challenges/user-journey.png";
+import ThoughtProcesses from "../../../assets/challenges/thought-processes.png";
+import FinalContent from "../../../assets/challenges/final-content.png";
+
+import UserImg from "../../../assets/challenges/uxw-challenge-day-13.png";
+import JourneyImg from "../../../assets/challenges/uxw-challenge-day-13-journey.png";
+import ResultImg from "../../../assets/challenges/uxw-day-13.jpg";
 
 function ChallengeDay14() {
   return (
@@ -53,7 +64,13 @@ function ChallengeDay14() {
 
             <div className="challenge-details">
               <section>
-                <h6 className="project-details-content">Voice and tone</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={VoiceAndTone}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   When I read today's challenge, I think of a persona that's
                   cool, friendly, and a bit humorous. The idea is to connect
@@ -68,11 +85,19 @@ function ChallengeDay14() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Goals</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={Goals}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">
                   <ul>
-                    <li>Let users know about the current issue preventing app
-                      access</li>
+                    <li>
+                      Let users know about the current issue preventing app
+                      access
+                    </li>
                     <li>Provide guidance on available actions for users</li>
                     <li>Uphold a positive relationship with users</li>
                     <li>Maintain user retention rate</li>
@@ -91,51 +116,27 @@ function ChallengeDay14() {
               </section>
 
               <section>
-                <h6 className="project-details-content">User journey</h6>
-                <p className="body-4">
-                User picks up their phone &gt; 
-                taps on the app icon &gt; 
-                📍 <b>encounters an error message</b> &gt; 
-                tries refreshing the app &gt; 
-                exits the app &gt; 
-                eturns later &gt; 
-                resumes using the app
-                </p>
-                <br />
+                <div className="challenge-topic">
+                  <img
+                    src={UserJourney}
+                    alt="user journey and emotional state section"
+                    className="challenge-topic"
+                  />
+                </div>
+                <img src={JourneyImg} alt="user journey" width="100%" />
+
                 <p className="project-sub-heading">
                   ☝ What happens if the message is unsuccessful?
                 </p>
                 <ul>
-                  <li>User persists in trying to use the app when it won't work</li>
+                  <li>
+                    User persists in trying to use the app when it won't work
+                  </li>
                   <li>User is uncertain about what they can or should do</li>
                   <li>User complaints about the app</li>
                   <li>User changes to another price comparison app</li>
                   <li>The app receives low ratings and negative feedback</li>
                 </ul>
-              </section>
-              <section>
-                <h6 className="project-details-content">
-                  User’s emotional state
-                </h6>
-                <p className="body-4">
-                  <ul>
-                    <li>
-                      <b>Disappointed</b> — that the app is not functioning as expected
-                    </li>
-                    <li>
-                      <b>Annoyed</b> — due to the inconvenience caused by the app's malfunction
-                    </li>
-                    <li>
-                      <b>Impatient</b> — want to swiftly use the app for their needs
-                    </li>
-                    <li>
-                      <b>Distrust</b> — lose confidence in the reliability of the app
-                    </li>
-                    <li>
-                      <b>Lost</b> — not sure what to do next
-                    </li>
-                  </ul>
-                </p>
               </section>
 
               <section>
@@ -145,18 +146,26 @@ function ChallengeDay14() {
                 <p className="body-4">
                   <b>Heading:</b> what happens
                   <br />
-                  <b>Body:</b> what we do to help + what they can do now or later
+                  <b>Body:</b> what we do to help + what they can do now or
+                  later
                   <br />
                   <b>CTA:</b> what they can try right now
                 </p>
                 <br />
                 <p>
-                In this situation, the way to help the users is answering these questions
+                  In this situation, the way to help the users is answering
+                  these questions
                 </p>
               </section>
 
               <section>
-                <h6 className="project-details-content">Thought processes</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={ThoughtProcesses}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <p className="body-4">??</p>
                 <br />
                 <p>??</p>
@@ -169,7 +178,13 @@ function ChallengeDay14() {
               </section>
 
               <section>
-                <h6 className="project-details-content">Final content</h6>
+                <div className="challenge-topic">
+                  <img
+                    src={FinalContent}
+                    alt="thought processes section"
+                    className="challenge-topic"
+                  />
+                </div>
                 <div className="project-deliverable-img">
                   <img
                     src={ResultImg}
